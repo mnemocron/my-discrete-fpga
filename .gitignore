@@ -1,3 +1,8 @@
+# drawio
+*.bkp
+*.dtmp
+*.db
+
 # LATEX
 ## Core latex/pdflatex auxiliary files:
 *.aux
