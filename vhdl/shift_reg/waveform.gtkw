@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Sep  4 08:12:59 2023
+[*]
+[dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/shift_reg/wave.vcd"
+[dumpfile_mtime] "Mon Sep  4 08:10:01 2023"
+[dumpfile_size] 8048
+[savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/shift_reg/waveform.gtkw"
+[timestart] 0
+[size] 1908 1047
+[pos] 34687 32767
+*-25.000000 30500000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_sr_74xx595.
+[sst_width] 214
+[signals_width] 214
+[sst_expanded] 1
+[sst_vpaned_height] 309
+@22
+tb_sr_74xx595.clk_count[31:0]
+@28
+tb_sr_74xx595.sclk
+tb_sr_74xx595.latch
+tb_sr_74xx595.rst_n
+tb_sr_74xx595.mosi
+tb_sr_74xx595.q_a
+tb_sr_74xx595.q_b
+tb_sr_74xx595.q_c
+tb_sr_74xx595.q_d
+tb_sr_74xx595.q_e
+tb_sr_74xx595.q_f
+tb_sr_74xx595.q_g
+tb_sr_74xx595.q_h
+tb_sr_74xx595.x_a
+tb_sr_74xx595.x_b
+tb_sr_74xx595.x_c
+tb_sr_74xx595.x_d
+tb_sr_74xx595.x_e
+tb_sr_74xx595.x_f
+tb_sr_74xx595.x_g
+tb_sr_74xx595.x_h
+tb_sr_74xx595.miso
+@22
+tb_sr_74xx595.reg_inst_0.reg_internal[7:0]
+tb_sr_74xx595.reg_inst_1.reg_internal[7:0]
+tb_sr_74xx595.reg_inst_0.reg_latch[7:0]
+@23
+tb_sr_74xx595.reg_inst_1.reg_latch[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

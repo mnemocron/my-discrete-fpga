@@ -19,30 +19,25 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity mux_74Lxx151 is
+entity mux_74xx157 is
     port(
-        s    : in  std_ulogic_vector(2 downto 0);
+        s    : in  std_ulogic;
         e_n  : in  std_ulogic;
-        i    : in  std_ulogic_vector(7 downto 0);
-        y    : out std_ulogic
+        in_0 : in  std_ulogic_vector(3 downto 0);
+        in_1 : in  std_ulogic_vector(3 downto 0);
+        y    : out std_ulogic_vector(3 downto 0)
     );
 end entity;
 
-architecture arch of mux_74Lxx151 is
-  signal yy : std_ulogic;
+architecture arch of mux_74xx157 is
+    signal yy : std_ulogic_vector(3 downto 0);
 begin
     
-    -- the 74xx151 does NOT have a tri-state output (only the 74xx251)
+    -- the 74xx157 does NOT have a tri-state output (only the 74xx257)
 
-    yy <= i(7) when s = "111" else
-          i(6) when s = "110" else
-          i(5) when s = "101" else
-          i(4) when s = "100" else
-          i(3) when s = "011" else
-          i(2) when s = "010" else
-          i(1) when s = "001" else
-          i(0);
-          
-    y <= yy when e_n = '0' else '0';
+    yy <= in_1 when s = '1' else
+         in_0;
+
+    y <= yy when e_n = '0' else "0000";
 
 end architecture;

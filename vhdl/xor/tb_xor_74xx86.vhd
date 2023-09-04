@@ -3,7 +3,7 @@
 -- Engineer:       simon.burkhardt
 -- 
 -- Create Date:    2023-09-03
--- Design Name:    tb_mux_74Lxx157
+-- Design Name:    tb_xor_74xx86
 -- Module Name:    
 -- Project Name:   
 -- Target Devices: 
@@ -20,19 +20,17 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity tb_mux_74Lxx157 is
+entity tb_xor_74xx86 is
 
-end tb_mux_74Lxx157;
+end tb_xor_74xx86;
 
-architecture bh of tb_mux_74Lxx157 is
+architecture bh of tb_xor_74xx86 is
 
-  component mux_74Lxx157 is
+  component xor_74xx86 is
     port(
-      s    : in  std_ulogic;
-      e_n  : in  std_ulogic;
-      in_0 : in  std_ulogic_vector(3 downto 0);
-      in_1 : in  std_ulogic_vector(3 downto 0);
-      y    : out std_ulogic_vector(3 downto 0)
+      a : in  std_ulogic_vector(3 downto 0);
+      b : in  std_ulogic_vector(3 downto 0);  
+      y : out std_ulogic_vector(3 downto 0)
     );
   end component;
 
@@ -41,10 +39,9 @@ architecture bh of tb_mux_74Lxx157 is
   signal clk        : std_logic;
   signal rst_n      : std_logic;
 
-  signal selector : std_logic := 'Z';
-  signal i_ch_a   : std_ulogic_vector(3 downto 0) := (others => 'Z');
-  signal i_ch_b   : std_ulogic_vector(3 downto 0) := (others => 'Z');
-  signal o_out    : std_ulogic_vector(3 downto 0) := (others => 'Z');
+  signal in_0 : std_ulogic_vector(3 downto 0) := (others => 'Z');
+  signal in_1 : std_ulogic_vector(3 downto 0) := (others => 'Z');
+  signal o_y  : std_ulogic_vector(3 downto 0) := (others => 'Z');
 
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
 begin
@@ -71,30 +68,20 @@ begin
 
   p_test : process
   begin
-    -- initial condition
-    selector <= '0';
-
     -- set channel A
-    i_ch_a <= x"A";
-    i_ch_b <= x"B";
+    in_0 <= "1100";
+    in_1 <= "1010";
     wait for (CLK_PERIOD/4);
-    assert o_out = x"A" report "o_out != i_ch_0 (0)";
-
-    -- switch input
-    selector <= '1';
-    wait for (CLK_PERIOD/4);
-    assert o_out = x"B" report "o_out != i_ch_b (2)";
+    assert o_y = "0110" report "o_y not xor function (0)";
 
     wait;
   end process;
 
-  sw_inst : mux_74Lxx157
+  sw_inst : xor_74xx86
     port map (
-      s    => selector,
-      e_n  => '0',
-      in_0 => i_ch_a,
-      in_1 => i_ch_b,
-      y    => o_out
+      a => in_0,
+      b => in_1,
+      y => o_y
     );
 
 end bh;

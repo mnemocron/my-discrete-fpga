@@ -7,15 +7,15 @@ rm -rf *.vcd &
 rm -rf *.cf &
 
 # analyze
-ghdl -a mux_74xx151.vhd
-ghdl -a tb_mux_74xx151.vhd
+ghdl -a xor_74xx86.vhd
+ghdl -a tb_xor_74xx86.vhd
 
 # elaborate
-ghdl -e mux_74xx151
-ghdl -e tb_mux_74xx151
+ghdl -e xor_74xx86
+ghdl -e tb_xor_74xx86
 
 # run
-ghdl -r tb_mux_74xx151 --vcd=wave.vcd --stop-time=100ns
+ghdl -r tb_xor_74xx86 --vcd=wave.vcd --stop-time=100ns
 gtkwave wave.vcd waveform.gtkw
 
 # delete

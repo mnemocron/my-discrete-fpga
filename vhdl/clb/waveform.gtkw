@@ -1,0 +1,51 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Sep  4 13:37:32 2023
+[*]
+[dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/clb/wave.vcd"
+[dumpfile_mtime] "Mon Sep  4 13:36:55 2023"
+[dumpfile_size] 60846
+[savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/clb/waveform.gtkw"
+[timestart] 0
+[size] 1908 1047
+[pos] 34685 32764
+*-27.000000 139500000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_clb_slice.
+[treeopen] tb_clb_slice.clb_inst.
+[sst_width] 283
+[signals_width] 214
+[sst_expanded] 1
+[sst_vpaned_height] 309
+@28
+tb_clb_slice.sclk
+tb_clb_slice.mosi
+tb_clb_slice.latch
+tb_clb_slice.conf_done
+tb_clb_slice.clk
+tb_clb_slice.rst_n
+tb_clb_slice.o_qa
+tb_clb_slice.o_qb
+tb_clb_slice.o_qc
+tb_clb_slice.o_qd
+@22
+tb_clb_slice.cb_presel[3:0]
+@28
+tb_clb_slice.clb_inst.ser_in_to_lut_d0
+tb_clb_slice.clb_inst.lut3d0_inst.ser
+@24
+tb_clb_slice.clb_inst.lut3a0[7:0]
+tb_clb_slice.clb_inst.lut3a1[7:0]
+tb_clb_slice.clb_inst.lut3b0[7:0]
+tb_clb_slice.clb_inst.lut3b1[7:0]
+tb_clb_slice.clb_inst.lut3c0[7:0]
+tb_clb_slice.clb_inst.lut3c1[7:0]
+tb_clb_slice.clb_inst.lut3d0[7:0]
+@25
+tb_clb_slice.clb_inst.lut3d1[7:0]
+@24
+tb_clb_slice.clb_inst.insel_a[1:0]
+tb_clb_slice.clb_inst.insel_b[1:0]
+tb_clb_slice.clb_inst.insel_c[1:0]
+tb_clb_slice.clb_inst.insel_d[1:0]
+[pattern_trace] 1
+[pattern_trace] 0

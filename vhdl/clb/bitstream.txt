@@ -1,0 +1,15 @@
+# CLB input select and configuration
+00000000
+00001111
+# LUTa - 4-input XOR
+00000001
+00010110
+# LUTb - 4-input AND
+10000000
+00000000
+# LUTc - even parity
+01101001
+10010110
+# LUTd - 2-input NAND
+00000000
+01110111

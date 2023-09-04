@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Sep  4 07:41:41 2023
+[*]
+[dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/xor/wave.vcd"
+[dumpfile_mtime] "Mon Sep  4 07:41:31 2023"
+[dumpfile_size] 1920
+[savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/xor/waveform.gtkw"
+[timestart] 0
+[size] 1908 1047
+[pos] 34687 32767
+*-24.000000 4610000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 214
+[signals_width] 214
+[sst_expanded] 1
+[sst_vpaned_height] 309
+@28
+tb_xor_74xx86.clk
+@22
+tb_xor_74xx86.in_0[3:0]
+tb_xor_74xx86.in_1[3:0]
+@23
+tb_xor_74xx86.o_y[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
