@@ -1,0 +1,9 @@
+\subsubsection{Fast Carry Chain}
+
+LUTs only offer a low input signal count and can rarely add longer than 2x2 bit numbers.
+This is hardly practical which is why longer additions require multiple LUT primitives.
+The way an addition works is by starting at the LSB position.
+If both numbers are a "1" bit, a carry bit is added to the next higher bit.
+Each additional bit in the input vector length therefore translates to an additional LUT cascaded (in series).
+This increases the critical path significantly to the point where timing quickly becomes an issue in high speed FPGAs.
+To circumvent this problem, multiple versions of a (fast) carry chain were developed and are standard in modern CLB slices.

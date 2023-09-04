@@ -1,0 +1,17 @@
+\subsubsection{Look Up Table (LUT)}
+
+The LUT is the implementation of a truth-table in hardware.
+Any thinkable logic function with $A$ inputs and $O$ outputs can be realized using a $O\cdot 2^A$ LUT.
+
+Modern implementations of LUTs use between 4 and 6 inputs while having a maximum of 2 outputs. 
+This means that an output variable can depend on up to 6 input variables.
+If an application requires more input variables, multiple LUT primitives need to be cascaded. 
+Another approach would be to offer LUT primitives with a higher number of inputs (e.g. an 8:1 LUT). This comes at the cost of higher area consumption which is wasted for simpler functions using less than 8 inputs.
+Research in FPGA chip design suggests that 4 to 6 inputs is a good balance.
+Xilinx LUTs for example can either be configured as a 6:1 LUT or a 5:2 LUT.
+
+The output of a LUT can be registered with a D-type flip-flop stage.
+Or the output can be routed to another LUT for additional functionality.
+The output register therefore is a configuration option in the bitstream.
+
+
