@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Mon Sep  4 13:37:32 2023
+[*] Mon Sep  4 15:23:57 2023
 [*]
 [dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/clb/wave.vcd"
-[dumpfile_mtime] "Mon Sep  4 13:36:55 2023"
-[dumpfile_size] 60846
+[dumpfile_mtime] "Mon Sep  4 15:22:45 2023"
+[dumpfile_size] 83125
 [savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/clb/waveform.gtkw"
-[timestart] 0
+[timestart] 294720000
 [size] 1908 1047
 [pos] 34685 32764
-*-27.000000 139500000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-24.000000 346980000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb_clb_slice.
 [treeopen] tb_clb_slice.clb_inst.
 [sst_width] 283
@@ -19,33 +19,37 @@
 @28
 tb_clb_slice.sclk
 tb_clb_slice.mosi
+tb_clb_slice.cfg_clr_n
 tb_clb_slice.latch
-tb_clb_slice.conf_done
+[color] 2
+tb_clb_slice.bitstream_done
+@24
+tb_clb_slice.clk_count[31:0]
+@28
 tb_clb_slice.clk
 tb_clb_slice.rst_n
+[color] 2
 tb_clb_slice.o_qa
+[color] 2
 tb_clb_slice.o_qb
+[color] 2
 tb_clb_slice.o_qc
+[color] 2
 tb_clb_slice.o_qd
 @22
-tb_clb_slice.cb_presel[3:0]
+[color] 3
+tb_clb_slice.lut_input[3:0]
+@24
+tb_clb_slice.cb_bus_north[3:0]
+tb_clb_slice.cb_bus_south[3:0]
 @28
-tb_clb_slice.clb_inst.ser_in_to_lut_d0
-tb_clb_slice.clb_inst.lut3d0_inst.ser
+tb_clb_slice.cin
 @24
-tb_clb_slice.clb_inst.lut3a0[7:0]
-tb_clb_slice.clb_inst.lut3a1[7:0]
-tb_clb_slice.clb_inst.lut3b0[7:0]
-tb_clb_slice.clb_inst.lut3b1[7:0]
-tb_clb_slice.clb_inst.lut3c0[7:0]
-tb_clb_slice.clb_inst.lut3c1[7:0]
-tb_clb_slice.clb_inst.lut3d0[7:0]
-@25
-tb_clb_slice.clb_inst.lut3d1[7:0]
-@24
-tb_clb_slice.clb_inst.insel_a[1:0]
-tb_clb_slice.clb_inst.insel_b[1:0]
-tb_clb_slice.clb_inst.insel_c[1:0]
-tb_clb_slice.clb_inst.insel_d[1:0]
+tb_clb_slice.sum_out[3:0]
+@28
+tb_clb_slice.clb_inst.la
+tb_clb_slice.clb_inst.carry_mux_a.i0
+tb_clb_slice.clb_inst.carry_mux_a.i1
+tb_clb_slice.cin
 [pattern_trace] 1
 [pattern_trace] 0

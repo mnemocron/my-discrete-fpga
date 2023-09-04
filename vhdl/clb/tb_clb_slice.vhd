@@ -73,6 +73,7 @@ architecture bh of tb_clb_slice is
   signal o_qb       : std_logic;
   signal o_qc       : std_logic;
   signal o_qd       : std_logic;
+  signal sum_out    : std_logic_vector(3 downto 0);
 
   signal cin          : std_logic;
   signal cout         : std_logic;
@@ -80,11 +81,15 @@ architecture bh of tb_clb_slice is
   signal cb_bus_north : std_ulogic_vector(3 downto 0);
   signal cb_bus_south : std_ulogic_vector(3 downto 0);
   signal cb_presel    : std_ulogic_vector(3 downto 0);
+  signal lut_input    : std_ulogic_vector(3 downto 0);
 
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
 
-  signal conf_done : std_logic := '0';
+  signal bitstream_done : std_logic := '0';
+  signal test_done : std_logic := '0';
 begin
+
+  lut_input <= cb_presel;
 
   -- generate clk signal
   p_clk_gen : process
@@ -99,7 +104,8 @@ begin
   end process;
 
   proc_bitstream_programming : process
-    file text_file : text open read_mode is "bitstream.txt";
+    file bitstream_file : text open read_mode is "bitstream.txt";
+    file bitstream_sum_file : text open read_mode is "bitstream_carry.txt";
     variable text_line : line;
     variable ok : boolean;
     variable conf_byte : std_logic_vector(7 downto 0);
@@ -111,9 +117,13 @@ begin
     wait for 5 ns;
     cfg_clr_n <= '1';
     wait for 5 ns;
+    latch <= '1';
+    wait for 5 ns;
+    latch <= '0';
+    wait for 5 ns;
 
-    while not endfile(text_file) loop  
-      readline(text_file, text_line);
+    while not endfile(bitstream_file) loop  
+      readline(bitstream_file, text_line);
       -- skip empty and comment lines
       if text_line.all'length = 0 or text_line.all(1) = '#' then
         next;
@@ -130,14 +140,52 @@ begin
         wait for (SPI_CLK_PERIOD / 2);
         sclk <= '0';
       end loop l_send_byte;
-
     end loop;
+
     wait for 5 ns;
     latch <= '1';
     wait for 5 ns;
     latch <= '0';
     wait for 5 ns;
-    conf_done <= '1';
+    bitstream_done <= '1';
+
+    wait until test_done = '1';
+    bitstream_done <= '0';
+    sclk <= '0';
+    mosi <= 'Z';
+    latch <= '0';
+    cfg_clr_n <= '0';
+    wait for 5 ns;
+    cfg_clr_n <= '1';
+    wait for 5 ns;
+
+    while not endfile(bitstream_sum_file) loop  
+      readline(bitstream_sum_file, text_line);
+      -- skip empty and comment lines
+      if text_line.all'length = 0 or text_line.all(1) = '#' then
+        next;
+      end if;
+      read(text_line, conf_byte, ok);
+      assert ok
+        report "Read 'conf_byte' failed for line: " & text_line.all
+        severity failure;
+
+      l_send_byte_2 : for k in conf_byte'length-1 downto 0 loop
+        mosi <= conf_byte(k);
+        wait for (SPI_CLK_PERIOD / 2);
+        sclk <= '1';
+        wait for (SPI_CLK_PERIOD / 2);
+        sclk <= '0';
+      end loop l_send_byte_2;
+    end loop;
+
+    wait for 5 ns;
+    latch <= '1';
+    wait for 5 ns;
+    latch <= '0';
+    wait for 5 ns;
+    bitstream_done <= '1';
+
     wait;
     -- finish;
   end process;
@@ -146,7 +194,7 @@ begin
   p_reset_gen : process
   begin 
     rst_n <= '0';
-    wait until rising_edge(conf_done);
+    wait until rising_edge(bitstream_done);
     wait for (CLK_PERIOD / 4);
     wait until rising_edge(clk);
     rst_n <= '1';
@@ -156,7 +204,12 @@ begin
   p_test : process(clk)
   begin
     if unsigned(clk_count) = 0 then
-      cb_presel <= "0000";
+      cb_presel <= (others => '0');
+      cb_presel <= (others => '0');
+      cb_bus_north <= (others => '0');
+      cb_bus_south <= (others => '0');
+      cb_bus_west  <= (others => '0');
+      cin <= '0';
     end if;
     if unsigned(clk_count) = 2 then
       cb_presel <= "0001";
@@ -203,7 +256,148 @@ begin
     if unsigned(clk_count) = 16 then
       cb_presel <= "1111";
     end if;
+    if unsigned(clk_count) = 17 then
+      cb_presel <= "0000";
+    end if;
+
+
+    if unsigned(clk_count) = 45 then
+      cb_bus_north <= "0000";
+      cb_bus_south <= "0001";
+      cin <= '0';
+    end if;
+    if unsigned(clk_count) = 46 then
+      cb_bus_north <= "0001";
+      cb_bus_south <= "0001";
+      cin <= '0';
+    end if;
+    if unsigned(clk_count) = 47 then
+      cb_bus_north <= "0010";
+      cb_bus_south <= "0010";
+      cin <= '0';
+    end if;
+    if unsigned(clk_count) = 48 then
+      cb_bus_north <= "0010";
+      cb_bus_south <= "0011";
+      cin <= '0';
+    end if;
+    if unsigned(clk_count) = 49 then
+      cb_bus_north <= "0000";
+      cb_bus_south <= "0000";
+      cin <= '0';
+    end if;
+
   end process;
+
+  p_assert : process(clk)
+  begin
+    if falling_edge(clk) then -- falling edge because of signal changes on rising edge
+      if unsigned(clk_count) = 2 then
+        assert o_qa = '0' report "(2) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(2) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '0' report "(2) Qc != 0 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(2) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 3 then
+        assert o_qa = '1' report "(3) Qa != 1 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(3) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '1' report "(3) Qc != 1 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(3) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 4 then
+        assert o_qa = '1' report "(4) Qa != 1 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(4) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '1' report "(4) Qc != 1 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(4) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 5 then
+        assert o_qa = '0' report "(5) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(5) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '0' report "(5) Qc != 0 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '0' report "(5) Qc != 0 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 6 then
+        assert o_qa = '1' report "(6) Qa != 1 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(6) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '1' report "(6) Qc != 1 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(6) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 7 then
+        assert o_qa = '0' report "(7) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(7) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '0' report "(7) Qc != 0 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(7) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 8 then
+        assert o_qa = '0' report "(8) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(8) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '0' report "(8) Qc != 0 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(8) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 9 then
+        assert o_qa = '0' report "(9) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(9) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '1' report "(9) Qc != 1 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '0' report "(9) Qc != 0 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 10 then
+        assert o_qa = '1' report "(10) Qa != 1 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(10) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '1' report "(10) Qc != 1 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(10) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 11 then
+        assert o_qa = '0' report "(11) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(11) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '0' report "(11) Qc != 0 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(11) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 12 then
+        assert o_qa = '0' report "(12) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(12) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '0' report "(12) Qc != 0 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(12) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 13 then
+        assert o_qa = '0' report "(13) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(13) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '1' report "(13) Qc != 1 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '0' report "(13) Qc != 0 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 14 then
+        assert o_qa = '0' report "(14) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(14) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '0' report "(14) Qc != 0 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(14) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 15 then
+        assert o_qa = '0' report "(15) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(15) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '1' report "(15) Qc != 1 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(15) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 16 then
+        assert o_qa = '0' report "(16) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '0' report "(16) Qb != 0 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '1' report "(16) Qc != 1 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '1' report "(16) Qc != 1 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 17 then
+        assert o_qa = '0' report "(17) Qa != 0 - instead=" & std_logic'image(o_qa);
+        assert o_qb = '1' report "(17) Qb != 1 - instead=" & std_logic'image(o_qb);
+        assert o_qc = '0' report "(17) Qc != 0 - instead=" & std_logic'image(o_qc);
+        assert o_qd = '0' report "(17) Qc != 0 - instead=" & std_logic'image(o_qd);
+      end if;
+      if unsigned(clk_count) = 20 then
+        test_done <= '1';
+      end if;
+    end if;
+  end process;
+
+  sum_out(3) <= o_qd;
+  sum_out(2) <= o_qc;
+  sum_out(1) <= o_qb;
+  sum_out(0) <= o_qa;
 
   clb_inst : clb_slice
     port map (

@@ -1,0 +1,15 @@
+# CLB input select and configuration
+10101010
+00011111
+# LUTa - sum mode 
+01100110
+01100110
+# LUTb - sum mode 
+01100110
+01100110
+# LUTc - sum mode 
+01100110
+01100110
+# LUTd - sum mode 
+01100110
+01100110

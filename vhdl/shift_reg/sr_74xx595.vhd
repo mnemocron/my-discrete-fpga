@@ -43,12 +43,13 @@ architecture arch of sr_74xx595 is
   signal reg_internal : std_ulogic_vector(7 downto 0) := (others => 'U');
   signal reg_latch    : std_ulogic_vector(7 downto 0) := (others => 'U');
 begin
-  p_reg_int : process(srclk)
+  p_reg_int : process(srclk,srclkr_n)
   begin
-    if rising_edge(srclk) then
-      if srclkr_n = '0' then
-        reg_internal <= (others => '0');
-      else
+    -- asynchronous clear
+    if srclkr_n = '0' then
+      reg_internal <= (others => '0');
+    else
+      if rising_edge(srclk) then
         reg_internal(7 downto 1) <= reg_internal(6 downto 0);
         reg_internal(0) <= ser;
       end if;
