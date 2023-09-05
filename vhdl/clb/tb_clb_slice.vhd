@@ -158,6 +158,10 @@ begin
     wait for 5 ns;
     cfg_clr_n <= '1';
     wait for 5 ns;
+    latch <= '1';
+    wait for 5 ns;
+    latch <= '0';
+    wait for 5 ns;
 
     while not endfile(bitstream_sum_file) loop  
       readline(bitstream_sum_file, text_line);
@@ -260,38 +264,38 @@ begin
       cb_presel <= "0000";
     end if;
 
-    if (unsigned(clk_count) > 31) and (unsigned(clk_count) < (31+256)) then
+    if (unsigned(clk_count) > 31+16) and (unsigned(clk_count) < (31+256+16)) then
       cb_bus_north <= std_ulogic_vector(clk_count(3 downto 0));
       cb_bus_south <= std_ulogic_vector(clk_count(7 downto 4));
       cin <= '0';
     end if;
-    if (unsigned(clk_count) > 31+256+4) and (unsigned(clk_count) < (31+256+256+4)) then
+    if (unsigned(clk_count) > 31+256+16) and (unsigned(clk_count) < (31+256+256+16)) then
       cb_bus_north <= std_ulogic_vector(clk_count(3 downto 0));
       cb_bus_south <= std_ulogic_vector(clk_count(7 downto 4));
       cin <= '1';
     end if;
 
-    if unsigned(clk_count) = 553 then
+    if unsigned(clk_count) = 563 then
       cb_bus_north <= "0000";
       cb_bus_north <= "0000";
       cin <= '0';
     end if;
-    if unsigned(clk_count) = 554 then
+    if unsigned(clk_count) = 564 then
       cb_bus_north <= "0101";
       cb_bus_north <= "0010";
       cin <= '0';
     end if;
-    if unsigned(clk_count) = 555 then
+    if unsigned(clk_count) = 565 then
       cb_bus_north <= "0000";
       cb_bus_north <= "0000";
       cin <= '0';
     end if;
-    if unsigned(clk_count) = 556 then
+    if unsigned(clk_count) = 566 then
       cb_bus_north <= "0101";
       cb_bus_north <= "0010";
       cin <= '1';
     end if;
-    if unsigned(clk_count) = 557 then
+    if unsigned(clk_count) = 567 then
       cb_bus_north <= "0000";
       cb_bus_north <= "0000";
       cin <= '0';

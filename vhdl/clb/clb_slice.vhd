@@ -249,10 +249,10 @@ begin
   begin 
     if falling_edge(reg_clk) then
       if set_sum = '1' then
-        assert La = (A0 xor A1) report "A0 xor A1 error!";
-        assert Lb = (B0 xor B1) report "B0 xor B1 error!";
-        assert Lc = (C0 xor C1) report "C0 xor C1 error!";
-        assert Ld = (D0 xor D1) report "D0 xor D1 error!";
+        assert La = (A0 xor A1) report "La = A0 xor A1 error! (" & std_ulogic'image(A0) & " xor " & std_ulogic'image(A1) & " = " & std_ulogic'image(La) & ")";
+        assert Lb = (B0 xor B1) report "Lb = B0 xor B1 error! (" & std_ulogic'image(B0) & " xor " & std_ulogic'image(B1) & " = " & std_ulogic'image(Lb) & ")";
+        assert Lc = (C0 xor C1) report "Lc = C0 xor C1 error! (" & std_ulogic'image(C0) & " xor " & std_ulogic'image(C1) & " = " & std_ulogic'image(Lc) & ")";
+        assert Ld = (D0 xor D1) report "Ld = D0 xor D1 error! (" & std_ulogic'image(D0) & " xor " & std_ulogic'image(D1) & " = " & std_ulogic'image(Ld) & ")";
         if (cin and La) = '1' then
           assert cca = '1' report "Carry chain error for cca!";
         end if;
@@ -262,10 +262,10 @@ begin
         if (ccb and Lc) = '1' then
           assert ccc = '1' report "Carry chain error for ccc!";
         end if;
-        assert Oa = (A0 xor A1 xor cin) report "A0 + A1 + c sum with carry error!";
-        assert Ob = (B0 xor B1 xor cca) report "B0 + B1 + c sum with carry error!";
-        assert Oc = (C0 xor C1 xor ccb) report "C0 + C1 + c sum with carry error!";
-        assert Od = (D0 xor D1 xor ccc) report "D0 + D1 + c sum with carry error!";
+        assert Oa = (A0 xor A1 xor cin) report "Oa = A0 + A1 + c sum with carry error (" & std_ulogic'image(A0) & " xor " & std_ulogic'image(A1) & " xor " & std_ulogic'image(cin) & " = " & std_ulogic'image(Oa) & ")";
+        assert Ob = (B0 xor B1 xor cca) report "Ob = B0 + B1 + c sum with carry error (" & std_ulogic'image(B0) & " xor " & std_ulogic'image(B1) & " xor " & std_ulogic'image(cca) & " = " & std_ulogic'image(Ob) & ")";
+        assert Oc = (C0 xor C1 xor ccb) report "Oc = C0 + C1 + c sum with carry error (" & std_ulogic'image(C0) & " xor " & std_ulogic'image(C1) & " xor " & std_ulogic'image(ccb) & " = " & std_ulogic'image(Oc) & ")";
+        assert Od = (D0 xor D1 xor ccc) report "Od = D0 + D1 + c sum with carry error (" & std_ulogic'image(D0) & " xor " & std_ulogic'image(D1) & " xor " & std_ulogic'image(ccc) & " = " & std_ulogic'image(Od) & ")";
 
         assert (unsigned(test_sum_ref) = unsigned(test_sum_out)) report "failed sum calculation!";
       end if;
