@@ -22,7 +22,7 @@ ghdl -e clb_slice
 ghdl -e -fsynopsys tb_clb_slice
 
 # run
-ghdl -r -fsynopsys tb_clb_slice --vcd=wave.vcd --stop-time=1us
+ghdl -r -fsynopsys tb_clb_slice --vcd=wave.vcd --stop-time=10us
 gtkwave wave.vcd waveform.gtkw
 
 # delete

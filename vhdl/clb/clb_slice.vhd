@@ -18,7 +18,7 @@
 ----------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
--- use ieee.numeric_std.all;
+use ieee.numeric_std.all;
 
 entity clb_slice is
   port(
@@ -214,9 +214,63 @@ architecture arch of clb_slice is
   signal insel_c     : std_ulogic_vector(1 downto 0);
   signal insel_d     : std_ulogic_vector(1 downto 0);
 
+  -- testbench signals
+  signal test_sum_0_in : std_ulogic_vector(5 downto 0);
+  signal test_sum_1_in : std_ulogic_vector(5 downto 0);
+  signal test_sum_2_in : std_ulogic_vector(5 downto 0);
+  signal test_sum_ref  : std_ulogic_vector(5 downto 0);
+  signal test_sum_out  : std_ulogic_vector(5 downto 0);
+
 
 begin
 
+  test_sum_0_in(0) <= A0;
+  test_sum_0_in(1) <= B0;
+  test_sum_0_in(2) <= C0;
+  test_sum_0_in(3) <= D0;
+  test_sum_0_in(4) <= '0';
+  test_sum_0_in(5) <= '0';
+
+  test_sum_1_in(0) <= A1;
+  test_sum_1_in(1) <= B1;
+  test_sum_1_in(2) <= C1;
+  test_sum_1_in(3) <= D1;
+  test_sum_1_in(4) <= '0';
+  test_sum_1_in(5) <= '0';
+
+  test_sum_2_in <= "00000" & cin;
+
+  test_sum_out(5) <= '0';
+  test_sum_out(4) <= ccd;
+  test_sum_out(3 downto 0) <= ff_vect_in(3 downto 0);
+  test_sum_ref <= std_ulogic_vector(unsigned(test_sum_0_in) + unsigned(test_sum_1_in) + unsigned(test_sum_2_in));
+
+  p_sum_check : process(reg_clk)
+  begin 
+    if falling_edge(reg_clk) then
+      if set_sum = '1' then
+        assert La = (A0 xor A1) report "A0 xor A1 error!";
+        assert Lb = (B0 xor B1) report "B0 xor B1 error!";
+        assert Lc = (C0 xor C1) report "C0 xor C1 error!";
+        assert Ld = (D0 xor D1) report "D0 xor D1 error!";
+        if (cin and La) = '1' then
+          assert cca = '1' report "Carry chain error for cca!";
+        end if;
+        if (cca and Lb) = '1' then
+          assert ccb = '1' report "Carry chain error for ccb!";
+        end if;
+        if (ccb and Lc) = '1' then
+          assert ccc = '1' report "Carry chain error for ccc!";
+        end if;
+        assert Oa = (A0 xor A1 xor cin) report "A0 + A1 + c sum with carry error!";
+        assert Ob = (B0 xor B1 xor cca) report "B0 + B1 + c sum with carry error!";
+        assert Oc = (C0 xor C1 xor ccb) report "C0 + C1 + c sum with carry error!";
+        assert Od = (D0 xor D1 xor ccc) report "D0 + D1 + c sum with carry error!";
+
+        assert (unsigned(test_sum_ref) = unsigned(test_sum_out)) report "failed sum calculation!";
+      end if;
+    end if;
+  end process;
   ser_in_to_lut_d0 <= mosi;
 
   -- input selection
@@ -247,23 +301,23 @@ begin
   insel_d0_in(1) <= cb_w(1);
   insel_d1_in(1) <= cb_w(0);
 
-  insel_a0_in(2) <= cb_n(3);
-  insel_a1_in(2) <= cb_n(0);
-  insel_b0_in(2) <= cb_n(2);
-  insel_b1_in(2) <= cb_n(1);
-  insel_c0_in(2) <= cb_n(1);
-  insel_c1_in(2) <= cb_n(2);
-  insel_d0_in(2) <= cb_n(0);
-  insel_d1_in(2) <= cb_n(3);
+  insel_a0_in(2) <= cb_n(0);
+  insel_a1_in(2) <= cb_s(0);
+  insel_b0_in(2) <= cb_n(1);
+  insel_b1_in(2) <= cb_s(1);
+  insel_c0_in(2) <= cb_n(2);
+  insel_c1_in(2) <= cb_s(2);
+  insel_d0_in(2) <= cb_n(3);
+  insel_d1_in(2) <= cb_s(3);
 
-  insel_a0_in(3) <= cb_n(0);
-  insel_a1_in(3) <= cb_n(3);
-  insel_b0_in(3) <= cb_n(1);
-  insel_b1_in(3) <= cb_n(2);
-  insel_c0_in(3) <= cb_n(2);
-  insel_c1_in(3) <= cb_n(1);
-  insel_d0_in(3) <= cb_n(3);
-  insel_d1_in(3) <= cb_n(0);
+  insel_a0_in(3) <= cb_n(3);
+  insel_a1_in(3) <= cb_s(3);
+  insel_b0_in(3) <= cb_n(2);
+  insel_b1_in(3) <= cb_s(2);
+  insel_c0_in(3) <= cb_n(1);
+  insel_c1_in(3) <= cb_s(1);
+  insel_d0_in(3) <= cb_n(0);
+  insel_d1_in(3) <= cb_s(0);
 
   LUT3_sel_a(0) <= A0;
   LUT3_sel_a(1) <= A1;
@@ -606,8 +660,10 @@ begin
       e_n => '0',
       i0  => D1,
       i1  => ccc,
-      y   => cout
+      y   => ccd
     );
+
+  cout <= ccd;
 
   -- carry chain XOR
   i_xor_lx(0) <= La;

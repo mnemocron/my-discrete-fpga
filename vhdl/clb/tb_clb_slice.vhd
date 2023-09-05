@@ -260,32 +260,44 @@ begin
       cb_presel <= "0000";
     end if;
 
+    if (unsigned(clk_count) > 31) and (unsigned(clk_count) < (31+256)) then
+      cb_bus_north <= std_ulogic_vector(clk_count(3 downto 0));
+      cb_bus_south <= std_ulogic_vector(clk_count(7 downto 4));
+      cin <= '0';
+    end if;
+    if (unsigned(clk_count) > 31+256+4) and (unsigned(clk_count) < (31+256+256+4)) then
+      cb_bus_north <= std_ulogic_vector(clk_count(3 downto 0));
+      cb_bus_south <= std_ulogic_vector(clk_count(7 downto 4));
+      cin <= '1';
+    end if;
 
-    if unsigned(clk_count) = 45 then
+    if unsigned(clk_count) = 553 then
       cb_bus_north <= "0000";
-      cb_bus_south <= "0001";
-      cin <= '0';
-    end if;
-    if unsigned(clk_count) = 46 then
-      cb_bus_north <= "0001";
-      cb_bus_south <= "0001";
-      cin <= '0';
-    end if;
-    if unsigned(clk_count) = 47 then
-      cb_bus_north <= "0010";
-      cb_bus_south <= "0010";
-      cin <= '0';
-    end if;
-    if unsigned(clk_count) = 48 then
-      cb_bus_north <= "0010";
-      cb_bus_south <= "0011";
-      cin <= '0';
-    end if;
-    if unsigned(clk_count) = 49 then
       cb_bus_north <= "0000";
-      cb_bus_south <= "0000";
       cin <= '0';
     end if;
+    if unsigned(clk_count) = 554 then
+      cb_bus_north <= "0101";
+      cb_bus_north <= "0010";
+      cin <= '0';
+    end if;
+    if unsigned(clk_count) = 555 then
+      cb_bus_north <= "0000";
+      cb_bus_north <= "0000";
+      cin <= '0';
+    end if;
+    if unsigned(clk_count) = 556 then
+      cb_bus_north <= "0101";
+      cb_bus_north <= "0010";
+      cin <= '1';
+    end if;
+    if unsigned(clk_count) = 557 then
+      cb_bus_north <= "0000";
+      cb_bus_north <= "0000";
+      cin <= '0';
+    end if;
+
+
 
   end process;
 
