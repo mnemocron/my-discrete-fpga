@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Sep  6 09:36:32 2023
+[*]
+[dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/cb_test/wave.vcd"
+[dumpfile_mtime] "Wed Sep  6 09:33:52 2023"
+[dumpfile_size] 3399
+[savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/cb_test/waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1617 20
+*-24.000000 31960000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 214
+[signals_width] 193
+[sst_expanded] 1
+[sst_vpaned_height] 152
+@24
+tb_cbox.clk_count[31:0]
+@28
+tb_cbox.clk
+tb_cbox.en
+tb_cbox.a_is_driving
+tb_cbox.sa
+tb_cbox.b_is_driving
+tb_cbox.sb
+tb_cbox.c_is_driving
+tb_cbox.sc
+[pattern_trace] 1
+[pattern_trace] 0
