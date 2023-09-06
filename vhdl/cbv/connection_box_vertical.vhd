@@ -79,8 +79,6 @@ architecture arch of connection_box_vertical is
   signal xpoint_6_en : std_logic := '0';
   signal xpoint_7_en : std_logic := '0';
 
-  signal prio_lane   : std_logic_vector(1 downto 0);
-
 begin
 
   p_assert : process(xpoint_0_en,xpoint_1_en,xpoint_2_en,xpoint_3_en,xpoint_4_en,xpoint_5_en,xpoint_6_en,xpoint_7_en)
@@ -140,31 +138,30 @@ begin
   xpoint_4_inst : cbox 
     port map (
       a  => prio_north(1),
-      b  => prio_south(0),
-      c  => bus_west(3),
+      b  => prio_south(1),
+      c  => bus_west(0),
       en => xpoint_4_en
     );
   xpoint_5_inst : cbox 
     port map (
       a  => prio_north(0),
-      b  => prio_south(1),
-      c  => bus_west(2),
+      b  => prio_south(0),
+      c  => bus_west(1),
       en => xpoint_5_en
     );
   xpoint_6_inst : cbox 
     port map (
       a  => prio_north(1),
-      b  => prio_south(0),
-      c  => bus_west(1),
+      b  => prio_south(1),
+      c  => bus_west(2),
       en => xpoint_6_en
     );
   xpoint_7_inst : cbox 
     port map (
       a  => prio_north(0),
-      b  => prio_south(1),
-      c  => bus_west(0),
+      b  => prio_south(0),
+      c  => bus_west(3),
       en => xpoint_7_en
     );
-
 
 end architecture;

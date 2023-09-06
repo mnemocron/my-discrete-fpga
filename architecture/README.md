@@ -2,6 +2,86 @@
 
 ---
 
+
+Bitstream is **MSB first**
+
+
+## Connection Box (horizontal)
+
+### CBh configuration
+
+There are 2 bytes of configuration.
+
+| pos | function | description |
+|--:|:--|:--|
+|  0 | `sel_0[0]`      | Input selection for LUT input 0 |
+|  1 | `sel_0[1]`      | Input selection for LUT input 0 |
+|  2 | `sel_0[2]`      | Input selection for LUT input 0 |
+|  3 | `xpoint_cin`    | Connect the LUT `cout` to the priority line for `cin` |
+|  4 | `sel_1[0]`      | Input selection for LUT input 1 |
+|  5 | `sel_1[1]`      | Input selection for LUT input 1 |
+|  6 | `sel_1[2]`      | Input selection for LUT input 1 |
+|  7 | `xpoint_cout_n` | Connect the `cout` from south LUT on the priority line to the `cin` of the north LUT |
+|  8 | `sel_2[0]`      | Input selection for LUT input 2 |
+|  9 | `sel_2[1]`      | Input selection for LUT input 2 |
+| 10 | `sel_2[2]`      | Input selection for LUT input 2 |
+| 11 | `xpoint_cout_s` | Connect the `cout` from the priority line to the `cin` of the south LUT |
+| 12 | `sel_3[0]`      | Input selection for LUT input 3 |
+| 13 | `sel_3[1]`      | Input selection for LUT input 3 |
+| 14 | `sel_3[2]`      | Input selection for LUT input 3 |
+| 15 | `-`             | <unused> |
+
+
+### Input Selection Table
+
+| `sel_*[2:0]` | selected input |
+|------:|:---|
+| `000` | `0` / `GND` |
+| `001` | `1` / `Vcc` |
+| `010` | Priority Line 1 |
+| `011` | Priority Line 0 |
+| `100` | Bus 3 |
+| `101` | Bus 2 |
+| `110` | Bus 1 |
+| `111` | Bus 0 |
+
+**regular input connection (no cin/cout)**
+
+```
+01000101
+01100111
+```
+
+**sum mode (all to GND) + cout forwarding to priority bus**
+
+```
+00000000
+00001000
+```
+
+
+## Connection Box (vertical)
+
+### CBv configuration
+
+There is 1 byte of configuration.
+
+| pos | field | function | description |
+|--:|:--|:--|:--|
+|  0 | `W0` | `xpoint_0` | Connects LUT output 0 to main north/south bus 0 |
+|  1 | `W1` | `xpoint_1` | Connects LUT output 1 to main north/south bus 1 |
+|  2 | `W2` | `xpoint_2` | Connects LUT output 2 to main north/south bus 2 |
+|  3 | `W3` | `xpoint_3` | Connects LUT output 3 to main north/south bus 3 |
+|  4 | `P0` | `xpoint_4` | Connects LUT output 0 to priority bus 1 |
+|  5 | `P1` | `xpoint_5` | Connects LUT output 1 to priority bus 0 |
+|  6 | `P2` | `xpoint_6` | Connects LUT output 2 to priority bus 1 |
+|  7 | `P3` | `xpoint_7` | Connects LUT output 3 to priority bus 0 |
+
+```
+[ MSB           ...          LSB ]
+[ P3, P2, P1, P0, W3, W2, W1, W0 ]
+```
+
 ## Configurable Logic Block (CLB) Slice
 
 One CLB consists of 4 individual LUT4 entities connected to a carry-chain.
@@ -14,24 +94,24 @@ The following documentation uses letter index `A` for all signals and primitives
 
 There are 2 bytes of configuration per CLB.
 
-| field | function | description |
-|:--|:--|:--|
-| `Xa` | `set_reg_a` | register enable for slice `A` |
-| `Xb` | `set_reg_b` | register enable for slice `B` |
-| `Xc` | `set_reg_c` | register enable for slice `C` |
-| `Xd` | `set_reg_d` | register enable for slice `D` |
-| `Xe` | `set_sum` | sum mode enable for entire CLB |
-| `Xf` | `set_clk_sel` | clock select `0` for `clk_0` |
-| `Xg` | `set_` | <unused> |
-| `Xh` | `set_` | <unused> |
-| `Ya` | `insel_a0` | LUT3a input select 0 |
-| `Yb` | `insel_a1` | LUT3a input select 1 |
-| `Yc` | `insel_b0` | LUT3b input select 0 |
-| `Yd` | `insel_b1` | LUT3b input select 1 |
-| `Ye` | `insel_c0` | LUT3c input select 0 |
-| `Yf` | `insel_c1` | LUT3c input select 1 |
-| `Yg` | `insel_d0` | LUT3d input select 0 |
-| `Yh` | `insel_d1` | LUT3d input select 1 |
+| pos | field | function | description |
+|--:|:--|:--|:--|
+|  0 | `Xa` | `set_reg_a` | register enable for slice `A` |
+|  1 | `Xb` | `set_reg_b` | register enable for slice `B` |
+|  2 | `Xc` | `set_reg_c` | register enable for slice `C` |
+|  3 | `Xd` | `set_reg_d` | register enable for slice `D` |
+|  4 | `Xe` | `set_sum` | sum mode enable for entire CLB |
+|  5 | `Xf` | `set_clk_sel` | clock select `0` for `clk_0` |
+|  6 | `Xg` | `set_` | <unused> |
+|  7 | `Xh` | `set_` | <unused> |
+|  8 | `Ya` | `insel_a0` | LUT3a input select 0 |
+|  9 | `Yb` | `insel_a1` | LUT3a input select 1 |
+| 10 | `Yc` | `insel_b0` | LUT3b input select 0 |
+| 11 | `Yd` | `insel_b1` | LUT3b input select 1 |
+| 12 | `Ye` | `insel_c0` | LUT3c input select 0 |
+| 13 | `Yf` | `insel_c1` | LUT3c input select 1 |
+| 14 | `Yg` | `insel_d0` | LUT3d input select 0 |
+| 15 | `Yh` | `insel_d1` | LUT3d input select 1 |
 
 ```
 [ MSB           ...          LSB ]

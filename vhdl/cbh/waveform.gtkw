@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Sep  6 17:17:31 2023
+[*]
+[dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/cbh/wave.vcd"
+[dumpfile_mtime] "Wed Sep  6 17:16:42 2023"
+[dumpfile_size] 498257
+[savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/cbh/waveform.gtkw"
+[timestart] 0
+[size] 1908 1047
+[pos] -1 -1
+*-25.000000 57200000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_connection_box_horizontal.
+[treeopen] tb_connection_box_horizontal.bcinst.
+[sst_width] 214
+[signals_width] 228
+[sst_expanded] 1
+[sst_vpaned_height] 309
+@28
+tb_connection_box_horizontal.cfg_clr_n
+tb_connection_box_horizontal.sclk
+tb_connection_box_horizontal.mosi
+tb_connection_box_horizontal.latch
+tb_connection_box_horizontal.bitstream_done
+tb_connection_box_horizontal.test_done
+@22
+tb_connection_box_horizontal.cb_bus_north[3:0]
+tb_connection_box_horizontal.cb_bus_south[3:0]
+tb_connection_box_horizontal.cb_bus_east[3:0]
+tb_connection_box_horizontal.cb_bus_west[3:0]
+tb_connection_box_horizontal.cb_preselect[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
