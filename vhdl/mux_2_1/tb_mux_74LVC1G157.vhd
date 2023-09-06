@@ -28,11 +28,11 @@ architecture bh of tb_mux_74LVC1G157 is
 
   component mux_74LVC1G157 is
     port(
-        s   : in  std_ulogic;
-        e_n : in  std_ulogic;
-        i0  : in  std_ulogic;
-        i1  : in  std_ulogic;
-        y   : out std_ulogic
+        s   : in  std_logic;
+        e_n : in  std_logic;
+        i0  : in  std_logic;
+        i1  : in  std_logic;
+        y   : out std_logic
     );
   end component;
 

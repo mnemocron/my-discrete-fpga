@@ -28,9 +28,9 @@ architecture bh of tb_digital_switch is
 
   component digital_switch is
     port(
-        en : in    std_ulogic;
-        d1 : inout std_ulogic;
-        d2 : inout std_ulogic
+        en : in    std_logic;
+        d1 : inout std_logic;
+        d2 : inout std_logic
     );
   end component;
 

@@ -21,11 +21,11 @@ use ieee.std_logic_1164.all;
 
 entity ff_74xx175 is
   port(
-    clk    : in  std_ulogic;
-    rst_n  : in  std_ulogic;
-    din    : in  std_ulogic_vector(7 downto 0);
-    qout   : out std_ulogic_vector(7 downto 0);
-    qout_n : out std_ulogic_vector(7 downto 0)
+    clk    : in  std_logic;
+    rst_n  : in  std_logic;
+    din    : in  std_logic_vector(7 downto 0);
+    qout   : out std_logic_vector(7 downto 0);
+    qout_n : out std_logic_vector(7 downto 0)
   );
 end entity;
 

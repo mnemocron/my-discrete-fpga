@@ -22,26 +22,26 @@ use ieee.std_logic_1164.all;
 
 entity sr_74xx595 is
   port(
-    rclk     : in  std_ulogic; -- register latch clock
-    srclk    : in  std_ulogic; -- serial clock
-    srclkr_n : in  std_ulogic; -- register clear
-    oe_n     : in  std_ulogic; 
-    ser      : in  std_ulogic;
-    qa       : out std_ulogic;
-    qb       : out std_ulogic;
-    qc       : out std_ulogic;
-    qd       : out std_ulogic;
-    qe       : out std_ulogic;
-    qf       : out std_ulogic;
-    qg       : out std_ulogic;
-    qh       : out std_ulogic;
-    qh_s     : out std_ulogic
+    rclk     : in  std_logic; -- register latch clock
+    srclk    : in  std_logic; -- serial clock
+    srclkr_n : in  std_logic; -- register clear
+    oe_n     : in  std_logic; 
+    ser      : in  std_logic;
+    qa       : out std_logic;
+    qb       : out std_logic;
+    qc       : out std_logic;
+    qd       : out std_logic;
+    qe       : out std_logic;
+    qf       : out std_logic;
+    qg       : out std_logic;
+    qh       : out std_logic;
+    qh_s     : out std_logic
   );
 end entity;
 
 architecture arch of sr_74xx595 is
-  signal reg_internal : std_ulogic_vector(7 downto 0) := (others => 'U');
-  signal reg_latch    : std_ulogic_vector(7 downto 0) := (others => 'U');
+  signal reg_internal : std_logic_vector(7 downto 0) := (others => 'U');
+  signal reg_latch    : std_logic_vector(7 downto 0) := (others => 'U');
 begin
   p_reg_int : process(srclk,srclkr_n)
   begin

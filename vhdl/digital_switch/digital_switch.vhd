@@ -21,9 +21,9 @@ use ieee.std_logic_1164.all;
 
 entity digital_switch is
     port(
-        en : in    std_ulogic;
-        d1 : inout std_ulogic;
-        d2 : inout std_ulogic
+        en : in    std_logic;
+        d1 : inout std_logic;
+        d2 : inout std_logic
     );
 end entity;
 

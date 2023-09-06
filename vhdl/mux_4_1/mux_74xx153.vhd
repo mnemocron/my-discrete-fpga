@@ -21,19 +21,19 @@ use ieee.std_logic_1164.all;
 
 entity mux_74xx153 is
     port(
-        s    : in  std_ulogic_vector(1 downto 0);
-        e1_n : in  std_ulogic;
-        e2_n : in  std_ulogic;
-        i1   : in  std_ulogic_vector(3 downto 0);
-        i2   : in  std_ulogic_vector(3 downto 0);
-        y1   : out std_ulogic;
-        y2   : out std_ulogic
+        s    : in  std_logic_vector(1 downto 0);
+        e1_n : in  std_logic;
+        e2_n : in  std_logic;
+        i1   : in  std_logic_vector(3 downto 0);
+        i2   : in  std_logic_vector(3 downto 0);
+        y1   : out std_logic;
+        y2   : out std_logic
     );
 end entity;
 
 architecture arch of mux_74xx153 is
-  signal yy1 : std_ulogic;
-  signal yy2 : std_ulogic;
+  signal yy1 : std_logic;
+  signal yy2 : std_logic;
 begin
 
     yy1 <= i1(3) when s = "11" else

@@ -28,9 +28,9 @@ architecture bh of tb_xor_74xx86 is
 
   component xor_74xx86 is
     port(
-      a : in  std_ulogic_vector(3 downto 0);
-      b : in  std_ulogic_vector(3 downto 0);  
-      y : out std_ulogic_vector(3 downto 0)
+      a : in  std_logic_vector(3 downto 0);
+      b : in  std_logic_vector(3 downto 0);  
+      y : out std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -39,9 +39,9 @@ architecture bh of tb_xor_74xx86 is
   signal clk        : std_logic;
   signal rst_n      : std_logic;
 
-  signal in_0 : std_ulogic_vector(3 downto 0) := (others => 'Z');
-  signal in_1 : std_ulogic_vector(3 downto 0) := (others => 'Z');
-  signal o_y  : std_ulogic_vector(3 downto 0) := (others => 'Z');
+  signal in_0 : std_logic_vector(3 downto 0) := (others => 'Z');
+  signal in_1 : std_logic_vector(3 downto 0) := (others => 'Z');
+  signal o_y  : std_logic_vector(3 downto 0) := (others => 'Z');
 
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
 begin

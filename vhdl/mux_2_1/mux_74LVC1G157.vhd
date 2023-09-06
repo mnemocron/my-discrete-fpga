@@ -21,16 +21,16 @@ use ieee.std_logic_1164.all;
 
 entity mux_74LVC1G157 is
     port(
-        s   : in  std_ulogic;
-        e_n : in  std_ulogic;
-        i0  : in  std_ulogic;
-        i1  : in  std_ulogic;
-        y   : out std_ulogic
+        s   : in  std_logic;
+        e_n : in  std_logic;
+        i0  : in  std_logic;
+        i1  : in  std_logic;
+        y   : out std_logic
     );
 end entity;
 
 architecture arch of mux_74LVC1G157 is
-    signal yy : std_ulogic;
+    signal yy : std_logic;
 begin
 
     yy <= i0 when s = '0' else

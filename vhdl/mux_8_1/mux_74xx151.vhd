@@ -21,15 +21,15 @@ use ieee.std_logic_1164.all;
 
 entity mux_74xx151 is
     port(
-        s    : in  std_ulogic_vector(2 downto 0);
-        e_n  : in  std_ulogic;
-        i    : in  std_ulogic_vector(7 downto 0);
-        y    : out std_ulogic
+        s    : in  std_logic_vector(2 downto 0);
+        e_n  : in  std_logic;
+        i    : in  std_logic_vector(7 downto 0);
+        y    : out std_logic
     );
 end entity;
 
 architecture arch of mux_74xx151 is
-  signal yy : std_ulogic;
+  signal yy : std_logic;
 begin
     
     -- the 74xx151 does NOT have a tri-state output (only the 74xx251)

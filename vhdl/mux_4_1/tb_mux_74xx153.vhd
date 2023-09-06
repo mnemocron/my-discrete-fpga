@@ -28,13 +28,13 @@ architecture bh of tb_mux_74xx153 is
 
   component mux_74xx153 is
     port(
-      s    : in  std_ulogic_vector(1 downto 0);
-      e1_n : in  std_ulogic;
-      e2_n : in  std_ulogic;
-      i1   : in  std_ulogic_vector(3 downto 0);
-      i2   : in  std_ulogic_vector(3 downto 0);
-      y1   : out std_ulogic;
-      y2   : out std_ulogic
+      s    : in  std_logic_vector(1 downto 0);
+      e1_n : in  std_logic;
+      e2_n : in  std_logic;
+      i1   : in  std_logic_vector(3 downto 0);
+      i2   : in  std_logic_vector(3 downto 0);
+      y1   : out std_logic;
+      y2   : out std_logic
     );
   end component;
 
@@ -43,11 +43,11 @@ architecture bh of tb_mux_74xx153 is
   signal clk        : std_logic;
   signal rst_n      : std_logic;
 
-  signal selector : std_ulogic_vector(1 downto 0) := (others => 'Z');
-  signal i0      : std_ulogic_vector(3 downto 0) := (others => 'Z');
-  signal i1      : std_ulogic_vector(3 downto 0) := (others => 'Z');
-  signal o_y1     : std_ulogic := 'Z';
-  signal o_y2     : std_ulogic := 'Z';
+  signal selector : std_logic_vector(1 downto 0) := (others => 'Z');
+  signal i0      : std_logic_vector(3 downto 0) := (others => 'Z');
+  signal i1      : std_logic_vector(3 downto 0) := (others => 'Z');
+  signal o_y1     : std_logic := 'Z';
+  signal o_y2     : std_logic := 'Z';
 
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
 begin

@@ -28,20 +28,20 @@ architecture bh of tb_sr_74xx595 is
 
   component sr_74xx595 is
     port(
-      rclk     : in  std_ulogic; -- register latch clock
-      srclk    : in  std_ulogic; -- serial clock
-      srclkr_n : in  std_ulogic; -- register clear
-      oe_n     : in  std_ulogic; 
-      ser      : in  std_ulogic;
-      qa       : out std_ulogic;
-      qb       : out std_ulogic;
-      qc       : out std_ulogic;
-      qd       : out std_ulogic;
-      qe       : out std_ulogic;
-      qf       : out std_ulogic;
-      qg       : out std_ulogic;
-      qh       : out std_ulogic;
-      qh_s     : out std_ulogic
+      rclk     : in  std_logic; -- register latch clock
+      srclk    : in  std_logic; -- serial clock
+      srclkr_n : in  std_logic; -- register clear
+      oe_n     : in  std_logic; 
+      ser      : in  std_logic;
+      qa       : out std_logic;
+      qb       : out std_logic;
+      qc       : out std_logic;
+      qd       : out std_logic;
+      qe       : out std_logic;
+      qf       : out std_logic;
+      qg       : out std_logic;
+      qh       : out std_logic;
+      qh_s     : out std_logic
     );
   end component;
 
@@ -51,14 +51,14 @@ architecture bh of tb_sr_74xx595 is
   signal sclk       : std_logic;
   signal rst_n      : std_logic;
 
-  signal mosi  : std_ulogic := 'Z';
-  signal miso  : std_ulogic := 'Z';
-  signal ser_next : std_ulogic := 'Z';
-  signal latch : std_ulogic := 'Z';
-  signal q_a,q_b,q_c,q_d,q_e,q_f,q_g,q_h : std_ulogic := 'Z';
-  signal x_a,x_b,x_c,x_d,x_e,x_f,x_g,x_h : std_ulogic := 'Z';
+  signal mosi  : std_logic := 'Z';
+  signal miso  : std_logic := 'Z';
+  signal ser_next : std_logic := 'Z';
+  signal latch : std_logic := 'Z';
+  signal q_a,q_b,q_c,q_d,q_e,q_f,q_g,q_h : std_logic := 'Z';
+  signal x_a,x_b,x_c,x_d,x_e,x_f,x_g,x_h : std_logic := 'Z';
 
-  signal send_data : std_ulogic_vector(15 downto 0) := (others => 'U');
+  signal send_data : std_logic_vector(15 downto 0) := (others => 'U');
 
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
 begin

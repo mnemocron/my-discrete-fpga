@@ -26,15 +26,4 @@ begin
       '0' when b = '0' else
       '1' when b = '1' else 'Z';
 
---  direction <= '1' when a = '0' else
---               '1' when a = '1' else
---               '0' when b = '0' else
---               '0' when b = '1' else 'Z';
---
---  a <= c when en = '1' else
---       b when (en = '0' and direction = '0') else 'Z';
---
---  b <= c when en = '1' else
---       a when (en = '0' and direction = '1') else 'Z';
-
 end architecture;

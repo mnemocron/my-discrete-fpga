@@ -28,11 +28,11 @@ architecture bh of tb_mux_74xx157 is
 
   component mux_74xx157 is
     port(
-      s    : in  std_ulogic;
-      e_n  : in  std_ulogic;
-      in_0 : in  std_ulogic_vector(3 downto 0);
-      in_1 : in  std_ulogic_vector(3 downto 0);
-      y    : out std_ulogic_vector(3 downto 0)
+      s    : in  std_logic;
+      e_n  : in  std_logic;
+      in_0 : in  std_logic_vector(3 downto 0);
+      in_1 : in  std_logic_vector(3 downto 0);
+      y    : out std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -42,9 +42,9 @@ architecture bh of tb_mux_74xx157 is
   signal rst_n      : std_logic;
 
   signal selector : std_logic := 'Z';
-  signal i_ch_a   : std_ulogic_vector(3 downto 0) := (others => 'Z');
-  signal i_ch_b   : std_ulogic_vector(3 downto 0) := (others => 'Z');
-  signal o_out    : std_ulogic_vector(3 downto 0) := (others => 'Z');
+  signal i_ch_a   : std_logic_vector(3 downto 0) := (others => 'Z');
+  signal i_ch_b   : std_logic_vector(3 downto 0) := (others => 'Z');
+  signal o_out    : std_logic_vector(3 downto 0) := (others => 'Z');
 
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
 begin

@@ -28,11 +28,11 @@ architecture bh of tb_ff_74xx175 is
 
   component ff_74xx175 is
     port(
-      clk    : in  std_ulogic;
-      rst_n  : in  std_ulogic;
-      din    : in  std_ulogic_vector(7 downto 0);
-      qout   : out std_ulogic_vector(7 downto 0);
-      qout_n : out std_ulogic_vector(7 downto 0)
+      clk    : in  std_logic;
+      rst_n  : in  std_logic;
+      din    : in  std_logic_vector(7 downto 0);
+      qout   : out std_logic_vector(7 downto 0);
+      qout_n : out std_logic_vector(7 downto 0)
     );
   end component;
 
@@ -41,9 +41,9 @@ architecture bh of tb_ff_74xx175 is
   signal clk        : std_logic;
   signal rst_n      : std_logic;
 
-  signal tx   : std_ulogic_vector(7 downto 0) := (others => 'Z');
-  signal rx   : std_ulogic_vector(7 downto 0) := (others => 'Z');
-  signal rx_n : std_ulogic_vector(7 downto 0) := (others => 'Z');
+  signal tx   : std_logic_vector(7 downto 0) := (others => 'Z');
+  signal rx   : std_logic_vector(7 downto 0) := (others => 'Z');
+  signal rx_n : std_logic_vector(7 downto 0) := (others => 'Z');
 
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
 begin

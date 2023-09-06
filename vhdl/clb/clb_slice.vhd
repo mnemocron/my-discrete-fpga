@@ -23,27 +23,27 @@ use ieee.numeric_std.all;
 entity clb_slice is
   port(
     -- clocking and reset
-    clk_0 : in  std_ulogic;
-    clk_1 : in  std_ulogic;
-    rst_n : in  std_ulogic;
+    clk_0 : in  std_logic;
+    clk_1 : in  std_logic;
+    rst_n : in  std_logic;
     -- configuration
-    sclk  : in  std_ulogic;
-    mosi  : in  std_ulogic;
-    latch : in  std_ulogic;
-    miso  : out std_ulogic;
-    clr_n   : in  std_ulogic;
+    sclk  : in  std_logic;
+    mosi  : in  std_logic;
+    latch : in  std_logic;
+    miso  : out std_logic;
+    clr_n   : in  std_logic;
     -- LUT outputs
-    Qa    : out std_ulogic;
-    Qb    : out std_ulogic;
-    Qc    : out std_ulogic;
-    Qd    : out std_ulogic;
+    Qa    : out std_logic;
+    Qb    : out std_logic;
+    Qc    : out std_logic;
+    Qd    : out std_logic;
     -- connection box ports
-    cin    : in  std_ulogic;
-    cout   : out std_ulogic;
-    cb_w   : in  std_ulogic_vector(1 downto 0);
-    cb_n   : in  std_ulogic_vector(3 downto 0);
-    cb_s   : in  std_ulogic_vector(3 downto 0);
-    cb_pre : in  std_ulogic_vector(3 downto 0)
+    cin    : in  std_logic;
+    cout   : out std_logic;
+    cb_w   : in  std_logic_vector(1 downto 0);
+    cb_n   : in  std_logic_vector(3 downto 0);
+    cb_s   : in  std_logic_vector(3 downto 0);
+    cb_pre : in  std_logic_vector(3 downto 0)
   );
 end entity;
 
@@ -52,174 +52,174 @@ architecture arch of clb_slice is
   -- D-type Flip Flop Register
   component ff_74xx175 is
     port(
-      clk    : in  std_ulogic;
-      rst_n  : in  std_ulogic;
-      din    : in  std_ulogic_vector(7 downto 0);
-      qout   : out std_ulogic_vector(7 downto 0);
-      qout_n : out std_ulogic_vector(7 downto 0)
+      clk    : in  std_logic;
+      rst_n  : in  std_logic;
+      din    : in  std_logic_vector(7 downto 0);
+      qout   : out std_logic_vector(7 downto 0);
+      qout_n : out std_logic_vector(7 downto 0)
     );
   end component;
 
   -- MUX 2:1
   component mux_74LVC1G157 is
     port(
-      s   : in  std_ulogic;
-      e_n : in  std_ulogic;
-      i0  : in  std_ulogic;
-      i1  : in  std_ulogic;
-      y   : out std_ulogic
+      s   : in  std_logic;
+      e_n : in  std_logic;
+      i0  : in  std_logic;
+      i1  : in  std_logic;
+      y   : out std_logic
     );
   end component;
 
   -- MUX 4:1 (dual)
   component mux_74xx153 is
     port(
-      s    : in  std_ulogic_vector(1 downto 0);
-      e1_n : in  std_ulogic;
-      e2_n : in  std_ulogic;
-      i1   : in  std_ulogic_vector(3 downto 0);
-      i2   : in  std_ulogic_vector(3 downto 0);
-      y1   : out std_ulogic;
-      y2   : out std_ulogic
+      s    : in  std_logic_vector(1 downto 0);
+      e1_n : in  std_logic;
+      e2_n : in  std_logic;
+      i1   : in  std_logic_vector(3 downto 0);
+      i2   : in  std_logic_vector(3 downto 0);
+      y1   : out std_logic;
+      y2   : out std_logic
     );
   end component;
 
   -- MUX 8:1
   component mux_74xx151 is
     port(
-      s    : in  std_ulogic_vector(2 downto 0);
-      e_n  : in  std_ulogic;
-      i    : in  std_ulogic_vector(7 downto 0);
-      y    : out std_ulogic
+      s    : in  std_logic_vector(2 downto 0);
+      e_n  : in  std_logic;
+      i    : in  std_logic_vector(7 downto 0);
+      y    : out std_logic
     );
   end component;
 
   -- MUX 2:1 (quad)
   component mux_74xx157 is
     port(
-      s    : in  std_ulogic;
-      e_n  : in  std_ulogic;
-      in_0 : in  std_ulogic_vector(3 downto 0);
-      in_1 : in  std_ulogic_vector(3 downto 0);
-      y    : out std_ulogic_vector(3 downto 0)
+      s    : in  std_logic;
+      e_n  : in  std_logic;
+      in_0 : in  std_logic_vector(3 downto 0);
+      in_1 : in  std_logic_vector(3 downto 0);
+      y    : out std_logic_vector(3 downto 0)
     );
   end component;
 
   -- 8-bit Shift Register
   component sr_74xx595 is
     port(
-      rclk     : in  std_ulogic; -- register latch clock
-      srclk    : in  std_ulogic; -- serial clock
-      srclkr_n : in  std_ulogic; -- register clear
-      oe_n     : in  std_ulogic; 
-      ser      : in  std_ulogic;
-      qa       : out std_ulogic;
-      qb       : out std_ulogic;
-      qc       : out std_ulogic;
-      qd       : out std_ulogic;
-      qe       : out std_ulogic;
-      qf       : out std_ulogic;
-      qg       : out std_ulogic;
-      qh       : out std_ulogic;
-      qh_s     : out std_ulogic
+      rclk     : in  std_logic; -- register latch clock
+      srclk    : in  std_logic; -- serial clock
+      srclkr_n : in  std_logic; -- register clear
+      oe_n     : in  std_logic; 
+      ser      : in  std_logic;
+      qa       : out std_logic;
+      qb       : out std_logic;
+      qc       : out std_logic;
+      qd       : out std_logic;
+      qe       : out std_logic;
+      qf       : out std_logic;
+      qg       : out std_logic;
+      qh       : out std_logic;
+      qh_s     : out std_logic
     );
   end component;
 
   -- XOR (quad) dual-input
   component xor_74xx86 is
     port(
-      a : in  std_ulogic_vector(3 downto 0);
-      b : in  std_ulogic_vector(3 downto 0);  
-      y : out std_ulogic_vector(3 downto 0)
+      a : in  std_logic_vector(3 downto 0);
+      b : in  std_logic_vector(3 downto 0);  
+      y : out std_logic_vector(3 downto 0)
     );
   end component;
 
-  signal reg_clk     : std_ulogic;  -- register clock for D-flip flop stage
+  signal reg_clk     : std_logic;  -- register clock for D-flip flop stage
 
   -- LUT input signals
-  signal A0,A1,A2,A3 : std_ulogic;
-  signal B0,B1,B2,B3 : std_ulogic;
-  signal C0,C1,C2,C3 : std_ulogic;
-  signal D0,D1,D2,D3 : std_ulogic;
-  signal insel_a0_in : std_ulogic_vector(3 downto 0);
-  signal insel_a1_in : std_ulogic_vector(3 downto 0);
-  signal insel_b0_in : std_ulogic_vector(3 downto 0);
-  signal insel_b1_in : std_ulogic_vector(3 downto 0);
-  signal insel_c0_in : std_ulogic_vector(3 downto 0);
-  signal insel_c1_in : std_ulogic_vector(3 downto 0);
-  signal insel_d0_in : std_ulogic_vector(3 downto 0);
-  signal insel_d1_in : std_ulogic_vector(3 downto 0);
+  signal A0,A1,A2,A3 : std_logic;
+  signal B0,B1,B2,B3 : std_logic;
+  signal C0,C1,C2,C3 : std_logic;
+  signal D0,D1,D2,D3 : std_logic;
+  signal insel_a0_in : std_logic_vector(3 downto 0);
+  signal insel_a1_in : std_logic_vector(3 downto 0);
+  signal insel_b0_in : std_logic_vector(3 downto 0);
+  signal insel_b1_in : std_logic_vector(3 downto 0);
+  signal insel_c0_in : std_logic_vector(3 downto 0);
+  signal insel_c1_in : std_logic_vector(3 downto 0);
+  signal insel_d0_in : std_logic_vector(3 downto 0);
+  signal insel_d1_in : std_logic_vector(3 downto 0);
 
   -- LUT3 contents
-  signal LUT3a0      : std_ulogic_vector(7 downto 0);
-  signal LUT3a1      : std_ulogic_vector(7 downto 0);
-  signal LUT3b0      : std_ulogic_vector(7 downto 0);
-  signal LUT3b1      : std_ulogic_vector(7 downto 0);
-  signal LUT3c0      : std_ulogic_vector(7 downto 0);
-  signal LUT3c1      : std_ulogic_vector(7 downto 0);
-  signal LUT3d0      : std_ulogic_vector(7 downto 0);
-  signal LUT3d1      : std_ulogic_vector(7 downto 0);
+  signal LUT3a0      : std_logic_vector(7 downto 0);
+  signal LUT3a1      : std_logic_vector(7 downto 0);
+  signal LUT3b0      : std_logic_vector(7 downto 0);
+  signal LUT3b1      : std_logic_vector(7 downto 0);
+  signal LUT3c0      : std_logic_vector(7 downto 0);
+  signal LUT3c1      : std_logic_vector(7 downto 0);
+  signal LUT3d0      : std_logic_vector(7 downto 0);
+  signal LUT3d1      : std_logic_vector(7 downto 0);
 
   -- LUT3 selectors
-  signal LUT3_sel_a  : std_ulogic_vector(2 downto 0);
-  signal LUT3_sel_b  : std_ulogic_vector(2 downto 0);
-  signal LUT3_sel_c  : std_ulogic_vector(2 downto 0);
-  signal LUT3_sel_d  : std_ulogic_vector(2 downto 0);
+  signal LUT3_sel_a  : std_logic_vector(2 downto 0);
+  signal LUT3_sel_b  : std_logic_vector(2 downto 0);
+  signal LUT3_sel_c  : std_logic_vector(2 downto 0);
+  signal LUT3_sel_d  : std_logic_vector(2 downto 0);
 
   -- LUT3 outputs
-  signal La0, La1    : std_ulogic;
-  signal Lb0, Lb1    : std_ulogic;
-  signal Lc0, Lc1    : std_ulogic;
-  signal Ld0, Ld1    : std_ulogic;
+  signal La0, La1    : std_logic;
+  signal Lb0, Lb1    : std_logic;
+  signal Lc0, Lc1    : std_logic;
+  signal Ld0, Ld1    : std_logic;
 
   -- LUT4 outputs
-  signal La,Lb,Lc,Ld : std_ulogic;
+  signal La,Lb,Lc,Ld : std_logic;
 
   -- carry chain
-  signal cca,ccb,ccc,ccd : std_ulogic;
-  signal i_xor_lx        : std_ulogic_vector(3 downto 0);
-  signal i_xor_cc        : std_ulogic_vector(3 downto 0);
-  signal xor_S           : std_ulogic_vector(3 downto 0);
-  signal sum_O           : std_ulogic_vector(3 downto 0);
-  signal Sa,Sb,Sc,Sd     : std_ulogic;
-  signal Oa,Ob,Oc,Od     : std_ulogic;
+  signal cca,ccb,ccc,ccd : std_logic;
+  signal i_xor_lx        : std_logic_vector(3 downto 0);
+  signal i_xor_cc        : std_logic_vector(3 downto 0);
+  signal xor_S           : std_logic_vector(3 downto 0);
+  signal sum_O           : std_logic_vector(3 downto 0);
+  signal Sa,Sb,Sc,Sd     : std_logic;
+  signal Oa,Ob,Oc,Od     : std_logic;
 
   -- flip flop
-  signal ff_vect_in      : std_ulogic_vector(7 downto 0);
-  signal ff_vect_out     : std_ulogic_vector(7 downto 0);
-  signal sum_O_reg       : std_ulogic_vector(3 downto 0);
+  signal ff_vect_in      : std_logic_vector(7 downto 0);
+  signal ff_vect_out     : std_logic_vector(7 downto 0);
+  signal sum_O_reg       : std_logic_vector(3 downto 0);
 
   -- bitstream configuration SPI
-  signal ser_in_to_lut_d0     : std_ulogic;
-  signal lut_d0_to_lut_d1     : std_ulogic;
-  signal lut_d1_to_lut_c0     : std_ulogic;
-  signal lut_c0_to_lut_c1     : std_ulogic;
-  signal lut_c1_to_lut_b0     : std_ulogic;
-  signal lut_b0_to_lut_b1     : std_ulogic;
-  signal lut_b1_to_lut_a0     : std_ulogic;
-  signal lut_a0_to_lut_a1     : std_ulogic;
-  signal lut_a1_to_config     : std_ulogic;
-  signal config_to_insel      : std_ulogic;
-  signal insel_to_serout      : std_ulogic;
+  signal ser_in_to_lut_d0     : std_logic;
+  signal lut_d0_to_lut_d1     : std_logic;
+  signal lut_d1_to_lut_c0     : std_logic;
+  signal lut_c0_to_lut_c1     : std_logic;
+  signal lut_c1_to_lut_b0     : std_logic;
+  signal lut_b0_to_lut_b1     : std_logic;
+  signal lut_b1_to_lut_a0     : std_logic;
+  signal lut_a0_to_lut_a1     : std_logic;
+  signal lut_a1_to_config     : std_logic;
+  signal config_to_insel      : std_logic;
+  signal insel_to_serout      : std_logic;
 
   -- config signals 
-  signal set_reg_a   : std_ulogic;
-  signal set_reg_b   : std_ulogic;
-  signal set_reg_c   : std_ulogic;
-  signal set_reg_d   : std_ulogic;
-  signal set_sum     : std_ulogic;
-  signal set_clk_sel : std_ulogic;
-  signal insel_a     : std_ulogic_vector(1 downto 0);
-  signal insel_b     : std_ulogic_vector(1 downto 0);
-  signal insel_c     : std_ulogic_vector(1 downto 0);
-  signal insel_d     : std_ulogic_vector(1 downto 0);
+  signal set_reg_a   : std_logic;
+  signal set_reg_b   : std_logic;
+  signal set_reg_c   : std_logic;
+  signal set_reg_d   : std_logic;
+  signal set_sum     : std_logic;
+  signal set_clk_sel : std_logic;
+  signal insel_a     : std_logic_vector(1 downto 0);
+  signal insel_b     : std_logic_vector(1 downto 0);
+  signal insel_c     : std_logic_vector(1 downto 0);
+  signal insel_d     : std_logic_vector(1 downto 0);
 
   -- testbench signals
-  signal test_sum_0_in : std_ulogic_vector(5 downto 0);
-  signal test_sum_1_in : std_ulogic_vector(5 downto 0);
-  signal test_sum_2_in : std_ulogic_vector(5 downto 0);
-  signal test_sum_ref  : std_ulogic_vector(5 downto 0);
-  signal test_sum_out  : std_ulogic_vector(5 downto 0);
+  signal test_sum_0_in : std_logic_vector(5 downto 0);
+  signal test_sum_1_in : std_logic_vector(5 downto 0);
+  signal test_sum_2_in : std_logic_vector(5 downto 0);
+  signal test_sum_ref  : std_logic_vector(5 downto 0);
+  signal test_sum_out  : std_logic_vector(5 downto 0);
 
 
 begin
@@ -243,16 +243,16 @@ begin
   test_sum_out(5) <= '0';
   test_sum_out(4) <= ccd;
   test_sum_out(3 downto 0) <= ff_vect_in(3 downto 0);
-  test_sum_ref <= std_ulogic_vector(unsigned(test_sum_0_in) + unsigned(test_sum_1_in) + unsigned(test_sum_2_in));
+  test_sum_ref <= std_logic_vector(unsigned(test_sum_0_in) + unsigned(test_sum_1_in) + unsigned(test_sum_2_in));
 
   p_sum_check : process(reg_clk)
   begin 
     if falling_edge(reg_clk) then
       if set_sum = '1' then
-        assert La = (A0 xor A1) report "La = A0 xor A1 error! (" & std_ulogic'image(A0) & " xor " & std_ulogic'image(A1) & " = " & std_ulogic'image(La) & ")";
-        assert Lb = (B0 xor B1) report "Lb = B0 xor B1 error! (" & std_ulogic'image(B0) & " xor " & std_ulogic'image(B1) & " = " & std_ulogic'image(Lb) & ")";
-        assert Lc = (C0 xor C1) report "Lc = C0 xor C1 error! (" & std_ulogic'image(C0) & " xor " & std_ulogic'image(C1) & " = " & std_ulogic'image(Lc) & ")";
-        assert Ld = (D0 xor D1) report "Ld = D0 xor D1 error! (" & std_ulogic'image(D0) & " xor " & std_ulogic'image(D1) & " = " & std_ulogic'image(Ld) & ")";
+        assert La = (A0 xor A1) report "La = A0 xor A1 error! (" & std_logic'image(A0) & " xor " & std_logic'image(A1) & " = " & std_logic'image(La) & ")";
+        assert Lb = (B0 xor B1) report "Lb = B0 xor B1 error! (" & std_logic'image(B0) & " xor " & std_logic'image(B1) & " = " & std_logic'image(Lb) & ")";
+        assert Lc = (C0 xor C1) report "Lc = C0 xor C1 error! (" & std_logic'image(C0) & " xor " & std_logic'image(C1) & " = " & std_logic'image(Lc) & ")";
+        assert Ld = (D0 xor D1) report "Ld = D0 xor D1 error! (" & std_logic'image(D0) & " xor " & std_logic'image(D1) & " = " & std_logic'image(Ld) & ")";
         if (cin and La) = '1' then
           assert cca = '1' report "Carry chain error for cca!";
         end if;
@@ -262,10 +262,10 @@ begin
         if (ccb and Lc) = '1' then
           assert ccc = '1' report "Carry chain error for ccc!";
         end if;
-        assert Oa = (A0 xor A1 xor cin) report "Oa = A0 + A1 + c sum with carry error (" & std_ulogic'image(A0) & " xor " & std_ulogic'image(A1) & " xor " & std_ulogic'image(cin) & " = " & std_ulogic'image(Oa) & ")";
-        assert Ob = (B0 xor B1 xor cca) report "Ob = B0 + B1 + c sum with carry error (" & std_ulogic'image(B0) & " xor " & std_ulogic'image(B1) & " xor " & std_ulogic'image(cca) & " = " & std_ulogic'image(Ob) & ")";
-        assert Oc = (C0 xor C1 xor ccb) report "Oc = C0 + C1 + c sum with carry error (" & std_ulogic'image(C0) & " xor " & std_ulogic'image(C1) & " xor " & std_ulogic'image(ccb) & " = " & std_ulogic'image(Oc) & ")";
-        assert Od = (D0 xor D1 xor ccc) report "Od = D0 + D1 + c sum with carry error (" & std_ulogic'image(D0) & " xor " & std_ulogic'image(D1) & " xor " & std_ulogic'image(ccc) & " = " & std_ulogic'image(Od) & ")";
+        assert Oa = (A0 xor A1 xor cin) report "Oa = A0 + A1 + c sum with carry error (" & std_logic'image(A0) & " xor " & std_logic'image(A1) & " xor " & std_logic'image(cin) & " = " & std_logic'image(Oa) & ")";
+        assert Ob = (B0 xor B1 xor cca) report "Ob = B0 + B1 + c sum with carry error (" & std_logic'image(B0) & " xor " & std_logic'image(B1) & " xor " & std_logic'image(cca) & " = " & std_logic'image(Ob) & ")";
+        assert Oc = (C0 xor C1 xor ccb) report "Oc = C0 + C1 + c sum with carry error (" & std_logic'image(C0) & " xor " & std_logic'image(C1) & " xor " & std_logic'image(ccb) & " = " & std_logic'image(Oc) & ")";
+        assert Od = (D0 xor D1 xor ccc) report "Od = D0 + D1 + c sum with carry error (" & std_logic'image(D0) & " xor " & std_logic'image(D1) & " xor " & std_logic'image(ccc) & " = " & std_logic'image(Od) & ")";
 
         assert (unsigned(test_sum_ref) = unsigned(test_sum_out)) report "failed sum calculation!";
       end if;

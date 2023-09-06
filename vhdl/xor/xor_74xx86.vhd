@@ -21,9 +21,9 @@ use ieee.std_logic_1164.all;
 
 entity xor_74xx86 is
   port(
-    a : in  std_ulogic_vector(3 downto 0);
-    b : in  std_ulogic_vector(3 downto 0);  
-    y : out std_ulogic_vector(3 downto 0)
+    a : in  std_logic_vector(3 downto 0);
+    b : in  std_logic_vector(3 downto 0);  
+    y : out std_logic_vector(3 downto 0)
   );
 end entity;
 

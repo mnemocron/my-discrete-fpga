@@ -31,27 +31,27 @@ architecture bh of tb_clb_slice is
   component clb_slice is
     port(
       -- clocking and reset
-      clk_0 : in  std_ulogic;
-      clk_1 : in  std_ulogic;
-      rst_n : in  std_ulogic;
+      clk_0 : in  std_logic;
+      clk_1 : in  std_logic;
+      rst_n : in  std_logic;
       -- configuration
-      sclk  : in  std_ulogic;
-      mosi  : in  std_ulogic;
-      latch : in  std_ulogic;
-      miso  : out std_ulogic;
-      clr_n : in  std_ulogic;
+      sclk  : in  std_logic;
+      mosi  : in  std_logic;
+      latch : in  std_logic;
+      miso  : out std_logic;
+      clr_n : in  std_logic;
       -- LUT outputs
-      Qa    : out std_ulogic;
-      Qb    : out std_ulogic;
-      Qc    : out std_ulogic;
-      Qd    : out std_ulogic;
+      Qa    : out std_logic;
+      Qb    : out std_logic;
+      Qc    : out std_logic;
+      Qd    : out std_logic;
       -- connection box ports
-      cin    : in  std_ulogic;
-      cout   : out std_ulogic;
-      cb_w   : in  std_ulogic_vector(1 downto 0);
-      cb_n   : in  std_ulogic_vector(3 downto 0);
-      cb_s   : in  std_ulogic_vector(3 downto 0);
-      cb_pre : in  std_ulogic_vector(3 downto 0)
+      cin    : in  std_logic;
+      cout   : out std_logic;
+      cb_w   : in  std_logic_vector(1 downto 0);
+      cb_n   : in  std_logic_vector(3 downto 0);
+      cb_s   : in  std_logic_vector(3 downto 0);
+      cb_pre : in  std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -77,11 +77,11 @@ architecture bh of tb_clb_slice is
 
   signal cin          : std_logic;
   signal cout         : std_logic;
-  signal cb_bus_west  : std_ulogic_vector(1 downto 0);
-  signal cb_bus_north : std_ulogic_vector(3 downto 0);
-  signal cb_bus_south : std_ulogic_vector(3 downto 0);
-  signal cb_presel    : std_ulogic_vector(3 downto 0);
-  signal lut_input    : std_ulogic_vector(3 downto 0);
+  signal cb_bus_west  : std_logic_vector(1 downto 0);
+  signal cb_bus_north : std_logic_vector(3 downto 0);
+  signal cb_bus_south : std_logic_vector(3 downto 0);
+  signal cb_presel    : std_logic_vector(3 downto 0);
+  signal lut_input    : std_logic_vector(3 downto 0);
 
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
 
@@ -265,13 +265,13 @@ begin
     end if;
 
     if (unsigned(clk_count) > 31+16) and (unsigned(clk_count) < (31+256+16)) then
-      cb_bus_north <= std_ulogic_vector(clk_count(3 downto 0));
-      cb_bus_south <= std_ulogic_vector(clk_count(7 downto 4));
+      cb_bus_north <= std_logic_vector(clk_count(3 downto 0));
+      cb_bus_south <= std_logic_vector(clk_count(7 downto 4));
       cin <= '0';
     end if;
     if (unsigned(clk_count) > 31+256+16) and (unsigned(clk_count) < (31+256+256+16)) then
-      cb_bus_north <= std_ulogic_vector(clk_count(3 downto 0));
-      cb_bus_south <= std_ulogic_vector(clk_count(7 downto 4));
+      cb_bus_north <= std_logic_vector(clk_count(3 downto 0));
+      cb_bus_south <= std_logic_vector(clk_count(7 downto 4));
       cin <= '1';
     end if;
 
