@@ -1,0 +1,57 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Sep  7 07:31:50 2023
+[*]
+[dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/swbox/wave.vcd"
+[dumpfile_mtime] "Thu Sep  7 07:31:05 2023"
+[dumpfile_size] 281347
+[savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/swbox/waveform.gtkw"
+[timestart] 0
+[size] 1908 1047
+[pos] -1 -1
+*-25.000000 86000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_sw_box.
+[treeopen] tb_sw_box.bcinst.
+[sst_width] 214
+[signals_width] 228
+[sst_expanded] 1
+[sst_vpaned_height] 309
+@28
+tb_sw_box.cfg_clr_n
+tb_sw_box.latch
+tb_sw_box.sclk
+tb_sw_box.mosi
+tb_sw_box.bitstream_done
+tb_sw_box.test_done
+tb_sw_box.clk
+tb_sw_box.rst_n
+@24
+tb_sw_box.clk_count[31:0]
+@28
+tb_sw_box.cbs_0
+tb_sw_box.cbs_1
+tb_sw_box.cbs_2
+tb_sw_box.cbs_3
+tb_sw_box.cbw_0
+tb_sw_box.cbw_1
+tb_sw_box.cbw_2
+tb_sw_box.cbw_3
+tb_sw_box.pri_s0
+tb_sw_box.pri_s1
+tb_sw_box.pri_w0
+tb_sw_box.pri_w1
+tb_sw_box.pri_e0
+tb_sw_box.pri_e1
+tb_sw_box.pri_n0
+@29
+tb_sw_box.pri_n1
+@28
+tb_sw_box.bcinst.xpoint_4
+tb_sw_box.bcinst.xpoint_5
+tb_sw_box.bcinst.xpoint_6
+tb_sw_box.bcinst.xpoint_7
+tb_sw_box.bcinst.sw_24
+tb_sw_box.bcinst.sw_31
+tb_sw_box.bcinst.sw_28
+[pattern_trace] 1
+[pattern_trace] 0

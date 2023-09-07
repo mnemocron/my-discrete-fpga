@@ -6,6 +6,28 @@
 Bitstream is **MSB first**
 
 
+## Switch Box
+
+### SW configuration
+
+**connect south to west**
+
+``` 
+00000000
+00001111
+00001111
+00001111
+```
+
+**connect south to west + prio(0) to prio(0)**
+
+```
+00010001
+00001111
+00001111
+00011111
+```
+
 ## Connection Box (horizontal)
 
 ### CBh configuration

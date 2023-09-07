@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Sep  7 09:18:08 2023
+[*]
+[dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/xpoint_double_thru/wave.vcd"
+[dumpfile_mtime] "Thu Sep  7 09:17:10 2023"
+[dumpfile_size] 9396
+[savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/xpoint_double_thru/waveform.gtkw"
+[timestart] 0
+[size] 1908 1047
+[pos] 34687 32767
+*-27.000000 273100000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_xpoint_double_thru.
+[sst_width] 214
+[signals_width] 214
+[sst_expanded] 1
+[sst_vpaned_height] 309
+@28
+tb_xpoint_double_thru.clk
+tb_xpoint_double_thru.bus_n[1:0]
+tb_xpoint_double_thru.bus_s[1:0]
+tb_xpoint_double_thru.bus_e[1:0]
+tb_xpoint_double_thru.bus_w[1:0]
+tb_xpoint_double_thru.x_4
+tb_xpoint_double_thru.x_5
+tb_xpoint_double_thru.x_6
+tb_xpoint_double_thru.x_7
+[pattern_trace] 1
+[pattern_trace] 0
