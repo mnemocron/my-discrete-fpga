@@ -1,0 +1,53 @@
+-- instantiation HDL
+-- concept of how it could be implemented
+
+slice counter {
+    loc <= "A0"; -- coordinates
+    q0 <= not b0;
+    q1 <= b0 xor b1;
+    q2 <= b1 xor b2;
+    q3 <= b2 xor b3;
+}
+
+-- correct adder function
+-- if cin statement missing, assume '0'
+slice adder {
+    loc <= "A1"; -- coordinates
+    cin <= '0'; -- cin unconnected
+    cin <= h1;  -- highway(1) as cin
+    q0 <= n0 + s0;
+    q1 <= n1 + s1;
+    q2 <= n2 + s2;
+    q3 <= n3 + s3;
+    h0 <= cout; -- optional to output cout to highway(0)
+}
+
+-- routing error: q1 cannot have s0 as an input 
+slice adder {
+    cin <= '0';
+    q0 <= n0 + s0;
+    q1 <= n1 + s0;
+    q2 <= n2 + s1;
+    q3 <= n3 + s3;
+    h0 <= cout;
+}
+
+-- functionality error: clb does not support adder mode and lut mode
+slice adder {
+    q0 <= n0 + s0;
+    q1 <= p0 and (p2 or p3);
+}
+
+-- switchbox instance with connection WEST <=> SOUTH
+switchbox ctr_to_adder {
+    loc <= "A0";
+    w <= s;
+    s <= w; -- equivalent
+}
+
+switchbox adder_in {
+    loc <= "A1";
+    w <= n;
+}
+
+
