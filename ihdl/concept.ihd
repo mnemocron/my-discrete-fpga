@@ -1,18 +1,25 @@
 -- instantiation HDL
 -- concept of how it could be implemented
 
+-- counter using synchronous assignment <=
 slice counter {
-    loc <= "A0"; -- coordinates
+    loc := "A0"; -- coordinates
     q0 <= not b0;
     q1 <= b0 xor b1;
     q2 <= b1 xor b2;
     q3 <= b2 xor b3;
 }
 
+slice funky {
+    loc := "B1";
+    h0 = b0 and b1; -- output to h0
+    q2 = h0 xnor b2 and b3; -- reuse h0
+}
+
 -- correct adder function
 -- if cin statement missing, assume '0'
 slice adder {
-    loc <= "A1"; -- coordinates
+    loc := "A1"; -- coordinates
     cin <= '0'; -- cin unconnected
     cin <= h1;  -- highway(1) as cin
     q0 <= n0 + s0;
@@ -40,13 +47,13 @@ slice adder {
 
 -- switchbox instance with connection WEST <=> SOUTH
 switchbox ctr_to_adder {
-    loc <= "A0";
+    loc := "A0";
     w <= s;
     s <= w; -- equivalent
 }
 
 switchbox adder_in {
-    loc <= "A1";
+    loc := "A1";
     w <= n;
 }
 
