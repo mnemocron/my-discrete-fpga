@@ -29,6 +29,12 @@
 - 8-bit shift register with latch
 - LUT3 memory, configuration registers
 
+### MAX5102 DAC
+
+- 8-bit DAC
+- parallel input
+- asymmetrical supply voltage
+
 ---
 
 | IC | simulation |
@@ -40,6 +46,11 @@
 | 74xx595 | ✅ |
 | 74xx86  | ✅ |
 | 74_1G157 | ✅ |
-|  |  |
-|  |  |
+
+---
+
+## Interconnect Simulation
+
+- use `std_logic` not `std_ulogic` because of "multiple drivers"
+- 
 
