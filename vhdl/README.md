@@ -1,6 +1,51 @@
 # VHDL Simulation
 ---
 
+## FPGA modules
+
+### CLB
+
+- Entity: `clb_slice`
+- Dependencies: `ff_74xx175`/`mux_74LVC1G157`/`mux_74xx153`/`mux_74xx151`/`mux_74xx157`/`sr_74xx595`/`xor_74xx86`
+- Version: `1.0.0`
+- Tests: ✅
+- Comments: simple tests only
+
+### CBv
+
+- Entity: `connection_box_vertical`
+- Dependencies: `cbox`/`sr_74xx595`
+- Version: `1.0.0`
+- Tests: ✅
+- Comments: only checking for multiple drivers inside entity itself
+
+### CBh
+
+- Entity: `connection_box_horizontal`
+- Dependencies: `cbox`/`mux_74xx151`/`sr_74xx595`
+- Version: `1.0.0`
+- Tests: -
+- Comments: no self checking testbench
+
+### SW box
+
+- Entity: `sw_box`
+- Dependencies: `digital_switch`/`digital_switch`/`xpoint_thru`
+- Version: ``
+- Tests: -
+- Comments: 
+
+### Arch Slice
+
+- Entity: `arch_slice`
+- Dependencies: ``
+- Version: ``
+- Tests: 
+- Comments: WIP
+
+
+
+---
 
 ### MUX 8:1 74xx151 / 74xx251
 - Single 8-Input Multiplexer
