@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Wed Sep  6 10:57:38 2023
+[*] Sun Sep 17 14:04:42 2023
 [*]
-[dumpfile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/cbv/wave.vcd"
-[dumpfile_mtime] "Wed Sep  6 10:54:36 2023"
-[dumpfile_size] 414074
-[savefile] "/mnt/c/Users/simon/Downloads/my-discrete-fpga/vhdl/cbv/waveform.gtkw"
+[dumpfile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/cbv/wave.vcd"
+[dumpfile_mtime] "Sun Sep 17 14:04:26 2023"
+[dumpfile_size] 343807
+[savefile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/cbv/waveform.gtkw"
 [timestart] 0
 [size] 1908 1047
 [pos] -1 -1
-*-25.000000 25100000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-25.000000 6700000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb_connection_box_vertical.
 [sst_width] 214
 [signals_width] 228
@@ -17,6 +17,7 @@
 [sst_vpaned_height] 309
 @28
 tb_connection_box_vertical.cfg_clr_n
+tb_connection_box_vertical.latch
 tb_connection_box_vertical.miso
 tb_connection_box_vertical.mosi
 tb_connection_box_vertical.sclk
@@ -26,26 +27,8 @@ tb_connection_box_vertical.clk
 tb_connection_box_vertical.clk_count[31:0]
 @22
 tb_connection_box_vertical.cb_bus_west[3:0]
-@28
-tb_connection_box_vertical.pri_n0
-tb_connection_box_vertical.pri_n1
-tb_connection_box_vertical.pri_s0
-tb_connection_box_vertical.pri_s1
-@22
 tb_connection_box_vertical.cb_bus_east[3:0]
-@28
-tb_connection_box_vertical.cbn_0
-tb_connection_box_vertical.cbn_1
-tb_connection_box_vertical.cbn_2
-tb_connection_box_vertical.cbn_3
-@22
 tb_connection_box_vertical.cb_bus_north[3:0]
-@28
-tb_connection_box_vertical.cbs_0
-tb_connection_box_vertical.cbs_1
-tb_connection_box_vertical.cbs_2
-tb_connection_box_vertical.cbs_3
-@22
 tb_connection_box_vertical.cb_bus_south[3:0]
 [pattern_trace] 1
 [pattern_trace] 0

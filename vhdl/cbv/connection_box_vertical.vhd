@@ -11,7 +11,7 @@
 -- Description:    
 -- Dependencies:   
 -- 
--- Revision:
+-- Revision:       1.0.0
 -- Revision 0.01 - File Created
 -- Additional Comments:
 -- 
@@ -81,10 +81,12 @@ architecture arch of connection_box_vertical is
 
 begin
 
-  p_assert : process(xpoint_0_en,xpoint_1_en,xpoint_2_en,xpoint_3_en,xpoint_4_en,xpoint_5_en,xpoint_6_en,xpoint_7_en)
+  p_assert : process(latch) -- process(xpoint_0_en,xpoint_1_en,xpoint_2_en,xpoint_3_en,xpoint_4_en,xpoint_5_en,xpoint_6_en,xpoint_7_en)
   begin
-    assert (xpoint_4_en and xpoint_6_en) = '0' report "crosspoints (4) and (6) are driving each other!";
-    assert (xpoint_5_en and xpoint_7_en) = '0' report "crosspoints (5) and (7) are driving each other!";
+    if falling_edge(latch) then
+      assert (xpoint_4_en and xpoint_6_en) = '0' report "crosspoints (4) and (6) are driving each other!";
+      assert (xpoint_5_en and xpoint_7_en) = '0' report "crosspoints (5) and (7) are driving each other!";
+    end if;
   end process;
 
   bus_east <= bus_west; -- pass through
