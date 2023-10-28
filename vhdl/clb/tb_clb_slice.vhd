@@ -48,7 +48,7 @@ architecture bh of tb_clb_slice is
       -- connection box ports
       cin    : in  std_logic;
       cout   : out std_logic;
-      cb_w   : in  std_logic_vector(1 downto 0);
+      cb_w   : in  std_logic_vector(3 downto 0);
       cb_n   : in  std_logic_vector(3 downto 0);
       cb_s   : in  std_logic_vector(3 downto 0);
       cb_pre : in  std_logic_vector(3 downto 0)
@@ -77,7 +77,7 @@ architecture bh of tb_clb_slice is
 
   signal cin          : std_logic;
   signal cout         : std_logic;
-  signal cb_bus_west  : std_logic_vector(1 downto 0);
+  signal cb_bus_west  : std_logic_vector(3 downto 0);
   signal cb_bus_north : std_logic_vector(3 downto 0);
   signal cb_bus_south : std_logic_vector(3 downto 0);
   signal cb_presel    : std_logic_vector(3 downto 0);

@@ -40,7 +40,7 @@ entity clb_slice is
     -- connection box ports
     cin    : in  std_logic;
     cout   : out std_logic;
-    cb_w   : in  std_logic_vector(1 downto 0);
+    cb_w   : in  std_logic_vector(3 downto 0);
     cb_n   : in  std_logic_vector(3 downto 0);
     cb_s   : in  std_logic_vector(3 downto 0);
     cb_pre : in  std_logic_vector(3 downto 0)
@@ -292,14 +292,14 @@ begin
   insel_d0_in(0) <= cb_pre(0);
   insel_d1_in(0) <= cb_pre(1);
 
-  insel_a0_in(1) <= cb_w(1);
-  insel_a1_in(1) <= cb_w(0);
-  insel_b0_in(1) <= cb_w(1);
-  insel_b1_in(1) <= cb_w(0);
-  insel_c0_in(1) <= cb_w(1);
-  insel_c1_in(1) <= cb_w(0);
-  insel_d0_in(1) <= cb_w(1);
-  insel_d1_in(1) <= cb_w(0);
+  insel_a0_in(1) <= cb_w(0); -- cb_w(1);
+  insel_a1_in(1) <= cb_pre(1); -- cb_w(0);
+  insel_b0_in(1) <= cb_w(1); -- cb_w(1);
+  insel_b1_in(1) <= cb_pre(1); -- cb_w(0);
+  insel_c0_in(1) <= cb_w(2); -- cb_w(1);
+  insel_c1_in(1) <= cb_pre(1); -- cb_w(0);
+  insel_d0_in(1) <= cb_w(3); -- cb_w(1);
+  insel_d1_in(1) <= cb_pre(1); -- cb_w(0);
 
   insel_a0_in(2) <= cb_n(0);
   insel_a1_in(2) <= cb_s(0);
