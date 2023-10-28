@@ -975,7 +975,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 5d771b56-0bf6-44b3-af7f-4c777b98c54e)
   )
-  (hierarchical_label "REG" (shape input) (at 78.74 58.42 180) (fields_autoplaced)
+  (hierarchical_label "LATCH" (shape input) (at 78.74 58.42 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 732d820a-4eda-479c-a18b-5e4a8189fe2a)
   )
@@ -1490,6 +1490,43 @@
         )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
           (reference "#PWR0102") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3VP") (at 132.08 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 4ed6f3c1-4f26-4073-953b-12b7d0ce409d)
+    (property "Reference" "#PWR013" (at 135.89 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3VP" (at 132.08 33.02 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 132.08 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 132.08 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cf0032ef-8ab2-4dbd-aadb-f58655968a73))
+    (instances
+      (project "myFPGA-CLB-slice"
+        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
+          (reference "#PWR013") (unit 1)
+        )
+        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
+          (reference "#PWR06") (unit 1)
+        )
+        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
+          (reference "#PWR0140") (unit 1)
+        )
+        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
+          (reference "#PWR0141") (unit 1)
+        )
+        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
+          (reference "#PWR0142") (unit 1)
         )
       )
     )
