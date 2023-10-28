@@ -11,7 +11,7 @@
 -- Description:    
 -- Dependencies:   
 -- 
--- Revision:
+-- Revision:       1.0.0
 -- Revision 0.01 - File Created
 -- Additional Comments:
 -- 
@@ -53,7 +53,7 @@ architecture arch of clb_slice is
   component ff_74xx175 is
     port(
       clk    : in  std_logic;
-      rst_n  : in  std_logic;
+      arst_n : in  std_logic;
       din    : in  std_logic_vector(7 downto 0);
       qout   : out std_logic_vector(7 downto 0);
       qout_n : out std_logic_vector(7 downto 0)
@@ -706,7 +706,7 @@ begin
   ff_stage_inst : ff_74xx175
     port map (
       clk    => reg_clk, 
-      rst_n  => rst_n, 
+      arst_n => rst_n, 
       din    => ff_vect_in, 
       qout   => ff_vect_out, 
       qout_n => open
