@@ -74,6 +74,13 @@ There are 2 bytes of configuration.
 01100111
 ```
 
+**bit reversed input connection (no cin/cout)**
+
+```
+01110110
+01010100
+```
+
 **sum mode (all to GND) + cout forwarding to priority bus**
 
 ```
