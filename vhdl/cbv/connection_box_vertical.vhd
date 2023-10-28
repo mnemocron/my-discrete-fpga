@@ -114,28 +114,28 @@ begin
       a  => bus_north(3),
       b  => bus_south(3),
       c  => bus_west(3),
-      en => xpoint_0_en
+      en => xpoint_3_en
     );
   xpoint_1_inst : cbox 
     port map (
       a  => bus_north(2),
       b  => bus_south(2),
       c  => bus_west(2),
-      en => xpoint_1_en
+      en => xpoint_2_en
     );
   xpoint_2_inst : cbox 
     port map (
       a  => bus_north(1),
       b  => bus_south(1),
       c  => bus_west(1),
-      en => xpoint_2_en
+      en => xpoint_1_en
     );
   xpoint_3_inst : cbox 
     port map (
       a  => bus_north(0),
       b  => bus_south(0),
       c  => bus_west(0),
-      en => xpoint_3_en
+      en => xpoint_0_en
     );
   xpoint_4_inst : cbox 
     port map (

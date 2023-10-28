@@ -133,7 +133,7 @@ begin
       qh_s     => conf_ser_data_0
     );
 
-  config_inst_2 : sr_74xx595
+  config_inst_1 : sr_74xx595
     port map (
       rclk     => latch, 
       srclk    => sclk, 
@@ -151,7 +151,7 @@ begin
       qh_s     => conf_ser_data_2
     );
 
-  config_inst_3 : sr_74xx595
+  config_inst_2 : sr_74xx595
     port map (
       rclk     => latch, 
       srclk    => sclk, 
@@ -169,7 +169,7 @@ begin
       qh_s     => conf_ser_data_3
     );
 
-  config_inst_4 : sr_74xx595
+  config_inst_3 : sr_74xx595
     port map (
       rclk     => latch, 
       srclk    => sclk, 

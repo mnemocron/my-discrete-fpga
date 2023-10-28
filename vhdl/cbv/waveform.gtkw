@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Sun Sep 17 14:04:42 2023
+[*] Sat Oct 28 13:09:31 2023
 [*]
 [dumpfile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/cbv/wave.vcd"
-[dumpfile_mtime] "Sun Sep 17 14:04:26 2023"
-[dumpfile_size] 343807
+[dumpfile_mtime] "Sat Oct 28 13:09:05 2023"
+[dumpfile_size] 359753
 [savefile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/cbv/waveform.gtkw"
 [timestart] 0
 [size] 1908 1047
 [pos] -1 -1
-*-25.000000 6700000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-25.000000 69700000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb_connection_box_vertical.
 [sst_width] 214
 [signals_width] 228
@@ -30,5 +30,17 @@ tb_connection_box_vertical.cb_bus_west[3:0]
 tb_connection_box_vertical.cb_bus_east[3:0]
 tb_connection_box_vertical.cb_bus_north[3:0]
 tb_connection_box_vertical.cb_bus_south[3:0]
+@28
+tb_connection_box_vertical.cbn_0
+tb_connection_box_vertical.cbn_1
+tb_connection_box_vertical.cbn_2
+tb_connection_box_vertical.cbn_3
+tb_connection_box_vertical.cbs_0
+tb_connection_box_vertical.cbs_1
+tb_connection_box_vertical.cbs_2
+tb_connection_box_vertical.cbs_3
+tb_connection_box_vertical.pri_n0
+@29
+tb_connection_box_vertical.pri_n1
 [pattern_trace] 1
 [pattern_trace] 0
