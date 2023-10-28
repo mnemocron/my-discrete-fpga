@@ -29,7 +29,7 @@ architecture bh of tb_ff_74xx175 is
   component ff_74xx175 is
     port(
       clk    : in  std_logic;
-      rst_n  : in  std_logic;
+      arst_n : in  std_logic;
       din    : in  std_logic_vector(7 downto 0);
       qout   : out std_logic_vector(7 downto 0);
       qout_n : out std_logic_vector(7 downto 0)
@@ -39,7 +39,7 @@ architecture bh of tb_ff_74xx175 is
   constant CLK_PERIOD: TIME := 5 ns;
 
   signal clk        : std_logic;
-  signal rst_n      : std_logic;
+  signal arst_n      : std_logic;
 
   signal tx   : std_logic_vector(7 downto 0) := (others => 'Z');
   signal rx   : std_logic_vector(7 downto 0) := (others => 'Z');
@@ -61,10 +61,10 @@ begin
   -- generate initial reset
   p_reset_gen : process
   begin 
-    rst_n <= '0';
+    arst_n <= '0';
     wait until rising_edge(clk);
     wait for (CLK_PERIOD / 4);
-    rst_n <= '1';
+    arst_n <= '1';
     wait;
   end process;
 
@@ -107,7 +107,7 @@ begin
   sw_inst : ff_74xx175
     port map (
       clk    => clk,
-      rst_n  => rst_n,
+      arst_n => arst_n,
       din    => tx,
       qout   => rx,
       qout_n => rx_n

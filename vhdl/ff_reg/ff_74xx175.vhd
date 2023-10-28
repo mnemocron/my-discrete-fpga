@@ -22,7 +22,7 @@ use ieee.std_logic_1164.all;
 entity ff_74xx175 is
   port(
     clk    : in  std_logic;
-    rst_n  : in  std_logic;
+    arst_n : in  std_logic;
     din    : in  std_logic_vector(7 downto 0);
     qout   : out std_logic_vector(7 downto 0);
     qout_n : out std_logic_vector(7 downto 0)
@@ -32,16 +32,14 @@ end entity;
 architecture arch of ff_74xx175 is
     
 begin
-  p_reg : process(clk)
+  p_reg : process(arst_n, clk)
   begin
-    if rising_edge(clk) then
-      if rst_n = '0' then
-        qout   <= (others => '0');
-        qout_n <= (others => '1');
-      else
-        qout   <= din;
-        qout_n <= not din;
-      end if;
+    if arst_n = '0' then -- asynchronous / active low
+      qout   <= (others => '0');
+      qout_n <= (others => '1');
+    elsif rising_edge(clk) then
+      qout   <= din;
+      qout_n <= not din;
     end if;
   end process;
 
