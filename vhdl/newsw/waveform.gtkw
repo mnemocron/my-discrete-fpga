@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Tue Oct 31 14:59:28 2023
+[*]
+[dumpfile] "/mnt/c/Users/burkhardt/Documents/git/newsw/wave.vcd"
+[dumpfile_mtime] "Tue Oct 31 14:59:17 2023"
+[dumpfile_size] 14016
+[savefile] "/mnt/c/Users/burkhardt/Documents/git/newsw/waveform.gtkw"
+[timestart] 0
+[size] 1476 1040
+[pos] 33721 32927
+*-25.000000 26600000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_newsw.
+[sst_width] 214
+[signals_width] 278
+[sst_expanded] 1
+[sst_vpaned_height] 306
+@28
+tb_newsw.clk
+@22
+tb_newsw.clk_count[31:0]
+@28
+tb_newsw.i_n
+tb_newsw.i_e
+tb_newsw.i_s
+tb_newsw.i_w
+tb_newsw.en_x
+tb_newsw.en_n
+tb_newsw.en_e
+tb_newsw.en_s
+tb_newsw.en_w
+tb_newsw.newsw_inst.conf_done
+tb_newsw.newsw_inst.fn
+tb_newsw.newsw_inst.fs
+tb_newsw.newsw_inst.fe
+tb_newsw.newsw_inst.fw
+tb_newsw.newsw_inst.drv_n
+tb_newsw.newsw_inst.drv_s
+tb_newsw.newsw_inst.drv_e
+@29
+tb_newsw.newsw_inst.drv_w
+[pattern_trace] 1
+[pattern_trace] 0
