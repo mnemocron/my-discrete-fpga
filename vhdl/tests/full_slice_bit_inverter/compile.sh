@@ -8,7 +8,8 @@ rm -rf *.cf &
 
 # analyze
 ghdl -a ../../digital_switch/digital_switch.vhd
-ghdl -a ../../xpoint_thru/xpoint_thru.vhd
+#ghdl -a ../../xpoint_thru/xpoint_thru.vhd
+ghdl -a ../../newsw/newsw.vhd
 ghdl -a ../../shift_reg/sr_74xx595.vhd
 ghdl -a ../../cbox/cbox.vhd
 ghdl -a ../../ff_reg/ff_74xx175.vhd

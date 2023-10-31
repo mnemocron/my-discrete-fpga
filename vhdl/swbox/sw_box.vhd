@@ -71,7 +71,21 @@ architecture arch of sw_box is
     );
   end component;
 
-  component xpoint_thru is
+--  component xpoint_thru is
+--    port(
+--      d_n  : inout std_logic;
+--      d_s  : inout std_logic;
+--      d_e  : inout std_logic;
+--      d_w  : inout std_logic;
+--      en_x : in    std_logic;
+--      en_n : in    std_logic;
+--      en_s : in    std_logic;
+--      en_e : in    std_logic;
+--      en_w : in    std_logic
+--    );
+--  end component;
+
+  component newsw is
     port(
       d_n  : inout std_logic;
       d_s  : inout std_logic;
@@ -187,7 +201,7 @@ begin
       qh_s     => miso
     );
 
-  xpoint_0_inst : xpoint_thru
+  xpoint_0_inst : newsw
     port map (
       d_n  => bus_north(0),
       d_s  => bus_south(0),
@@ -199,7 +213,7 @@ begin
       en_e => sw_20,
       en_w => sw_16
     );
-  xpoint_1_inst : xpoint_thru
+  xpoint_1_inst : newsw
     port map (
       d_n  => bus_north(1),
       d_s  => bus_south(1),
@@ -211,7 +225,7 @@ begin
       en_e => sw_21,
       en_w => sw_17
     );
-  xpoint_2_inst : xpoint_thru
+  xpoint_2_inst : newsw
     port map (
       d_n  => bus_north(2),
       d_s  => bus_south(2),
@@ -223,7 +237,7 @@ begin
       en_e => sw_22,
       en_w => sw_18
     );
-  xpoint_3_inst : xpoint_thru
+  xpoint_3_inst : newsw
     port map (
       d_n  => bus_north(3),
       d_s  => bus_south(3),
@@ -237,7 +251,7 @@ begin
     );
 
 
-  xpoint_4_inst : xpoint_thru
+  xpoint_4_inst : newsw
     port map (
       d_n  => xpoint_4_6,
       d_s  => prio_south(0),
@@ -249,7 +263,7 @@ begin
       en_e => sw_30,
       en_w => '1'
     );
-  xpoint_5_inst : xpoint_thru
+  xpoint_5_inst : newsw
     port map (
       d_n  => xpoint_5_7,
       d_s  => prio_south(1),
@@ -261,7 +275,7 @@ begin
       en_e => '1',
       en_w => sw_28
     );
-  xpoint_6_inst : xpoint_thru
+  xpoint_6_inst : newsw
     port map (
       d_n  => prio_north(0),
       d_s  => xpoint_4_6,
@@ -273,7 +287,7 @@ begin
       en_e => sw_31,
       en_w => '1'
     );
-  xpoint_7_inst : xpoint_thru
+  xpoint_7_inst : newsw
     port map (
       d_n  => prio_north(1),
       d_s  => xpoint_5_7,

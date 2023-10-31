@@ -1,10 +1,10 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Sun Oct 29 09:28:33 2023
+[*] Tue Oct 31 16:15:26 2023
 [*]
 [dumpfile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/swbox/wave.vcd"
-[dumpfile_mtime] "Sun Oct 29 09:28:13 2023"
-[dumpfile_size] 345149
+[dumpfile_mtime] "Tue Oct 31 16:15:12 2023"
+[dumpfile_size] 500230
 [savefile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/swbox/waveform.gtkw"
 [timestart] 0
 [size] 1908 1047
