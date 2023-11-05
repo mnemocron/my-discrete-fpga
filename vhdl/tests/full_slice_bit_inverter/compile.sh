@@ -32,7 +32,7 @@ ghdl -e fpga_arch_tile
 ghdl -e -fsynopsys tb_fpga_arch_tile
 
 # run
-ghdl -r -fsynopsys tb_fpga_arch_tile --vcd=wave.vcd --stop-time=10us
+ghdl -r -fsynopsys tb_fpga_arch_tile --vcd=wave.vcd --stop-time=1us
 gtkwave wave.vcd waveform.gtkw
 
 # delete

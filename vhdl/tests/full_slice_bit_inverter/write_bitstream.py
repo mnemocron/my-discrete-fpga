@@ -1,12 +1,20 @@
 
 BITSTREAM_FILE = './bitstream.txt'
 
-set_bits = [6,93,94,52,53,54,55,44,45,46,47,76,4,5,7, 124,125,126,127, 116,117,118,119, 132,133,134,135] 
-set_bits = [4,5,6,7, 124,125,126,127, 76,77,78,79, 132,133,134,135, 116,117,118,119, 101,102,103, 97,98,99, 93,94,95, 89,90,91,  24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39] 
+# LUT B has a toggle bit
 
-# 24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39
-# 40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55
-# 56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71
+set_bits = []
+
+set_bits.append(134) # SW xpoint_1 south[1] to west [1]
+set_bits.append(126) # SW en_bus_south[1]
+set_bits.append(118) # SW en_bus_west[1]
+set_bits.append(6) # CBv LUT B -> bus[1] enable
+set_bits.append(89) # CBh presel_3 = 6
+set_bits.append(90) # CBh presel_3 = 6
+set_bits.append(14) # CLB LUT en reg b
+for b in [40,41,42,43,44,45,46,47] :
+    set_bits.append(b) #
+
 
 with open(BITSTREAM_FILE, 'w') as f:
     for i in range(136):

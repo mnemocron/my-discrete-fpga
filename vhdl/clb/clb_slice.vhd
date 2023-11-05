@@ -190,7 +190,8 @@ architecture arch of clb_slice is
   signal sum_O_reg       : std_logic_vector(3 downto 0);
 
   -- bitstream configuration SPI
-  signal ser_in_to_lut_d0     : std_logic;
+  signal ser_in_to_insel      : std_logic;
+  signal insel_to_lut_d0      : std_logic;
   signal lut_d0_to_lut_d1     : std_logic;
   signal lut_d1_to_lut_c0     : std_logic;
   signal lut_c0_to_lut_c1     : std_logic;
@@ -199,8 +200,7 @@ architecture arch of clb_slice is
   signal lut_b1_to_lut_a0     : std_logic;
   signal lut_a0_to_lut_a1     : std_logic;
   signal lut_a1_to_config     : std_logic;
-  signal config_to_insel      : std_logic;
-  signal insel_to_serout      : std_logic;
+  signal config_to_serout     : std_logic;
 
   -- config signals 
   signal set_reg_a   : std_logic;
@@ -271,7 +271,7 @@ begin
       end if;
     end if;
   end process;
-  ser_in_to_lut_d0 <= mosi;
+  ser_in_to_insel <= mosi;
 
   -- input selection
   A2 <= cb_pre(2);
@@ -599,7 +599,7 @@ begin
       srclk    => sclk, 
       srclkr_n => clr_n, 
       oe_n     => '0', 
-      ser      => ser_in_to_lut_d0, 
+      ser      => insel_to_lut_d0, 
       qa       => LUT3d0(0),
       qb       => LUT3d0(1),
       qc       => LUT3d0(2),
@@ -759,6 +759,25 @@ begin
       y   => reg_clk
     );
 
+
+  insel_reg_inst : sr_74xx595
+    port map (
+      rclk     => latch, 
+      srclk    => sclk, 
+      srclkr_n => clr_n, 
+      oe_n     => '0', 
+      ser      => ser_in_to_insel,
+      qa       => insel_a(0),
+      qb       => insel_a(1),
+      qc       => insel_b(0),
+      qd       => insel_b(1),
+      qe       => insel_c(0),
+      qf       => insel_c(1),
+      qg       => insel_d(0),
+      qh       => insel_d(1),
+      qh_s     => insel_to_lut_d0 
+    );
+
   config_reg_inst : sr_74xx595
     port map (
       rclk     => latch, 
@@ -774,27 +793,10 @@ begin
       qf       => set_clk_sel,
       qg       => open,
       qh       => open,
-      qh_s     => config_to_insel 
+      qh_s     => config_to_serout 
     );
 
-  insel_reg_inst : sr_74xx595
-    port map (
-      rclk     => latch, 
-      srclk    => sclk, 
-      srclkr_n => clr_n, 
-      oe_n     => '0', 
-      ser      => config_to_insel,
-      qa       => insel_a(0),
-      qb       => insel_a(1),
-      qc       => insel_b(0),
-      qd       => insel_b(1),
-      qe       => insel_c(0),
-      qf       => insel_c(1),
-      qg       => insel_d(0),
-      qh       => insel_d(1),
-      qh_s     => insel_to_serout 
-    );
 
-  miso <= insel_to_serout;
+  miso <= config_to_serout;
 
 end architecture;
