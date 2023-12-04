@@ -569,7 +569,7 @@ dkms.conf
 *.gbs
 *.gbp
 *.gbo
-*.gml
+*.gm1
 *.gtl
 *.gto
 *.gtp
