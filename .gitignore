@@ -562,3 +562,19 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Gerber and Drill Files
+*.gbl
+*.gbr
+*.gbs
+*.gbp
+*.gbo
+*.gml
+*.gtl
+*.gto
+*.gtp
+*.gts
+*.gbrjob
+*.drl
+*.lck
+*.zip
