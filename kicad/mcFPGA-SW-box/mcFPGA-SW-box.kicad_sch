@@ -896,9 +896,6 @@
   (junction (at 128.27 269.875) (diameter 0) (color 0 0 0 0)
     (uuid 571cd31f-8eda-432f-8bbf-38588a225899)
   )
-  (junction (at 242.57 274.32) (diameter 0) (color 0 0 0 0)
-    (uuid 57bd1c19-b4ec-4f89-bf17-d0b6a7d8b25d)
-  )
   (junction (at 347.345 215.9) (diameter 0) (color 0 0 0 0)
     (uuid 58485b5b-e4e4-454a-a5b7-665bce23e35d)
   )
@@ -1033,9 +1030,6 @@
   )
   (junction (at 314.96 63.5) (diameter 0) (color 0 0 0 0)
     (uuid c631487c-3a69-4a16-b83a-39fe665c5ad2)
-  )
-  (junction (at 242.57 266.7) (diameter 0) (color 0 0 0 0)
-    (uuid c7db65b8-c9dc-49d1-8776-38b0e2c0790d)
   )
   (junction (at 380.365 241.3) (diameter 0) (color 0 0 0 0)
     (uuid c83eec26-ddab-4af0-baa3-608cd7360f0f)
@@ -1621,10 +1615,6 @@
     (stroke (width 0) (type default))
     (uuid 4221aa9f-5a28-458e-9b9d-ed369abd0c5f)
   )
-  (wire (pts (xy 236.22 274.32) (xy 242.57 274.32))
-    (stroke (width 0) (type default))
-    (uuid 42570f11-d9d6-4c13-a6c2-844c8b051cac)
-  )
   (wire (pts (xy 102.87 224.155) (xy 102.87 227.965))
     (stroke (width 0) (type default))
     (uuid 4335b134-8599-40c9-83f6-48e29c9e53a4)
@@ -1652,10 +1642,6 @@
   (wire (pts (xy 322.58 128.27) (xy 323.85 128.27))
     (stroke (width 0) (type default))
     (uuid 45a3d808-8a6d-4491-aff3-8ea63579cbc2)
-  )
-  (wire (pts (xy 236.22 266.7) (xy 242.57 266.7))
-    (stroke (width 0) (type default))
-    (uuid 45ba8177-2a27-46e6-be1f-03f7555a6824)
   )
   (wire (pts (xy 173.99 156.21) (xy 175.26 156.21))
     (stroke (width 0) (type default))
@@ -2597,10 +2583,6 @@
     (stroke (width 0) (type default))
     (uuid cb24018d-6c58-4c20-88d1-29735ae9bfd2)
   )
-  (wire (pts (xy 242.57 264.16) (xy 242.57 266.7))
-    (stroke (width 0) (type default))
-    (uuid cbb2cfa1-ebc1-4b9d-a9a8-e8ae3f4a2faa)
-  )
   (wire (pts (xy 153.035 202.565) (xy 153.035 208.915))
     (stroke (width 0) (type default))
     (uuid cd0e4d6e-8849-4925-b3b8-c46162890cea)
@@ -2688,10 +2670,6 @@
   (wire (pts (xy 267.97 215.9) (xy 276.225 215.9))
     (stroke (width 0) (type default))
     (uuid d716161d-f4d3-431e-b209-7e51ff5e76ea)
-  )
-  (wire (pts (xy 242.57 274.32) (xy 242.57 276.86))
-    (stroke (width 0) (type default))
-    (uuid d79198fc-b0e7-4c86-bae0-ac98441766eb)
   )
   (wire (pts (xy 172.72 113.03) (xy 173.99 113.03))
     (stroke (width 0) (type default))
@@ -4684,56 +4662,6 @@
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
           (reference "C?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 242.57 264.16 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1661a362-2873-44c8-bdcc-276c18399e0b)
-    (property "Reference" "#PWR?" (at 242.57 267.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 242.57 259.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 242.57 264.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 242.57 264.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 49092e78-7660-4129-b79e-82db5278d9de))
-    (instances
-      (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "mcFPGA-SW-box"
-        (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
-          (reference "#PWR033") (unit 1)
-        )
-      )
-      (project "myFPGA-CBv"
-        (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
-          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -7600,60 +7528,6 @@
       (project "mcFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "C3") (unit 1)
-        )
-      )
-      (project "myFPGA-CBv"
-        (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
-          (reference "C?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 242.57 270.51 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 64e99a89-5c51-4fe8-a4e6-a05540f9021f)
-    (property "Reference" "C?" (at 243.84 266.7 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "22u" (at 243.84 274.32 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 243.5352 274.32 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 242.57 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "X5R" (at 242.57 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB Part #" "C12891" (at 242.57 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Nr." "CL31A226KAHNNNE" (at 242.57 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Voltage" "25" (at 242.57 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB Alt #" "" (at 242.57 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "package" "" (at 242.57 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a6625135-4d0c-4cff-8ba7-ea4751da4905))
-    (pin "2" (uuid 52acf163-9272-4318-acae-46edc4756270))
-    (instances
-      (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "C?") (unit 1)
-        )
-      )
-      (project "mcFPGA-SW-box"
-        (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
-          (reference "C8") (unit 1)
         )
       )
       (project "myFPGA-CBv"
@@ -11954,125 +11828,6 @@
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
           (reference "D8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 242.57 276.86 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid df1b2861-9725-4f98-9c77-6105ee10579d)
-    (property "Reference" "#PWR?" (at 242.57 283.21 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 242.57 281.94 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 242.57 276.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 242.57 276.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0b0d86c7-8d95-4bc3-a51b-d99daea6b584))
-    (instances
-      (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "mcFPGA-SW-box"
-        (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
-          (reference "#PWR034") (unit 1)
-        )
-      )
-      (project "myFPGA-CBv"
-        (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 236.22 270.51 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid df361273-c410-422a-bc27-87b4a68ccf43)
-    (property "Reference" "C?" (at 231.14 266.7 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100n" (at 229.87 274.32 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 237.1852 274.32 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 236.22 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB Part #" "C14663" (at 236.22 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Nr." "CC0603KRX7R9BB104" (at 236.22 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Dielectric" "X7R" (at 236.22 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Voltage" "50" (at 236.22 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB Alt #" "" (at 236.22 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "package" "" (at 236.22 270.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6ebb6b42-c3bb-41e8-9b9a-8f3afdffbc31))
-    (pin "2" (uuid e5bd51b1-082a-45b9-b4b0-065ac470be4b))
-    (instances
-      (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "C?") (unit 1)
-        )
-      )
-      (project "mcFPGA-SW-box"
-        (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
-          (reference "C7") (unit 1)
-        )
-      )
-      (project "myFPGA-CBv"
-        (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
-          (reference "C?") (unit 1)
         )
       )
     )
