@@ -1660,7 +1660,7 @@
   (symbol (lib_id "Device:R") (at 115.57 83.82 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0a85cf37-6056-4a2f-968b-42ad48f4cae6)
-    (property "Reference" "R?" (at 114.3 81.28 90)
+    (property "Reference" "R13" (at 114.3 81.28 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 113.03 86.36 90)
@@ -1694,12 +1694,6 @@
     (pin "2" (uuid 92d39bf4-da90-4cbc-8fd8-8faa50ee52c4))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "R13") (unit 1)
         )
@@ -1710,7 +1704,7 @@
   (symbol (lib_id "Analog_Switch:NC7SB3157P6X") (at 138.43 64.77 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c4e911d-202d-4bd8-97ff-d18168ff6976)
-    (property "Reference" "U?" (at 144.78 60.96 90)
+    (property "Reference" "U11" (at 144.78 60.96 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "NC7SB3157P6X" (at 146.05 58.42 90)
@@ -1748,9 +1742,6 @@
     (pin "5" (uuid cde3615b-9b24-4923-b2c9-0a97ecee1e61))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "U?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "U11") (unit 1)
         )
@@ -1805,7 +1796,7 @@
   (symbol (lib_id "Device:LED") (at 110.49 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1099e564-bd49-425e-870a-64af116799c4)
-    (property "Reference" "D?" (at 113.03 62.23 0)
+    (property "Reference" "D11" (at 113.03 62.23 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (blue)" (at 107.95 57.15 0)
@@ -1839,12 +1830,6 @@
     (pin "2" (uuid 22d2f79d-4936-43a5-8323-a6d91c06e3a8))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "D11") (unit 1)
         )
@@ -1899,7 +1884,7 @@
   (symbol (lib_id "Device:R") (at 120.65 30.48 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 157f0c45-b367-4fc5-abf2-dc4839fe9ae6)
-    (property "Reference" "R?" (at 119.38 27.94 90)
+    (property "Reference" "R15" (at 119.38 27.94 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 118.11 33.02 90)
@@ -1933,12 +1918,6 @@
     (pin "2" (uuid b42a20c4-5c80-4f20-ab60-5f6ef6461550))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "R15") (unit 1)
         )
@@ -1949,7 +1928,7 @@
   (symbol (lib_id "Device:LED") (at 105.41 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 16323f6d-bbf3-4763-abe6-02c350ff771e)
-    (property "Reference" "D?" (at 107.95 113.03 0)
+    (property "Reference" "D9" (at 107.95 113.03 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (blue)" (at 102.87 107.95 0)
@@ -1983,12 +1962,6 @@
     (pin "2" (uuid 3a5f595e-d8aa-42df-b796-ef548f629be0))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "D9") (unit 1)
         )
@@ -2080,7 +2053,7 @@
   (symbol (lib_id "Analog_Switch:NC7SB3157P6X") (at 135.89 90.17 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 24dae896-db13-418c-a9d3-bf2be50035e5)
-    (property "Reference" "U?" (at 142.24 86.36 90)
+    (property "Reference" "U10" (at 142.24 86.36 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "NC7SB3157P6X" (at 143.51 83.82 90)
@@ -2118,9 +2091,6 @@
     (pin "5" (uuid cde3615b-9b24-4923-b2c9-0a97ecee1e62))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "U?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "U10") (unit 1)
         )
@@ -2200,7 +2170,7 @@
   (symbol (lib_id "Analog_Switch:NC7SB3157P6X") (at 40.64 181.61 90) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4bedaa79-fbc0-4f13-89be-f15bc9489d66)
-    (property "Reference" "U?" (at 50.8 176.53 90)
+    (property "Reference" "U12" (at 50.8 176.53 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NC7SB3157P6X" (at 41.91 176.53 90)
@@ -2238,9 +2208,6 @@
     (pin "5" (uuid 3eb9d7de-1709-48e7-ae67-0787a2a96769))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "U?") (unit 2)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "U12") (unit 2)
         )
@@ -2251,7 +2218,7 @@
   (symbol (lib_id "Analog_Switch:NC7SB3157P6X") (at 40.64 168.91 90) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4c603624-8d24-4f42-b3a2-eea64440af70)
-    (property "Reference" "U?" (at 50.8 163.83 90)
+    (property "Reference" "U11" (at 50.8 163.83 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NC7SB3157P6X" (at 41.91 163.83 90)
@@ -2289,9 +2256,6 @@
     (pin "5" (uuid 698abf33-0019-46da-a518-e99fd5dc49a4))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "U?") (unit 2)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "U11") (unit 2)
         )
@@ -2327,7 +2291,7 @@
   (symbol (lib_id "Analog_Switch:NC7SB3157P6X") (at 140.97 39.37 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 531df4f4-ccfc-4ee4-9797-21ef7b9a7b94)
-    (property "Reference" "U?" (at 147.32 35.56 90)
+    (property "Reference" "U12" (at 147.32 35.56 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "NC7SB3157P6X" (at 148.59 33.02 90)
@@ -2365,9 +2329,6 @@
     (pin "5" (uuid cde3615b-9b24-4923-b2c9-0a97ecee1e63))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "U?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "U12") (unit 1)
         )
@@ -2434,7 +2395,7 @@
   (symbol (lib_id "Device:R") (at 118.11 58.42 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 606d3859-d538-40c8-8d63-1681aba6d94d)
-    (property "Reference" "R?" (at 116.84 55.88 90)
+    (property "Reference" "R14" (at 116.84 55.88 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 115.57 60.96 90)
@@ -2468,12 +2429,6 @@
     (pin "2" (uuid 1c7896b9-f8f7-42c8-ac58-e632ccc52474))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "R14") (unit 1)
         )
@@ -2661,7 +2616,7 @@
   (symbol (lib_id "Analog_Switch:NC7SB3157P6X") (at 40.64 143.51 90) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 92ce2abb-aa99-45c6-965c-4eb5345cb585)
-    (property "Reference" "U?" (at 50.8 138.43 90)
+    (property "Reference" "U9" (at 50.8 138.43 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NC7SB3157P6X" (at 41.91 138.43 90)
@@ -2699,9 +2654,6 @@
     (pin "5" (uuid bf2fb9ce-0c01-4d07-9b60-dfa36187aed5))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "U?") (unit 2)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "U9") (unit 2)
         )
@@ -2712,7 +2664,7 @@
   (symbol (lib_id "Device:LED") (at 107.95 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 95fa8def-701b-47ad-8e39-668d5c95e60c)
-    (property "Reference" "D?" (at 110.49 87.63 0)
+    (property "Reference" "D10" (at 110.49 87.63 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (blue)" (at 105.41 82.55 0)
@@ -2746,12 +2698,6 @@
     (pin "2" (uuid b43f7aec-3f2d-4941-8dae-31901bbde329))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "D10") (unit 1)
         )
@@ -2762,7 +2708,7 @@
   (symbol (lib_id "Device:R") (at 113.03 109.22 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9633a22e-5d66-4f3e-8eff-74669eade481)
-    (property "Reference" "R?" (at 111.76 106.68 90)
+    (property "Reference" "R12" (at 111.76 106.68 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 110.49 111.76 90)
@@ -2796,12 +2742,6 @@
     (pin "2" (uuid f6346655-55e3-46ee-90db-e73ff167a01a))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "R12") (unit 1)
         )
@@ -3093,7 +3033,7 @@
   (symbol (lib_id "Device:LED") (at 113.03 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid db861ed7-a94e-4419-8fc0-0e41dc4cce6a)
-    (property "Reference" "D?" (at 115.57 34.29 0)
+    (property "Reference" "D12" (at 115.57 34.29 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (blue)" (at 110.49 29.21 0)
@@ -3127,12 +3067,6 @@
     (pin "2" (uuid 286f9f2c-dd26-4c8a-91e8-9bde2c6700f2))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "D12") (unit 1)
         )
@@ -3143,7 +3077,7 @@
   (symbol (lib_id "Analog_Switch:NC7SB3157P6X") (at 40.64 156.21 90) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dbc71c4e-57a4-420f-ac67-2150da79cd58)
-    (property "Reference" "U?" (at 50.8 151.13 90)
+    (property "Reference" "U10" (at 50.8 151.13 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NC7SB3157P6X" (at 41.91 151.13 90)
@@ -3181,9 +3115,6 @@
     (pin "5" (uuid 9fcb9d7b-2bc5-4604-8e4a-7ece329cfa0a))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "U?") (unit 2)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "U10") (unit 2)
         )
@@ -3194,7 +3125,7 @@
   (symbol (lib_id "Analog_Switch:NC7SB3157P6X") (at 133.35 115.57 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea815fc0-a960-4401-be37-62f91fa83812)
-    (property "Reference" "U?" (at 139.7 111.76 90)
+    (property "Reference" "U9" (at 139.7 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "NC7SB3157P6X" (at 140.97 109.22 90)
@@ -3232,9 +3163,6 @@
     (pin "5" (uuid cde3615b-9b24-4923-b2c9-0a97ecee1e64))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "U?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
           (reference "U9") (unit 1)
         )

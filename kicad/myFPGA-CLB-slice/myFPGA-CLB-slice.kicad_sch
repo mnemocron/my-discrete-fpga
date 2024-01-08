@@ -860,9 +860,6 @@
   (junction (at 257.81 26.67) (diameter 0) (color 0 0 0 0)
     (uuid 7c61782a-9b4a-49ec-9ac5-e9fa04188ba8)
   )
-  (junction (at 260.35 25.4) (diameter 0) (color 0 0 0 0)
-    (uuid 82952faf-c958-47fa-97c1-c4170cf46fd9)
-  )
   (junction (at 252.73 137.16) (diameter 0) (color 0 0 0 0)
     (uuid 849a4b9a-4ff3-4619-9fbc-a22508874c43)
   )
@@ -919,6 +916,9 @@
   )
   (junction (at 237.49 137.16) (diameter 0) (color 0 0 0 0)
     (uuid f036b14e-ccd1-471d-a715-af8956e6b6ad)
+  )
+  (junction (at 260.35 25.4) (diameter 0) (color 0 0 0 0)
+    (uuid f805abcc-9122-4fe4-91a6-8198be7b9f43)
   )
 
   (no_connect (at 220.98 111.76) (uuid 560e6f08-ae97-4901-a143-e5af63b5e00d))
@@ -1216,14 +1216,6 @@
     (stroke (width 0) (type default))
     (uuid 46947f3a-b11e-4167-8c46-3c0105561e75)
   )
-  (wire (pts (xy 260.35 25.4) (xy 266.7 25.4))
-    (stroke (width 0) (type default))
-    (uuid 48dda583-709f-422b-a03b-6a35b1d1739b)
-  )
-  (wire (pts (xy 260.35 21.59) (xy 260.35 25.4))
-    (stroke (width 0) (type default))
-    (uuid 496916a8-7f6b-4eec-a80c-76dc046d7fc1)
-  )
   (wire (pts (xy 228.6 69.85) (xy 231.14 69.85))
     (stroke (width 0) (type default))
     (uuid 4a6a2d53-1076-48a9-bbb3-994f83392d76)
@@ -1268,6 +1260,10 @@
     (stroke (width 0) (type default))
     (uuid 52305337-0c56-41ed-8dd5-057809a15206)
   )
+  (wire (pts (xy 260.35 25.4) (xy 264.16 25.4))
+    (stroke (width 0) (type default))
+    (uuid 55d7c464-3f97-41ac-9ede-58497dd9bfed)
+  )
   (wire (pts (xy 220.98 99.06) (xy 248.92 99.06))
     (stroke (width 0) (type default))
     (uuid 5883de7d-9f89-45ed-bda8-dd20d4b218be)
@@ -1295,10 +1291,6 @@
   (wire (pts (xy 26.67 55.88) (xy 26.67 62.23))
     (stroke (width 0) (type default))
     (uuid 61779c1f-3ab6-40b6-9f04-29785ed1eb04)
-  )
-  (wire (pts (xy 274.32 25.4) (xy 276.86 25.4))
-    (stroke (width 0) (type default))
-    (uuid 62245440-3af3-434a-9eb3-8f61b26b8ff6)
   )
   (wire (pts (xy 240.03 149.86) (xy 245.11 149.86))
     (stroke (width 0) (type default))
@@ -1488,6 +1480,10 @@
     (stroke (width 0) (type default))
     (uuid 93ec2ae6-a501-459c-a32c-9ebbf207c0f2)
   )
+  (wire (pts (xy 271.78 25.4) (xy 273.05 25.4))
+    (stroke (width 0) (type default))
+    (uuid 9414227b-7727-4794-bc93-19cdb4392121)
+  )
   (wire (pts (xy 138.43 54.61) (xy 138.43 60.96))
     (stroke (width 0) (type default))
     (uuid 943affaa-23f7-4da0-a949-a79f80bae4ea)
@@ -1516,7 +1512,7 @@
     (stroke (width 0) (type default))
     (uuid 97583814-12cf-4313-90aa-80e60027c6dd)
   )
-  (wire (pts (xy 260.35 25.4) (xy 260.35 27.94))
+  (wire (pts (xy 260.35 21.59) (xy 260.35 25.4))
     (stroke (width 0) (type default))
     (uuid 97ae02cf-8521-49d7-89e6-aa54a4fd9284)
   )
@@ -1688,10 +1684,6 @@
     (stroke (width 0) (type default))
     (uuid c52738c2-e9ac-430b-b5cd-42349ed3044b)
   )
-  (wire (pts (xy 276.86 27.94) (xy 276.86 25.4))
-    (stroke (width 0) (type default))
-    (uuid c5c0583f-4a9f-4e1b-9df8-b0c9138f1830)
-  )
   (wire (pts (xy 229.87 137.16) (xy 237.49 137.16))
     (stroke (width 0) (type default))
     (uuid c672ad93-2748-4ef5-b52c-ba2c3b6ddc21)
@@ -1779,6 +1771,10 @@
   (wire (pts (xy 207.01 157.48) (xy 214.63 157.48))
     (stroke (width 0) (type default))
     (uuid d6eeef3e-f4b7-4a3e-8afb-e49d5374c029)
+  )
+  (wire (pts (xy 260.35 25.4) (xy 260.35 27.94))
+    (stroke (width 0) (type default))
+    (uuid d7f257de-48f2-4309-b043-213ded9a16c7)
   )
   (wire (pts (xy 135.89 92.71) (xy 135.89 90.17))
     (stroke (width 0) (type default))
@@ -2406,7 +2402,7 @@
   (symbol (lib_id "power:GND") (at 267.97 157.48 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04f2242f-14d7-4b22-b657-757bc0d1a7d4)
-    (property "Reference" "#PWR?" (at 261.62 157.48 0)
+    (property "Reference" "#PWR023" (at 261.62 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 264.16 157.48 90)
@@ -2421,23 +2417,33 @@
     (pin "1" (uuid e9695e96-572f-4f5b-982a-d90a4856f3d1))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR023") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 273.05 25.4 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0c681397-9eea-4d58-94fa-37417ae0c748)
+    (property "Reference" "#PWR0147" (at 269.24 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 276.86 25.4 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 273.05 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 273.05 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 873cfca3-7c7f-40ee-b650-c9a19958ebb0))
+    (instances
+      (project "myFPGA-CLB-slice"
+        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
+          (reference "#PWR0147") (unit 1)
         )
       )
     )
@@ -2490,7 +2496,7 @@
   (symbol (lib_id "Device:R") (at 237.49 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0e2197c2-7949-45cd-94af-8f4d51b8c7e3)
-    (property "Reference" "R?" (at 238.76 118.11 90)
+    (property "Reference" "R6" (at 238.76 118.11 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 237.49 124.46 90)
@@ -2524,9 +2530,6 @@
     (pin "2" (uuid 334cb981-c1ef-4394-bc34-7a03db06a663))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "R6") (unit 1)
         )
@@ -2581,7 +2584,7 @@
   (symbol (lib_id "power:GND") (at 252.73 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1579d3ea-f3eb-4cec-b2d3-124e1d2a1620)
-    (property "Reference" "#PWR?" (at 252.73 35.56 0)
+    (property "Reference" "#PWR0145" (at 252.73 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 252.73 33.02 0)
@@ -2596,21 +2599,6 @@
     (pin "1" (uuid df015234-bf30-4c3f-8898-e5e4e08f2ae7))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR0145") (unit 1)
         )
@@ -2711,7 +2699,7 @@
   (symbol (lib_id "power:GND") (at 31.75 143.51 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1af77cf1-1125-4ad2-8441-8c21aa70ae12)
-    (property "Reference" "#PWR?" (at 38.1 143.51 0)
+    (property "Reference" "#PWR0138" (at 38.1 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.83 143.51 90)
@@ -2726,21 +2714,6 @@
     (pin "1" (uuid e1b7f5cb-3229-4c63-a487-3cd8e399b6df))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR0138") (unit 1)
         )
@@ -2751,7 +2724,7 @@
   (symbol (lib_id "power:+3V3") (at 19.05 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d6e80ba-7de7-45a9-b603-d0fa03e7aa39)
-    (property "Reference" "#PWR?" (at 19.05 181.61 0)
+    (property "Reference" "#PWR01" (at 19.05 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 19.05 172.72 0)
@@ -2766,21 +2739,6 @@
     (pin "1" (uuid 4ed28242-479b-440c-9778-97b34ab094a0))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR01") (unit 1)
         )
@@ -2837,7 +2795,7 @@
   (symbol (lib_id "power:GND") (at 31.75 124.46 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 218804c8-0163-4575-b19a-c417b23e41e8)
-    (property "Reference" "#PWR?" (at 38.1 124.46 0)
+    (property "Reference" "#PWR02" (at 38.1 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.83 124.46 90)
@@ -2852,21 +2810,6 @@
     (pin "1" (uuid 76ef33ef-14d3-4647-8834-c62ac113f7c8))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR02") (unit 1)
         )
@@ -2877,7 +2820,7 @@
   (symbol (lib_id "Device:LED") (at 245.11 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 21e26ff0-01bd-4f16-8d20-4bdb36ee14f8)
-    (property "Reference" "D?" (at 246.38 125.73 0)
+    (property "Reference" "D5" (at 246.38 125.73 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (green)" (at 243.84 132.08 0)
@@ -2911,9 +2854,6 @@
     (pin "2" (uuid f30384a6-7049-41d1-95fe-a695bf65fa88))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "D5") (unit 1)
         )
@@ -2949,7 +2889,7 @@
   (symbol (lib_id "Device:LED") (at 252.73 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 22d4e280-a46c-4152-bf3c-d021fb4429dd)
-    (property "Reference" "D?" (at 254 125.73 0)
+    (property "Reference" "D7" (at 254 125.73 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (green)" (at 251.46 132.08 0)
@@ -2983,9 +2923,6 @@
     (pin "2" (uuid 96eefeca-f7fe-48e9-bd38-ccdbde532a54))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "D7") (unit 1)
         )
@@ -3040,7 +2977,7 @@
   (symbol (lib_id "Device:R") (at 245.11 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 29b0f791-ebca-4407-be21-d2ad907b3b1c)
-    (property "Reference" "R?" (at 246.38 118.11 90)
+    (property "Reference" "R8" (at 246.38 118.11 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 245.11 124.46 90)
@@ -3074,9 +3011,6 @@
     (pin "2" (uuid f0fc9885-2a48-44bb-9dbd-112a5ee2e5dd))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "R8") (unit 1)
         )
@@ -3087,7 +3021,7 @@
   (symbol (lib_id "Device:R") (at 241.3 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2db2f992-ac93-4674-9b62-e64c3bb8c69d)
-    (property "Reference" "R?" (at 242.57 118.11 90)
+    (property "Reference" "R7" (at 242.57 118.11 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 241.3 124.46 90)
@@ -3121,9 +3055,6 @@
     (pin "2" (uuid 734dc2bd-413d-4c44-85d3-6c9b00d6e8dc))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "R7") (unit 1)
         )
@@ -3134,7 +3065,7 @@
   (symbol (lib_id "power:GND") (at 31.75 148.59 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 300c2ccc-4133-4fa5-a91a-a9d7fc3372e6)
-    (property "Reference" "#PWR?" (at 38.1 148.59 0)
+    (property "Reference" "#PWR0139" (at 38.1 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.83 148.59 90)
@@ -3149,21 +3080,6 @@
     (pin "1" (uuid a6aac6ff-1750-4ebe-811e-4da3d67d1307))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR0139") (unit 1)
         )
@@ -3286,9 +3202,6 @@
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "U1") (unit 2)
         )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "U?") (unit 2)
-        )
       )
     )
   )
@@ -3321,7 +3234,7 @@
   (symbol (lib_id "Device:C") (at 207.01 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3d4d090d-4bb1-4f28-8e5e-62786db2042d)
-    (property "Reference" "C?" (at 201.93 148.59 0)
+    (property "Reference" "C40" (at 201.93 148.59 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 200.66 156.21 0)
@@ -3355,21 +3268,6 @@
     (pin "2" (uuid e32c286f-2a5d-4707-b364-75df41c80d4e))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "C?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "C40") (unit 1)
         )
@@ -3380,7 +3278,7 @@
   (symbol (lib_id "Device:LED") (at 237.49 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ea20333-70a0-4cca-9b1b-8e6a6d9d9aad)
-    (property "Reference" "D?" (at 238.76 125.73 0)
+    (property "Reference" "D3" (at 238.76 125.73 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (green)" (at 236.22 132.08 0)
@@ -3414,9 +3312,6 @@
     (pin "2" (uuid 632f4e69-01ab-4d74-8800-20eac6e69176))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "D3") (unit 1)
         )
@@ -3427,7 +3322,7 @@
   (symbol (lib_id "power:GND") (at 91.44 182.88 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 41dffea1-7fd1-4195-b422-9358e873b931)
-    (property "Reference" "#PWR?" (at 97.79 182.88 0)
+    (property "Reference" "#PWR08" (at 97.79 182.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 95.25 182.88 90)
@@ -3442,21 +3337,6 @@
     (pin "1" (uuid 83a115db-a5a7-4218-99a6-79e1554ead55))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR08") (unit 1)
         )
@@ -3467,7 +3347,7 @@
   (symbol (lib_id "power:GND") (at 165.1 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 437cb68b-b41b-4130-b5b1-2f4ce6246225)
-    (property "Reference" "#PWR?" (at 165.1 195.58 0)
+    (property "Reference" "#PWR016" (at 165.1 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 165.1 194.31 0)
@@ -3482,21 +3362,6 @@
     (pin "1" (uuid 30ac69e3-8dc7-47af-a659-86c06a6105bd))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR016") (unit 1)
         )
@@ -3507,7 +3372,7 @@
   (symbol (lib_id "power:GND") (at 186.69 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 442ac718-6685-45c4-bccc-ad639694d1f1)
-    (property "Reference" "#PWR?" (at 186.69 35.56 0)
+    (property "Reference" "#PWR0146" (at 186.69 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 186.69 33.02 0)
@@ -3522,21 +3387,6 @@
     (pin "1" (uuid 9bf78d85-1984-44bb-8457-4a54f30f641d))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR0146") (unit 1)
         )
@@ -3547,7 +3397,7 @@
   (symbol (lib_id "power:+3V3") (at 114.3 179.07 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4685149f-77e4-4705-83c9-ac20584048f9)
-    (property "Reference" "#PWR?" (at 110.49 179.07 0)
+    (property "Reference" "#PWR010" (at 110.49 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 118.11 179.07 90)
@@ -3562,21 +3412,6 @@
     (pin "1" (uuid cd02946a-c853-4044-9d45-bb2a47132fa2))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR010") (unit 1)
         )
@@ -3638,21 +3473,6 @@
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "U2") (unit 1)
         )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "U?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "U?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "U?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "U?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "U?") (unit 1)
-        )
       )
     )
   )
@@ -3660,7 +3480,7 @@
   (symbol (lib_id "Device:C") (at 199.39 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 560b5f6b-7069-49eb-b5b1-6ebf62d33f70)
-    (property "Reference" "C?" (at 194.31 148.59 0)
+    (property "Reference" "C42" (at 194.31 148.59 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 193.04 156.21 0)
@@ -3694,21 +3514,6 @@
     (pin "2" (uuid 142be7c8-2c21-4142-ab96-b2f2665ed041))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "C?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "C42") (unit 1)
         )
@@ -3744,7 +3549,7 @@
   (symbol (lib_id "power:+3V3") (at 207.01 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 57d95420-ef70-46b9-8c70-964078746c61)
-    (property "Reference" "#PWR?" (at 207.01 149.86 0)
+    (property "Reference" "#PWR0143" (at 207.01 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 207.01 140.97 0)
@@ -3759,21 +3564,6 @@
     (pin "1" (uuid 07ce6a3d-085e-4215-b418-c66846f13e19))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR0143") (unit 1)
         )
@@ -3784,7 +3574,7 @@
   (symbol (lib_id "power:+3V3") (at 91.44 179.07 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5aee9c50-15b6-46ad-beed-91ab437d12a0)
-    (property "Reference" "#PWR?" (at 87.63 179.07 0)
+    (property "Reference" "#PWR07" (at 87.63 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 95.25 179.07 90)
@@ -3799,21 +3589,6 @@
     (pin "1" (uuid ac1b70bc-6665-4d45-9ffc-f13a11fd1a9e))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR07") (unit 1)
         )
@@ -3870,7 +3645,7 @@
   (symbol (lib_id "power:GND") (at 63.5 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 62030ea0-a394-4fb6-b9a3-3c7d16dbbf3f)
-    (property "Reference" "#PWR?" (at 63.5 154.94 0)
+    (property "Reference" "#PWR05" (at 63.5 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.5 152.4 0)
@@ -3885,21 +3660,6 @@
     (pin "1" (uuid 4c7e2a27-7015-4efb-a21d-1cde467301c3))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR05") (unit 1)
         )
@@ -3910,7 +3670,7 @@
   (symbol (lib_id "power:GND") (at 48.26 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 62c9d099-b3bf-4336-b76d-93ba86b49a74)
-    (property "Reference" "#PWR?" (at 48.26 195.58 0)
+    (property "Reference" "#PWR04" (at 48.26 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 48.26 194.31 0)
@@ -3925,21 +3685,6 @@
     (pin "1" (uuid 5d5428ed-eef1-4146-8a23-d4f1d70752cc))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR04") (unit 1)
         )
@@ -3950,7 +3695,7 @@
   (symbol (lib_id "Device:LED") (at 248.92 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 642474dd-f9ec-4acc-a9b7-63ce72d608d0)
-    (property "Reference" "D?" (at 250.19 125.73 0)
+    (property "Reference" "D6" (at 250.19 125.73 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (green)" (at 247.65 132.08 0)
@@ -3984,9 +3729,6 @@
     (pin "2" (uuid 5b13c5ba-ee31-40b3-90ad-e44e7ae160e3))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "D6") (unit 1)
         )
@@ -3997,7 +3739,7 @@
   (symbol (lib_id "power:GND") (at 199.39 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65814f9e-06d7-4233-954d-a575aee29a74)
-    (property "Reference" "#PWR?" (at 199.39 27.94 0)
+    (property "Reference" "#PWR017" (at 199.39 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 199.39 25.4 0)
@@ -4012,21 +3754,6 @@
     (pin "1" (uuid 38756f1f-b78c-4392-aa48-0ae3a84df031))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR017") (unit 1)
         )
@@ -4037,7 +3764,7 @@
   (symbol (lib_id "Device:C") (at 158.75 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6c715bd1-8562-4f8a-9db8-71a1144e90b4)
-    (property "Reference" "C?" (at 153.67 179.07 0)
+    (property "Reference" "C3" (at 153.67 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 152.4 186.69 0)
@@ -4071,21 +3798,6 @@
     (pin "2" (uuid 94dc6517-6084-48f6-8460-97ac1529baab))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "C?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "C3") (unit 1)
         )
@@ -4096,7 +3808,7 @@
   (symbol (lib_id "Device:C") (at 137.16 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7172a9f5-7f15-4183-98a6-86070581c8f7)
-    (property "Reference" "C?" (at 132.08 179.07 0)
+    (property "Reference" "C1" (at 132.08 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 130.81 186.69 0)
@@ -4130,21 +3842,6 @@
     (pin "2" (uuid 550d0eb4-c4f2-40eb-9e51-0c9a9ffd345b))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "C?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "C1") (unit 1)
         )
@@ -4201,7 +3898,7 @@
   (symbol (lib_id "power:GND") (at 143.51 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 78b075a2-cd15-4b20-88fe-be670ad87d8f)
-    (property "Reference" "#PWR?" (at 143.51 195.58 0)
+    (property "Reference" "#PWR014" (at 143.51 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 143.51 194.31 0)
@@ -4216,21 +3913,6 @@
     (pin "1" (uuid 89783f3d-97ce-499b-8cde-37fb89c1296f))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR014") (unit 1)
         )
@@ -4312,7 +3994,7 @@
   (symbol (lib_id "power:GND") (at 210.82 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 82235c9a-3a78-4629-8eb2-092cfe2c1a4d)
-    (property "Reference" "#PWR?" (at 210.82 128.27 0)
+    (property "Reference" "#PWR020" (at 210.82 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 210.82 125.73 0)
@@ -4327,21 +4009,6 @@
     (pin "1" (uuid 5819516d-824b-4e7d-b602-0944e9eceb29))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR020") (unit 1)
         )
@@ -4349,46 +4016,43 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 270.51 25.4 90) (unit 1)
+  (symbol (lib_id "Device:R") (at 267.97 25.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 847f02f2-9b5b-469f-9348-7ffc11b34a05)
-    (property "Reference" "R?" (at 270.51 30.48 90)
+    (property "Reference" "R2" (at 269.24 27.94 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10k" (at 271.78 27.94 90)
+    (property "Value" "10k" (at 269.24 25.4 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 270.51 27.178 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 267.97 27.178 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 270.51 25.4 0)
+    (property "Datasheet" "~" (at 267.97 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB Part #" "C25804" (at 270.51 25.4 0)
+    (property "JLCPCB Part #" "C25804" (at 267.97 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Nr." "0603WAF1002T5E" (at 270.51 25.4 0)
+    (property "Part Nr." "0603WAF1002T5E" (at 267.97 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Dielectric" "" (at 270.51 25.4 0)
+    (property "Dielectric" "" (at 267.97 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Voltage" "" (at 270.51 25.4 0)
+    (property "Voltage" "" (at 267.97 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB Alt #" "" (at 270.51 25.4 0)
+    (property "JLCPCB Alt #" "" (at 267.97 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "package" "" (at 270.51 25.4 0)
+    (property "package" "" (at 267.97 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 82ca22e8-ea42-497f-b490-49adbf2609de))
     (pin "2" (uuid d0092d38-a337-4406-bb57-2ef6dc7d7d5c))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "R2") (unit 1)
         )
@@ -4399,7 +4063,7 @@
   (symbol (lib_id "Device:R") (at 256.54 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 90617c77-82e7-40a5-b9c7-326639e7a8ce)
-    (property "Reference" "R?" (at 257.81 118.11 90)
+    (property "Reference" "R11" (at 257.81 118.11 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 256.54 124.46 90)
@@ -4433,9 +4097,6 @@
     (pin "2" (uuid e8f1ba16-a68b-4d20-b4fe-828ee97e9571))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "R11") (unit 1)
         )
@@ -4487,9 +4148,6 @@
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "U1") (unit 1)
         )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "U?") (unit 1)
-        )
       )
     )
   )
@@ -4497,7 +4155,7 @@
   (symbol (lib_id "Device:C") (at 214.63 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 938507fe-65f9-4376-a95e-6b3ff1aaa468)
-    (property "Reference" "C?" (at 209.55 148.59 0)
+    (property "Reference" "C41" (at 209.55 148.59 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 208.28 156.21 0)
@@ -4531,21 +4189,6 @@
     (pin "2" (uuid b847a2f7-d76b-4048-82c6-169f51c00c50))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "C?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "C?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "C41") (unit 1)
         )
@@ -4602,7 +4245,7 @@
   (symbol (lib_id "Device:R") (at 248.92 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9435fea7-c045-4dee-86d4-f046af52e568)
-    (property "Reference" "R?" (at 250.19 118.11 90)
+    (property "Reference" "R9" (at 250.19 118.11 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 248.92 124.46 90)
@@ -4636,9 +4279,6 @@
     (pin "2" (uuid 5414f5bb-0c2d-4b7a-ae76-40b092aa7c95))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "R9") (unit 1)
         )
@@ -4649,7 +4289,7 @@
   (symbol (lib_id "power:+3V3") (at 165.1 176.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a4b405a6-a2f3-42f7-9c4d-3c86468c2e50)
-    (property "Reference" "#PWR?" (at 165.1 180.34 0)
+    (property "Reference" "#PWR015" (at 165.1 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 165.1 171.45 0)
@@ -4664,21 +4304,6 @@
     (pin "1" (uuid 6870911a-a92b-4e2d-985b-2f9bde53f4ba))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR015") (unit 1)
         )
@@ -4689,7 +4314,7 @@
   (symbol (lib_id "Device:LED") (at 241.3 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a4f3b098-17d0-4553-a0f5-069cba6337e5)
-    (property "Reference" "D?" (at 242.57 125.73 0)
+    (property "Reference" "D4" (at 242.57 125.73 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (green)" (at 240.03 132.08 0)
@@ -4723,9 +4348,6 @@
     (pin "2" (uuid a2d9f1af-8666-45b1-a080-90890f0fe5b1))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "D4") (unit 1)
         )
@@ -4782,7 +4404,7 @@
   (symbol (lib_id "Device:R") (at 252.73 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a7b6081a-75ad-4b06-8e1b-aecebc13004e)
-    (property "Reference" "R?" (at 254 118.11 90)
+    (property "Reference" "R10" (at 254 118.11 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 252.73 124.46 90)
@@ -4816,9 +4438,6 @@
     (pin "2" (uuid 33ef07bd-5868-4ad4-b3b5-232d82dfd9d3))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "R10") (unit 1)
         )
@@ -4829,7 +4448,7 @@
   (symbol (lib_id "power:GND") (at 207.01 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ac86f90f-4fd6-4acd-943b-4a061d8251b2)
-    (property "Reference" "#PWR?" (at 207.01 165.1 0)
+    (property "Reference" "#PWR055" (at 207.01 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 207.01 163.83 0)
@@ -4844,21 +4463,6 @@
     (pin "1" (uuid d1a0946d-9adf-4597-870f-34b60e39620e))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR055") (unit 1)
         )
@@ -4912,50 +4516,10 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 276.86 27.94 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid bcf13f46-ee60-4643-8009-fe61ef0be835)
-    (property "Reference" "#PWR?" (at 276.86 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 276.86 31.75 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 276.86 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 276.86 27.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9ef2ea2d-b3e9-498d-8882-fae06cc44167))
-    (instances
-      (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d"
-          (reference "#PWR0147") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:LED") (at 256.54 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c4912787-7041-4cff-83fe-ed579dfb9f3e)
-    (property "Reference" "D?" (at 257.81 125.73 0)
+    (property "Reference" "D8" (at 257.81 125.73 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED (green)" (at 255.27 132.08 0)
@@ -4989,9 +4553,6 @@
     (pin "2" (uuid 5d181794-b053-46c8-922b-976ef93c31e8))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "D?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "D8") (unit 1)
         )
@@ -5048,7 +4609,7 @@
   (symbol (lib_id "power:GND") (at 245.11 157.48 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca23c80c-494d-45d7-89d6-8900ba5ad9c4)
-    (property "Reference" "#PWR?" (at 251.46 157.48 0)
+    (property "Reference" "#PWR022" (at 251.46 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 248.92 157.48 90)
@@ -5063,21 +4624,6 @@
     (pin "1" (uuid 46fc20bb-69b8-43d8-8d6b-08587e40e329))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR022") (unit 1)
         )
@@ -5113,7 +4659,7 @@
   (symbol (lib_id "power:GND") (at 229.87 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d354a8c8-2c22-4455-8928-47f647edb634)
-    (property "Reference" "#PWR?" (at 229.87 144.78 0)
+    (property "Reference" "#PWR021" (at 229.87 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 229.87 142.24 0)
@@ -5128,21 +4674,6 @@
     (pin "1" (uuid 0a81bfd5-ea81-47c6-93f5-3c7f4772a7ea))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR021") (unit 1)
         )
@@ -5243,7 +4774,7 @@
   (symbol (lib_id "power:GND") (at 114.3 182.88 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eb3b18ea-7f93-4f20-8359-befc3b8d6f0f)
-    (property "Reference" "#PWR?" (at 120.65 182.88 0)
+    (property "Reference" "#PWR011" (at 120.65 182.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 182.88 90)
@@ -5258,21 +4789,6 @@
     (pin "1" (uuid 07ba9856-5c45-4bc7-b735-dd6b29866673))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/4edb728f-4165-4dad-bea7-d5caa521ea2d"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR011") (unit 1)
         )
@@ -5283,7 +4799,7 @@
   (symbol (lib_id "Device:R") (at 63.5 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f66bba8a-b76f-45b3-b399-0fcd832525f0)
-    (property "Reference" "R?" (at 66.04 142.24 0)
+    (property "Reference" "R1" (at 66.04 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 66.04 144.78 0)
@@ -5317,9 +4833,6 @@
     (pin "2" (uuid d74111e2-d9c2-4811-9ba5-1a4f604e9b7e))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "R?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "R1") (unit 1)
         )
@@ -5330,7 +4843,7 @@
   (symbol (lib_id "power:GND") (at 199.39 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f748fd42-ac97-4c4a-a423-f8dc12e87b86)
-    (property "Reference" "#PWR?" (at 199.39 128.27 0)
+    (property "Reference" "#PWR018" (at 199.39 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 199.39 125.73 0)
@@ -5345,21 +4858,6 @@
     (pin "1" (uuid da397ca2-1463-4b0b-b98e-4c0faf5e9621))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR018") (unit 1)
         )
@@ -5370,7 +4868,7 @@
   (symbol (lib_id "power:GND") (at 31.75 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fa18a550-1925-4095-ae88-272692ebae2c)
-    (property "Reference" "#PWR?" (at 38.1 129.54 0)
+    (property "Reference" "#PWR03" (at 38.1 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.83 129.54 90)
@@ -5385,21 +4883,6 @@
     (pin "1" (uuid 81ae4c05-ce16-4e52-a86e-179c18248871))
     (instances
       (project "myFPGA-CLB-slice"
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/2ae8c962-eb3a-4bc0-879b-9a9a0cb7ca8b"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/c0683758-8f95-4956-98b3-1cadd07503a7"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/8d6c6a11-91f4-4cda-a0a3-b01338b326ab"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f8f5aa5a-daee-44c0-974a-67be9fa42cb8"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/2d29d97f-956a-4594-9321-3d88807a498d/f7006967-44fd-4ee1-83ff-dc16f28634bd"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/2d29d97f-956a-4594-9321-3d88807a498d"
           (reference "#PWR03") (unit 1)
         )
