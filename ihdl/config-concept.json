@@ -1,0 +1,33 @@
+{
+	"comment" : "-",
+	"part" : "4x4",
+	"slices" : [
+		{
+			"comment" : "4 bit counter",
+			"loc" : "A0",
+			"reg" : {
+				"a" : true,
+				"b" : true,
+				"c" : true,
+				"d" : false
+			},
+			"in" : {
+				"i0" : "b0",
+				"i1" : "b1",
+				"i2" : "b2",
+				"i3" : "b3"
+			},
+			"lut" : {
+				"qa" : "NOT i0",
+				"qb" : "(i1 AND NOT i0) OR i0",
+				"qc" : "(i2 AND NOT i1) OR (i1 AND i0)",
+				"qd" : "(i3 AND NOT i2) OR (i2 AND i1 AND i0)"
+			},
+			"clk_sel" : 0,
+			"routes" : [
+				{"south" : "west"},
+				{"_s0" : "_w1"}
+			]
+		}
+	]
+}
