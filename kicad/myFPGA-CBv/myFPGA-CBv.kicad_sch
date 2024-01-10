@@ -1691,19 +1691,19 @@
     (uuid ec465233-6299-4a37-b30f-34a66c854d18)
   )
 
-  (label "s_0" (at 140.97 149.86 0) (fields_autoplaced)
+  (label "s_0" (at 132.08 149.86 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 47dde049-d1fb-4f78-b8d3-b9d72f7f144a)
   )
-  (label "s_3" (at 140.97 96.52 0) (fields_autoplaced)
+  (label "s_3" (at 132.08 96.52 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 952f5a38-6f07-40b2-9183-2c8ae3f9987f)
   )
-  (label "s_1" (at 140.97 132.08 0) (fields_autoplaced)
+  (label "s_1" (at 134.62 132.08 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9dbc5c09-f723-4c97-b0ac-abec98603904)
   )
-  (label "s_2" (at 140.97 114.3 0) (fields_autoplaced)
+  (label "s_2" (at 134.62 114.3 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f390a796-fc0b-4b52-b8ad-10a31248804c)
   )
@@ -2455,8 +2455,8 @@
     (pin "3" (uuid b6ec3326-13ee-4bbe-969a-a96d3c035c34))
     (pin "4" (uuid de4acb70-cbcb-4d71-800d-b6a3bf206898))
     (pin "6" (uuid 492b99b0-0d7f-4b91-8232-cc5b9ca7af1c))
-    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95ca))
-    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d14))
+    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cb))
+    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d15))
     (instances
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
@@ -2712,8 +2712,8 @@
     (pin "3" (uuid 948b846b-4e21-4ed8-af1f-968e356c77ef))
     (pin "4" (uuid b8d0fa45-d012-4304-8372-3f51980c05aa))
     (pin "6" (uuid 90d56cc7-c8b3-422f-a9fe-487ce059f872))
-    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95ca))
-    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d14))
+    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cc))
+    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d16))
     (instances
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
@@ -3257,10 +3257,10 @@
     (property "Part Nr." "BL1551B" (at 53.34 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb13f))
-    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f1))
-    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648a9d))
-    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb74))
+    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb140))
+    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f2))
+    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648a9e))
+    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb75))
     (pin "2" (uuid 63a74369-3105-480f-a7ca-1324dd983ac9))
     (pin "5" (uuid 460f13ff-3fd8-4d64-907a-71111d6642c8))
     (instances
@@ -3406,10 +3406,10 @@
     (property "Part Nr." "BL1551B" (at 62.23 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb13e))
-    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f0))
-    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648a9c))
-    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb73))
+    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb141))
+    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f3))
+    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648a9f))
+    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb76))
     (pin "2" (uuid 3aa77c35-9617-4ecd-bc39-73c66166923b))
     (pin "5" (uuid f52bc45c-fa69-48df-84c8-db69b6e2e29e))
     (instances
@@ -3449,8 +3449,8 @@
     (pin "3" (uuid 07fea87e-654d-41c8-9ccb-6ca4534a9996))
     (pin "4" (uuid bdc4a9a4-54f0-4a1e-bb2a-9b86f1133268))
     (pin "6" (uuid f9b309ca-deab-4acb-b7cd-b394d4858e1c))
-    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cb))
-    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d15))
+    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cd))
+    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d17))
     (instances
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
@@ -3707,10 +3707,10 @@
     (property "Part Nr." "BL1551B" (at 44.45 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb13e))
-    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f0))
-    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648a9c))
-    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb73))
+    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb142))
+    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f4))
+    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648aa0))
+    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb77))
     (pin "2" (uuid c20d6126-0058-4d34-abbc-3740a174533c))
     (pin "5" (uuid ef6a30bb-d489-4602-987f-2c0d49b3ceaf))
     (instances
@@ -3774,10 +3774,10 @@
     (property "Part Nr." "BL1551B" (at 88.9 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb13f))
-    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f1))
-    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648a9d))
-    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb74))
+    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb143))
+    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f5))
+    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648aa1))
+    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb78))
     (pin "2" (uuid 37d60b89-758d-4fb0-9a81-1f5431f5fd66))
     (pin "5" (uuid 3ca65944-266c-4e36-80bc-1b493e91cac2))
     (instances
@@ -4204,8 +4204,8 @@
     (pin "3" (uuid 6c1bda74-7f71-4157-90db-23ba550fe8d6))
     (pin "4" (uuid 414804c0-14fc-4fea-a990-9ecd28b9f5f0))
     (pin "6" (uuid 5ed800c8-7b66-42b1-9f7f-2f8fdf423871))
-    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cb))
-    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d15))
+    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95ce))
+    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d18))
     (instances
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
@@ -4383,8 +4383,8 @@
     (pin "3" (uuid 077e7e03-289d-409f-84a5-d2848d490a4d))
     (pin "4" (uuid 46608fe0-f5a1-4798-ba64-0732d0821011))
     (pin "6" (uuid b5b92e66-75b4-4b49-875f-9f0fa279dda3))
-    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95ca))
-    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d14))
+    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cf))
+    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d19))
     (instances
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
@@ -4757,10 +4757,10 @@
     (property "Part Nr." "BL1551B" (at 80.01 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb13e))
-    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f0))
-    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648a9c))
-    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb73))
+    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb144))
+    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f6))
+    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648aa2))
+    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb79))
     (pin "2" (uuid a3b6f1dc-9495-4125-bfbe-5d26b9cf3b85))
     (pin "5" (uuid 6c44022e-9428-446c-af4d-b839eec17308))
     (instances
@@ -5248,8 +5248,8 @@
     (pin "3" (uuid eb05234d-61e3-47ab-bdcc-b31be002c761))
     (pin "4" (uuid 7cfaa9c8-6344-4352-a354-f5b3371a060e))
     (pin "6" (uuid c331a4f1-fe1f-43de-becd-47e85c84afc9))
-    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cb))
-    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d15))
+    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d0))
+    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d1a))
     (instances
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
@@ -5283,10 +5283,10 @@
     (property "Part Nr." "BL1551B" (at 35.56 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb13e))
-    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f0))
-    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648a9c))
-    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb73))
+    (pin "1" (uuid ce307448-d1cb-4bf7-9c37-2aa0871fb145))
+    (pin "3" (uuid a6757ad6-60b0-4442-b151-072dfd7458f7))
+    (pin "4" (uuid 08f35f89-10a3-4867-8eee-410139648aa3))
+    (pin "6" (uuid b488aa6d-804d-4d25-b8eb-a8fa1888cb7a))
     (pin "2" (uuid 62847ca9-cef8-4997-a313-b3e44a88ff67))
     (pin "5" (uuid c3664c53-e157-4f6b-8602-f369535260ad))
     (instances
@@ -5448,8 +5448,8 @@
     (pin "3" (uuid 98bfc5d9-b349-49c5-9790-d7c1bd6a7c27))
     (pin "4" (uuid 3ad322d5-4ec0-407b-8fa0-045e16295e91))
     (pin "6" (uuid 087145a6-d168-473f-9a4a-f2af321a4e33))
-    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95ca))
-    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d14))
+    (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d1))
+    (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d1b))
     (instances
       (project "myFPGA-CBv"
         (path "/e7dd8cdd-7178-4795-89bd-2ea837b9d4c9"
