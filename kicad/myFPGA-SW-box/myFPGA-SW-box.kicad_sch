@@ -3959,7 +3959,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R14") (unit 1)
         )
@@ -3978,13 +3978,13 @@
     (property "Reference" "U29" (at 323.85 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 323.85 91.44 0)
+    (property "Value" "BL1551B" (at 323.85 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 323.85 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 323.85 95.25 0)
+    (property "Datasheet" "" (at 323.85 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 323.85 95.25 0)
@@ -4003,7 +4003,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cd))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d17))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U29") (unit 1)
         )
@@ -4022,13 +4022,13 @@
     (property "Reference" "U26" (at 312.42 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 304.8 81.28 0)
+    (property "Value" "BL1551B" (at 304.8 81.28 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 304.8 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 304.8 85.09 0)
+    (property "Datasheet" "" (at 304.8 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 304.8 85.09 0)
@@ -4047,7 +4047,7 @@
     (pin "2" (uuid 986f309e-550b-4af1-b918-b673967d8cd3))
     (pin "5" (uuid 41d86ff6-72e3-4d00-9ee7-9253ace2f714))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U26") (unit 1)
         )
@@ -4066,13 +4066,13 @@
     (property "Reference" "U29" (at 374.65 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 374.65 191.135 90)
+    (property "Value" "BL1551B" (at 374.65 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 372.11 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 372.11 184.785 0)
+    (property "Datasheet" "" (at 372.11 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 372.11 184.785 0)
@@ -4091,7 +4091,7 @@
     (pin "2" (uuid 141a58a0-3426-4b64-81ce-13d0a86be3f5))
     (pin "5" (uuid 274fbc2d-71e3-42fa-b0ff-bff7b5c1fb86))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U29") (unit 2)
         )
@@ -4121,7 +4121,7 @@
     )
     (pin "1" (uuid 980db574-665e-4075-8a7d-18141af295e4))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR048") (unit 1)
         )
@@ -4140,13 +4140,13 @@
     (property "Reference" "U12" (at 153.67 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 153.67 80.01 0)
+    (property "Value" "BL1551B" (at 153.67 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 153.67 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 153.67 83.82 0)
+    (property "Datasheet" "" (at 153.67 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 153.67 83.82 0)
@@ -4165,7 +4165,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95ce))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d18))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U12") (unit 1)
         )
@@ -4222,7 +4222,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D2") (unit 1)
         )
@@ -4255,7 +4255,7 @@
     (pin "3" (uuid ce490c56-8f1f-4089-826e-7d68d72ba381))
     (pin "4" (uuid 086d79ba-7b32-4d98-8945-deadaa8c257e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J5") (unit 1)
         )
@@ -4311,7 +4311,7 @@
           (reference "J?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J9") (unit 1)
         )
@@ -4342,7 +4342,7 @@
     (pin "1" (uuid 895d54c2-c846-49f7-a54a-9ca4fc9dc7b9))
     (pin "2" (uuid 5fc3229b-21cb-49eb-b410-1d96ad1d0d1f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J8") (unit 1)
         )
@@ -4398,7 +4398,7 @@
           (reference "J?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J3") (unit 1)
         )
@@ -4455,7 +4455,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R32") (unit 1)
         )
@@ -4512,7 +4512,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R6") (unit 1)
         )
@@ -4531,13 +4531,13 @@
     (property "Reference" "U31" (at 336.55 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 344.17 35.56 0)
+    (property "Value" "BL1551B" (at 344.17 35.56 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 344.17 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 344.17 39.37 0)
+    (property "Datasheet" "" (at 344.17 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 344.17 39.37 0)
@@ -4556,7 +4556,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cf))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d19))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U31") (unit 1)
         )
@@ -4575,13 +4575,13 @@
     (property "Reference" "U32" (at 344.17 64.77 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 344.17 67.31 0)
+    (property "Value" "BL1551B" (at 344.17 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 344.17 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 344.17 71.12 0)
+    (property "Datasheet" "" (at 344.17 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 344.17 71.12 0)
@@ -4600,7 +4600,7 @@
     (pin "2" (uuid d8d978f9-df79-471d-b4c4-11be9d171bcd))
     (pin "5" (uuid 9f6b101b-6e78-4de4-8123-6badbbc28b0e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U32") (unit 1)
         )
@@ -4654,7 +4654,7 @@
           (reference "C?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "C6") (unit 1)
         )
@@ -4685,7 +4685,7 @@
     (pin "1" (uuid f5e85d00-0c6e-4a9f-a58f-5a32840a3a85))
     (pin "2" (uuid cab30511-8a96-4aa6-9483-26f7806ef891))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J12") (unit 1)
         )
@@ -4715,7 +4715,7 @@
     )
     (pin "1" (uuid 221739d2-7d74-42e3-ac5b-0adf187a4b7d))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR046") (unit 1)
         )
@@ -4734,13 +4734,13 @@
     (property "Reference" "U7" (at 278.765 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 278.765 191.135 90)
+    (property "Value" "BL1551B" (at 278.765 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 276.225 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 276.225 184.785 0)
+    (property "Datasheet" "" (at 276.225 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 276.225 184.785 0)
@@ -4759,7 +4759,7 @@
     (pin "2" (uuid 2c10f5cd-4d4a-4231-a039-98d8c3c0a20d))
     (pin "5" (uuid 633649cd-07e4-4d90-9139-07eb91532f0e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U7") (unit 2)
         )
@@ -4816,7 +4816,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R26") (unit 1)
         )
@@ -4873,7 +4873,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R10") (unit 1)
         )
@@ -4923,7 +4923,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR042") (unit 1)
         )
@@ -4980,7 +4980,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D21") (unit 1)
         )
@@ -5037,7 +5037,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R30") (unit 1)
         )
@@ -5067,7 +5067,7 @@
     )
     (pin "1" (uuid ec1adc3a-ad06-4f06-a0d7-6820d4ef987c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR09") (unit 1)
         )
@@ -5124,7 +5124,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D10") (unit 1)
         )
@@ -5143,13 +5143,13 @@
     (property "Reference" "U19" (at 195.58 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 195.58 36.83 0)
+    (property "Value" "BL1551B" (at 195.58 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 195.58 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 195.58 40.64 0)
+    (property "Datasheet" "" (at 195.58 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 195.58 40.64 0)
@@ -5168,7 +5168,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d0))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d1a))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U19") (unit 1)
         )
@@ -5198,7 +5198,7 @@
     )
     (pin "1" (uuid 2e3f57fc-5143-4163-80af-ac76df84f9b2))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR020") (unit 1)
         )
@@ -5217,13 +5217,13 @@
     (property "Reference" "U34" (at 391.16 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 391.16 234.95 90)
+    (property "Value" "BL1551B" (at 391.16 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 388.62 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 388.62 228.6 0)
+    (property "Datasheet" "" (at 388.62 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 388.62 228.6 0)
@@ -5242,7 +5242,7 @@
     (pin "2" (uuid 99f0d047-e3db-49a2-9641-e9a5a576efb7))
     (pin "5" (uuid 435d61ef-baf7-46d9-9c7d-b306ed5d65a5))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U34") (unit 2)
         )
@@ -5311,7 +5311,7 @@
           (reference "C?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "C2") (unit 1)
         )
@@ -5341,7 +5341,7 @@
     )
     (pin "1" (uuid afe7214a-5046-413b-bc45-90c64dc92697))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR012") (unit 1)
         )
@@ -5360,13 +5360,13 @@
     (property "Reference" "U8" (at 120.65 125.73 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 113.03 115.57 0)
+    (property "Value" "BL1551B" (at 113.03 115.57 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 113.03 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 113.03 119.38 0)
+    (property "Datasheet" "" (at 113.03 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 113.03 119.38 0)
@@ -5385,7 +5385,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d1))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d1b))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U8") (unit 1)
         )
@@ -5418,7 +5418,7 @@
     (pin "3" (uuid 2b208913-6cf0-44f6-bd87-1522bcd67790))
     (pin "4" (uuid fb0b9d30-a6bc-4685-b405-963954b9447c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J2") (unit 1)
         )
@@ -5468,7 +5468,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR032") (unit 1)
         )
@@ -5525,7 +5525,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D11") (unit 1)
         )
@@ -5544,13 +5544,13 @@
     (property "Reference" "U9" (at 287.02 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 287.02 191.135 90)
+    (property "Value" "BL1551B" (at 287.02 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 284.48 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 284.48 184.785 0)
+    (property "Datasheet" "" (at 284.48 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 284.48 184.785 0)
@@ -5569,7 +5569,7 @@
     (pin "2" (uuid 112c10cc-b2a8-4c5b-9cee-b69a13d1cb52))
     (pin "5" (uuid 8bd551a8-8f33-4630-b679-6dd6ffd96cc0))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U9") (unit 2)
         )
@@ -5588,13 +5588,13 @@
     (property "Reference" "U27" (at 316.23 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 323.85 35.56 0)
+    (property "Value" "BL1551B" (at 323.85 35.56 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 323.85 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 323.85 39.37 0)
+    (property "Datasheet" "" (at 323.85 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 323.85 39.37 0)
@@ -5613,7 +5613,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d2))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d1c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U27") (unit 1)
         )
@@ -5670,7 +5670,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R27") (unit 1)
         )
@@ -5700,7 +5700,7 @@
     )
     (pin "1" (uuid d1d6d310-acee-4c85-8b36-c5881d89574d))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR06") (unit 1)
         )
@@ -5719,13 +5719,13 @@
     (property "Reference" "U22" (at 341.63 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 341.63 234.95 90)
+    (property "Value" "BL1551B" (at 341.63 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 339.09 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 339.09 228.6 0)
+    (property "Datasheet" "" (at 339.09 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 339.09 228.6 0)
@@ -5744,7 +5744,7 @@
     (pin "2" (uuid 00a9f9fb-5c79-4574-9244-a22469a62c2a))
     (pin "5" (uuid 58cb6248-30ea-4950-8c9a-756fe5d57541))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U22") (unit 2)
         )
@@ -5801,7 +5801,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R3") (unit 1)
         )
@@ -5820,13 +5820,13 @@
     (property "Reference" "U28" (at 366.395 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 366.395 234.95 90)
+    (property "Value" "BL1551B" (at 366.395 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 363.855 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 363.855 228.6 0)
+    (property "Datasheet" "" (at 363.855 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 363.855 228.6 0)
@@ -5845,7 +5845,7 @@
     (pin "2" (uuid 871907db-dd26-4d64-b46d-cf58b30c8d75))
     (pin "5" (uuid 82bfb834-a398-42dd-962f-04bcfc5b4c2f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U28") (unit 2)
         )
@@ -5902,7 +5902,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R22") (unit 1)
         )
@@ -5932,7 +5932,7 @@
     )
     (pin "1" (uuid 85243056-27d6-4ae8-ab00-4a6ee77759ec))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR040") (unit 1)
         )
@@ -5989,7 +5989,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D6") (unit 1)
         )
@@ -6019,7 +6019,7 @@
     )
     (pin "1" (uuid bae96058-9319-407d-84ff-8fcb832c59c5))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR029") (unit 1)
         )
@@ -6049,7 +6049,7 @@
     )
     (pin "1" (uuid c3a3e351-6eaf-449a-910e-a81021dc4579))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR04") (unit 1)
         )
@@ -6103,7 +6103,7 @@
     (pin "8" (uuid eeaccd2b-dabb-4c37-bb18-83834009aad3))
     (pin "9" (uuid 646ddaec-4372-49dc-ad6f-d0577fc3f6c1))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U3") (unit 1)
         )
@@ -6160,7 +6160,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D31") (unit 1)
         )
@@ -6217,7 +6217,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D14") (unit 1)
         )
@@ -6274,7 +6274,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R2") (unit 1)
         )
@@ -6331,7 +6331,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D18") (unit 1)
         )
@@ -6361,7 +6361,7 @@
     )
     (pin "1" (uuid fadb5e2c-93f3-4c3e-8c00-3cd6358647e2))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR03") (unit 1)
         )
@@ -6391,7 +6391,7 @@
     )
     (pin "1" (uuid e6ed1fed-30a4-4d99-aa0d-1ce1a74ff6a6))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR014") (unit 1)
         )
@@ -6410,13 +6410,13 @@
     (property "Reference" "U6" (at 120.65 90.17 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 113.03 80.01 0)
+    (property "Value" "BL1551B" (at 113.03 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 113.03 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 113.03 83.82 0)
+    (property "Datasheet" "" (at 113.03 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 113.03 83.82 0)
@@ -6435,7 +6435,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d3))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d1d))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U6") (unit 1)
         )
@@ -6492,7 +6492,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D13") (unit 1)
         )
@@ -6522,7 +6522,7 @@
     )
     (pin "1" (uuid a7b40696-eced-4531-bbc4-95d4d0a77342))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR045") (unit 1)
         )
@@ -6579,7 +6579,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R8") (unit 1)
         )
@@ -6598,13 +6598,13 @@
     (property "Reference" "U24" (at 208.28 115.57 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 215.9 105.41 0)
+    (property "Value" "BL1551B" (at 215.9 105.41 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 215.9 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 215.9 109.22 0)
+    (property "Datasheet" "" (at 215.9 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 215.9 109.22 0)
@@ -6623,7 +6623,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d4))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d1e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U24") (unit 1)
         )
@@ -6653,7 +6653,7 @@
     )
     (pin "1" (uuid 5d06ef94-4523-45d5-a1d1-fe139aabe3ea))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR025") (unit 1)
         )
@@ -6672,13 +6672,13 @@
     (property "Reference" "U18" (at 194.31 113.03 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 194.31 115.57 0)
+    (property "Value" "BL1551B" (at 194.31 115.57 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 194.31 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 194.31 119.38 0)
+    (property "Datasheet" "" (at 194.31 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 194.31 119.38 0)
@@ -6697,7 +6697,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d5))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d1f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U18") (unit 1)
         )
@@ -6754,7 +6754,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R20") (unit 1)
         )
@@ -6811,7 +6811,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R13") (unit 1)
         )
@@ -6841,7 +6841,7 @@
     )
     (pin "1" (uuid 48b061c3-fe60-4203-adf3-b5934bc3d7f4))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR038") (unit 1)
         )
@@ -6898,7 +6898,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D20") (unit 1)
         )
@@ -6955,7 +6955,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R5") (unit 1)
         )
@@ -7012,7 +7012,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R11") (unit 1)
         )
@@ -7062,7 +7062,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR035") (unit 1)
         )
@@ -7081,13 +7081,13 @@
     (property "Reference" "U26" (at 358.14 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 358.14 234.95 90)
+    (property "Value" "BL1551B" (at 358.14 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 355.6 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 355.6 228.6 0)
+    (property "Datasheet" "" (at 355.6 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 355.6 228.6 0)
@@ -7106,7 +7106,7 @@
     (pin "2" (uuid be8eeeff-60ca-47a1-8531-76e125d9fa4b))
     (pin "5" (uuid 9689e62f-dca7-4655-b976-b3228ae26083))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U26") (unit 2)
         )
@@ -7136,7 +7136,7 @@
     )
     (pin "1" (uuid ef50f06e-c35d-40f4-9a66-6a4ee6c7bfbd))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR039") (unit 1)
         )
@@ -7155,13 +7155,13 @@
     (property "Reference" "U35" (at 399.415 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 399.415 191.135 90)
+    (property "Value" "BL1551B" (at 399.415 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 396.875 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 396.875 184.785 0)
+    (property "Datasheet" "" (at 396.875 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 396.875 184.785 0)
@@ -7180,7 +7180,7 @@
     (pin "2" (uuid 630372de-ab7a-44c1-99b5-1b6fdfb0630d))
     (pin "5" (uuid 10d2a8ee-77cf-43b0-b46a-6d48f08ae57b))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U35") (unit 2)
         )
@@ -7237,7 +7237,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R9") (unit 1)
         )
@@ -7294,7 +7294,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D3") (unit 1)
         )
@@ -7313,13 +7313,13 @@
     (property "Reference" "U21" (at 341.63 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 341.63 191.135 90)
+    (property "Value" "BL1551B" (at 341.63 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 339.09 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 339.09 184.785 0)
+    (property "Datasheet" "" (at 339.09 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 339.09 184.785 0)
@@ -7338,7 +7338,7 @@
     (pin "2" (uuid 3157ee71-c7fb-4551-b7b2-1d6faec81b23))
     (pin "5" (uuid 86574b61-253f-4b1f-9472-fbd05b1d14b4))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U21") (unit 2)
         )
@@ -7368,7 +7368,7 @@
     )
     (pin "1" (uuid fc181b56-01c6-4e93-a8e1-ca557209586e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR024") (unit 1)
         )
@@ -7387,13 +7387,13 @@
     (property "Reference" "U13" (at 303.53 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 303.53 191.135 90)
+    (property "Value" "BL1551B" (at 303.53 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 300.99 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 300.99 184.785 0)
+    (property "Datasheet" "" (at 300.99 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 300.99 184.785 0)
@@ -7412,7 +7412,7 @@
     (pin "2" (uuid 82064dde-ba95-490c-985f-f8a84815b785))
     (pin "5" (uuid aaf1fb16-2730-4833-8074-1968b2d8cef2))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U13") (unit 2)
         )
@@ -7431,13 +7431,13 @@
     (property "Reference" "U27" (at 366.395 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 366.395 191.135 90)
+    (property "Value" "BL1551B" (at 366.395 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 363.855 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 363.855 184.785 0)
+    (property "Datasheet" "" (at 363.855 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 363.855 184.785 0)
@@ -7456,7 +7456,7 @@
     (pin "2" (uuid bdea0e66-1604-43f6-be1b-1de96ec0ddef))
     (pin "5" (uuid 55d1428d-323c-4f20-8426-01bf7cc59193))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U27") (unit 2)
         )
@@ -7525,7 +7525,7 @@
           (reference "C?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "C3") (unit 1)
         )
@@ -7582,7 +7582,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R12") (unit 1)
         )
@@ -7601,13 +7601,13 @@
     (property "Reference" "U20" (at 328.295 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 328.295 234.95 90)
+    (property "Value" "BL1551B" (at 328.295 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 325.755 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 325.755 228.6 0)
+    (property "Datasheet" "" (at 325.755 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 325.755 228.6 0)
@@ -7626,7 +7626,7 @@
     (pin "2" (uuid 19cbdbb3-c005-4976-922a-fccccb06bf99))
     (pin "5" (uuid cc4e2734-ebaa-4864-9aaa-9c7aa37618ce))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U20") (unit 2)
         )
@@ -7676,7 +7676,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR036") (unit 1)
         )
@@ -7695,13 +7695,13 @@
     (property "Reference" "U32" (at 382.905 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 382.905 234.95 90)
+    (property "Value" "BL1551B" (at 382.905 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 380.365 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 380.365 228.6 0)
+    (property "Datasheet" "" (at 380.365 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 380.365 228.6 0)
@@ -7720,7 +7720,7 @@
     (pin "2" (uuid b00920f0-d1d5-4ade-9908-fe3569fd09ad))
     (pin "5" (uuid 6fac1733-dc1e-44d3-8ed6-e3ad77905d63))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U32") (unit 2)
         )
@@ -7774,7 +7774,7 @@
     (pin "8" (uuid b67ffe3b-2605-4f70-bd2e-9cd36211bb01))
     (pin "9" (uuid 625a7ace-012c-404b-a3fc-25f674bb9c35))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U2") (unit 1)
         )
@@ -7793,13 +7793,13 @@
     (property "Reference" "U20" (at 195.58 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 195.58 140.97 0)
+    (property "Value" "BL1551B" (at 195.58 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 195.58 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 195.58 144.78 0)
+    (property "Datasheet" "" (at 195.58 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 195.58 144.78 0)
@@ -7818,7 +7818,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d6))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d20))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U20") (unit 1)
         )
@@ -7848,7 +7848,7 @@
     )
     (pin "1" (uuid 8c297470-79a5-4914-a87e-1df031a8a7cd))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR041") (unit 1)
         )
@@ -7878,7 +7878,7 @@
     )
     (pin "1" (uuid 21b616f5-a945-4b4c-9d65-fbf841002b5c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR023") (unit 1)
         )
@@ -7897,13 +7897,13 @@
     (property "Reference" "U19" (at 328.295 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 328.295 191.135 90)
+    (property "Value" "BL1551B" (at 328.295 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 325.755 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 325.755 184.785 0)
+    (property "Datasheet" "" (at 325.755 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 325.755 184.785 0)
@@ -7922,7 +7922,7 @@
     (pin "2" (uuid a5f6e812-8cf4-4341-b933-a56b6b65f50f))
     (pin "5" (uuid 8580a72b-3ed0-4bb3-b82d-128bcc8b80e3))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U19") (unit 2)
         )
@@ -7979,7 +7979,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D1") (unit 1)
         )
@@ -7998,13 +7998,13 @@
     (property "Reference" "U18" (at 320.04 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 320.04 234.95 90)
+    (property "Value" "BL1551B" (at 320.04 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 317.5 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 317.5 228.6 0)
+    (property "Datasheet" "" (at 317.5 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 317.5 228.6 0)
@@ -8023,7 +8023,7 @@
     (pin "2" (uuid 50dea24d-dc44-4082-998a-ba9a19dfbfbb))
     (pin "5" (uuid 70989063-577f-419a-a093-392d98cdeabc))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U18") (unit 2)
         )
@@ -8056,7 +8056,7 @@
     (pin "3" (uuid fc832541-c14e-43b4-a58a-a3600a6ae34e))
     (pin "4" (uuid b40fc94f-4ea0-45d7-8ad6-e5cc620b9742))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J6") (unit 1)
         )
@@ -8075,13 +8075,13 @@
     (property "Reference" "U17" (at 175.26 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 175.26 140.97 0)
+    (property "Value" "BL1551B" (at 175.26 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 175.26 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 175.26 144.78 0)
+    (property "Datasheet" "" (at 175.26 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 175.26 144.78 0)
@@ -8100,7 +8100,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d7))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d21))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U17") (unit 1)
         )
@@ -8157,7 +8157,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R15") (unit 1)
         )
@@ -8214,7 +8214,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D29") (unit 1)
         )
@@ -8233,13 +8233,13 @@
     (property "Reference" "U5" (at 120.65 72.39 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 113.03 62.23 0)
+    (property "Value" "BL1551B" (at 113.03 62.23 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 113.03 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 113.03 66.04 0)
+    (property "Datasheet" "" (at 113.03 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 113.03 66.04 0)
@@ -8258,7 +8258,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d8))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d22))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U5") (unit 1)
         )
@@ -8315,7 +8315,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R23") (unit 1)
         )
@@ -8345,7 +8345,7 @@
     )
     (pin "1" (uuid 76a85b8d-fba9-4e18-88d1-6878eec441ab))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR022") (unit 1)
         )
@@ -8364,13 +8364,13 @@
     (property "Reference" "U11" (at 134.62 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 134.62 140.97 0)
+    (property "Value" "BL1551B" (at 134.62 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 134.62 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 134.62 144.78 0)
+    (property "Datasheet" "" (at 134.62 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 134.62 144.78 0)
@@ -8389,7 +8389,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95d9))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d23))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U11") (unit 1)
         )
@@ -8446,7 +8446,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R29") (unit 1)
         )
@@ -8465,13 +8465,13 @@
     (property "Reference" "U21" (at 208.28 62.23 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 215.9 52.07 0)
+    (property "Value" "BL1551B" (at 215.9 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 215.9 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 215.9 55.88 0)
+    (property "Datasheet" "" (at 215.9 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 215.9 55.88 0)
@@ -8490,7 +8490,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95da))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d24))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U21") (unit 1)
         )
@@ -8509,13 +8509,13 @@
     (property "Reference" "U12" (at 295.275 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 295.275 234.95 90)
+    (property "Value" "BL1551B" (at 295.275 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 292.735 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 292.735 228.6 0)
+    (property "Datasheet" "" (at 292.735 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 292.735 228.6 0)
@@ -8534,7 +8534,7 @@
     (pin "2" (uuid 552d2088-d269-4d37-8b6b-e8d295c0b2d4))
     (pin "5" (uuid 2befbf2f-9d6a-4384-b4b2-f2c6fe1c2ea9))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U12") (unit 2)
         )
@@ -8603,7 +8603,7 @@
           (reference "C?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "C4") (unit 1)
         )
@@ -8660,7 +8660,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R1") (unit 1)
         )
@@ -8679,13 +8679,13 @@
     (property "Reference" "U33" (at 344.17 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 344.17 91.44 0)
+    (property "Value" "BL1551B" (at 344.17 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 344.17 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 344.17 95.25 0)
+    (property "Datasheet" "" (at 344.17 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 344.17 95.25 0)
@@ -8704,7 +8704,7 @@
     (pin "2" (uuid e29c36c6-f3c1-4a12-b4f6-c52bca5c54fe))
     (pin "5" (uuid ec80efc7-7866-4280-9ec2-96f4c6c59e05))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U33") (unit 1)
         )
@@ -8723,13 +8723,13 @@
     (property "Reference" "U15" (at 173.99 95.25 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 173.99 97.79 0)
+    (property "Value" "BL1551B" (at 173.99 97.79 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 173.99 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 173.99 101.6 0)
+    (property "Datasheet" "" (at 173.99 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 173.99 101.6 0)
@@ -8748,7 +8748,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95cb))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d15))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U15") (unit 1)
         )
@@ -8767,13 +8767,13 @@
     (property "Reference" "U34" (at 336.55 123.19 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 344.17 113.03 0)
+    (property "Value" "BL1551B" (at 344.17 113.03 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 344.17 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 344.17 116.84 0)
+    (property "Datasheet" "" (at 344.17 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 344.17 116.84 0)
@@ -8792,7 +8792,7 @@
     (pin "2" (uuid 69c60fb2-19a1-4579-8203-92c3de921149))
     (pin "5" (uuid f7f28ce4-d4af-4091-8b5a-3706c5674100))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U34") (unit 1)
         )
@@ -8822,7 +8822,7 @@
     )
     (pin "1" (uuid 28f8f728-c8a5-432c-a568-3c42b1c13d8d))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR013") (unit 1)
         )
@@ -8852,7 +8852,7 @@
     )
     (pin "1" (uuid 13f75c35-4e48-4bac-aecd-97681bb3bb84))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR010") (unit 1)
         )
@@ -8882,7 +8882,7 @@
     )
     (pin "1" (uuid b5f1a66b-f14f-44f3-a79c-ca28ff55daa6))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR015") (unit 1)
         )
@@ -8913,7 +8913,7 @@
     (pin "1" (uuid 52ba82b6-8a21-4d90-8e6d-a78b76f595ed))
     (pin "2" (uuid 155ea015-1f95-4a2c-a968-69bee3be18d9))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J10") (unit 1)
         )
@@ -8970,7 +8970,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D24") (unit 1)
         )
@@ -9027,7 +9027,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D22") (unit 1)
         )
@@ -9046,13 +9046,13 @@
     (property "Reference" "U30" (at 374.65 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 374.65 234.95 90)
+    (property "Value" "BL1551B" (at 374.65 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 372.11 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 372.11 228.6 0)
+    (property "Datasheet" "" (at 372.11 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 372.11 228.6 0)
@@ -9071,7 +9071,7 @@
     (pin "2" (uuid 2bab7c60-6a76-4f1c-87a4-966d76495ef1))
     (pin "5" (uuid ed97031b-66fb-4240-a406-a2da7a2589da))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U30") (unit 2)
         )
@@ -9090,13 +9090,13 @@
     (property "Reference" "U35" (at 359.41 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 367.03 57.15 0)
+    (property "Value" "BL1551B" (at 367.03 57.15 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 367.03 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 367.03 60.96 0)
+    (property "Datasheet" "" (at 367.03 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 367.03 60.96 0)
@@ -9115,7 +9115,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95dc))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d26))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U35") (unit 1)
         )
@@ -9146,7 +9146,7 @@
     (pin "1" (uuid 742fd754-a518-49f9-919f-30d5f837f4c2))
     (pin "2" (uuid 9b1c59fc-ff79-4a7e-a956-392e7d85e175))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J11") (unit 1)
         )
@@ -9203,7 +9203,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R18") (unit 1)
         )
@@ -9222,13 +9222,13 @@
     (property "Reference" "U7" (at 120.65 107.95 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 113.03 97.79 0)
+    (property "Value" "BL1551B" (at 113.03 97.79 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 113.03 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 113.03 101.6 0)
+    (property "Datasheet" "" (at 113.03 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 113.03 101.6 0)
@@ -9247,7 +9247,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95dd))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d27))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U7") (unit 1)
         )
@@ -9266,13 +9266,13 @@
     (property "Reference" "U31" (at 382.905 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 382.905 191.135 90)
+    (property "Value" "BL1551B" (at 382.905 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 380.365 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 380.365 184.785 0)
+    (property "Datasheet" "" (at 380.365 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 380.365 184.785 0)
@@ -9291,7 +9291,7 @@
     (pin "2" (uuid 79dc1201-ccec-4edf-85a1-6b95046cec07))
     (pin "5" (uuid b6254b5e-ec17-408c-a046-90abf791d0ff))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U31") (unit 2)
         )
@@ -9326,7 +9326,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR037") (unit 1)
         )
@@ -9345,13 +9345,13 @@
     (property "Reference" "U36" (at 359.41 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 367.03 81.28 0)
+    (property "Value" "BL1551B" (at 367.03 81.28 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 367.03 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 367.03 85.09 0)
+    (property "Datasheet" "" (at 367.03 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 367.03 85.09 0)
@@ -9370,7 +9370,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95de))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d28))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U36") (unit 1)
         )
@@ -9400,7 +9400,7 @@
     )
     (pin "1" (uuid cd67bf23-2c22-4089-8522-9196dd0ca82c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR047") (unit 1)
         )
@@ -9457,7 +9457,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R16") (unit 1)
         )
@@ -9514,7 +9514,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D4") (unit 1)
         )
@@ -9544,7 +9544,7 @@
     )
     (pin "1" (uuid 0b3f85e9-5d3a-4863-be95-65aa8b0b1747))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR018") (unit 1)
         )
@@ -9563,13 +9563,13 @@
     (property "Reference" "U9" (at 133.35 59.69 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 133.35 62.23 0)
+    (property "Value" "BL1551B" (at 133.35 62.23 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 133.35 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 133.35 66.04 0)
+    (property "Datasheet" "" (at 133.35 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 133.35 66.04 0)
@@ -9588,7 +9588,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95ca))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d14))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U9") (unit 1)
         )
@@ -9638,7 +9638,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR043") (unit 1)
         )
@@ -9657,13 +9657,13 @@
     (property "Reference" "U16" (at 311.785 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 311.785 234.95 90)
+    (property "Value" "BL1551B" (at 311.785 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 309.245 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 309.245 228.6 0)
+    (property "Datasheet" "" (at 309.245 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 309.245 228.6 0)
@@ -9682,7 +9682,7 @@
     (pin "2" (uuid e0bb034e-942e-4aa2-854d-4125dda6f54e))
     (pin "5" (uuid ab3e1045-436a-4ffb-9e2a-51b3ce3f331f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U16") (unit 2)
         )
@@ -9701,13 +9701,13 @@
     (property "Reference" "U25" (at 312.42 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 304.8 57.15 0)
+    (property "Value" "BL1551B" (at 304.8 57.15 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 304.8 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 304.8 60.96 0)
+    (property "Datasheet" "" (at 304.8 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 304.8 60.96 0)
@@ -9726,7 +9726,7 @@
     (pin "2" (uuid c07576f4-68a3-4c35-bcb5-c20020d344f2))
     (pin "5" (uuid 9ea02ca0-e550-42d6-a489-3a5d9bd3061c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U25") (unit 1)
         )
@@ -9745,13 +9745,13 @@
     (property "Reference" "U17" (at 320.04 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 320.04 191.135 90)
+    (property "Value" "BL1551B" (at 320.04 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 317.5 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 317.5 184.785 0)
+    (property "Datasheet" "" (at 317.5 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 317.5 184.785 0)
@@ -9770,7 +9770,7 @@
     (pin "2" (uuid ea168799-79e4-4e8e-8bd4-bc26b989943e))
     (pin "5" (uuid c7ca4d05-b9fa-46f4-8482-4d34006f7c3a))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U17") (unit 2)
         )
@@ -9827,7 +9827,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R4") (unit 1)
         )
@@ -9884,7 +9884,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R7") (unit 1)
         )
@@ -9941,7 +9941,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D7") (unit 1)
         )
@@ -9960,13 +9960,13 @@
     (property "Reference" "U16" (at 175.26 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 175.26 36.83 0)
+    (property "Value" "BL1551B" (at 175.26 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 175.26 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 175.26 40.64 0)
+    (property "Datasheet" "" (at 175.26 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 175.26 40.64 0)
@@ -9985,7 +9985,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95e0))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d2a))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U16") (unit 1)
         )
@@ -10004,13 +10004,13 @@
     (property "Reference" "U6" (at 270.51 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 270.51 234.95 90)
+    (property "Value" "BL1551B" (at 270.51 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 267.97 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 267.97 228.6 0)
+    (property "Datasheet" "" (at 267.97 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 267.97 228.6 0)
@@ -10029,7 +10029,7 @@
     (pin "2" (uuid c3e51e38-f330-4a5f-b0c2-fff9c3dfb7bd))
     (pin "5" (uuid 3df23b4f-d85f-4974-b8c3-b8b6c77862a3))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U6") (unit 2)
         )
@@ -10048,13 +10048,13 @@
     (property "Reference" "U28" (at 323.85 64.77 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 323.85 67.31 0)
+    (property "Value" "BL1551B" (at 323.85 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 323.85 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 323.85 71.12 0)
+    (property "Datasheet" "" (at 323.85 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 323.85 71.12 0)
@@ -10073,7 +10073,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95e1))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d2b))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U28") (unit 1)
         )
@@ -10130,7 +10130,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D15") (unit 1)
         )
@@ -10163,7 +10163,7 @@
     (pin "3" (uuid c4acd1cf-81a3-444e-b5f6-2b800b580ebe))
     (pin "4" (uuid 87760959-220f-4dec-94a7-94b5300df865))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J4") (unit 1)
         )
@@ -10182,13 +10182,13 @@
     (property "Reference" "U36" (at 399.415 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 399.415 234.95 90)
+    (property "Value" "BL1551B" (at 399.415 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 396.875 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 396.875 228.6 0)
+    (property "Datasheet" "" (at 396.875 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 396.875 228.6 0)
@@ -10207,7 +10207,7 @@
     (pin "2" (uuid 73b0ccf4-4190-41db-a032-75d22aad3bd5))
     (pin "5" (uuid 7960a392-6c93-45a7-ba50-9282f24dd062))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U36") (unit 2)
         )
@@ -10226,13 +10226,13 @@
     (property "Reference" "U5" (at 270.51 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 270.51 191.135 90)
+    (property "Value" "BL1551B" (at 270.51 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 267.97 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 267.97 184.785 0)
+    (property "Datasheet" "" (at 267.97 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 267.97 184.785 0)
@@ -10251,7 +10251,7 @@
     (pin "2" (uuid 52f6a901-6bab-426d-abbf-0d49a27d90e9))
     (pin "5" (uuid 920e39ad-f252-4be7-80fc-99d172a7b47c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U5") (unit 2)
         )
@@ -10281,7 +10281,7 @@
     )
     (pin "1" (uuid 363541b6-7171-49f0-8034-b62b3ace33e0))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR07") (unit 1)
         )
@@ -10311,7 +10311,7 @@
     )
     (pin "1" (uuid 82e156b5-811e-4c54-b33e-698a5458a36f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR08") (unit 1)
         )
@@ -10346,7 +10346,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR044") (unit 1)
         )
@@ -10403,7 +10403,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D26") (unit 1)
         )
@@ -10422,13 +10422,13 @@
     (property "Reference" "U33" (at 391.16 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 391.16 191.135 90)
+    (property "Value" "BL1551B" (at 391.16 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 388.62 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 388.62 184.785 0)
+    (property "Datasheet" "" (at 388.62 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 388.62 184.785 0)
@@ -10447,7 +10447,7 @@
     (pin "2" (uuid d0433a5f-724d-4254-8908-2c100bad27c5))
     (pin "5" (uuid 9fb2ff05-2c62-4d53-82db-97d580394cd1))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U33") (unit 2)
         )
@@ -10466,13 +10466,13 @@
     (property "Reference" "U25" (at 358.14 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 358.14 191.135 90)
+    (property "Value" "BL1551B" (at 358.14 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 355.6 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 355.6 184.785 0)
+    (property "Datasheet" "" (at 355.6 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 355.6 184.785 0)
@@ -10491,7 +10491,7 @@
     (pin "2" (uuid cb07345c-2b16-4745-92c8-cbe62b855a6d))
     (pin "5" (uuid fccbc848-ba2a-49bd-8f0c-b5dee1907fbe))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U25") (unit 2)
         )
@@ -10510,13 +10510,13 @@
     (property "Reference" "U13" (at 154.94 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 154.94 36.83 0)
+    (property "Value" "BL1551B" (at 154.94 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 154.94 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 154.94 40.64 0)
+    (property "Datasheet" "" (at 154.94 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 154.94 40.64 0)
@@ -10535,7 +10535,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95e2))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d2c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U13") (unit 1)
         )
@@ -10592,7 +10592,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D12") (unit 1)
         )
@@ -10646,7 +10646,7 @@
     (pin "8" (uuid 66581133-6537-4a53-933d-9fbe46787bb4))
     (pin "9" (uuid 77fb5edb-079b-4490-b24c-06801adf29db))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U1") (unit 1)
         )
@@ -10665,13 +10665,13 @@
     (property "Reference" "U23" (at 208.28 97.79 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 215.9 87.63 0)
+    (property "Value" "BL1551B" (at 215.9 87.63 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 215.9 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 215.9 91.44 0)
+    (property "Datasheet" "" (at 215.9 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 215.9 91.44 0)
@@ -10690,7 +10690,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95e3))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d2d))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U23") (unit 1)
         )
@@ -10747,7 +10747,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R31") (unit 1)
         )
@@ -10782,7 +10782,7 @@
           (reference "#PWR?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR031") (unit 1)
         )
@@ -10812,7 +10812,7 @@
     )
     (pin "1" (uuid 5079d895-66ee-451b-8635-d518d3665cd2))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR05") (unit 1)
         )
@@ -10831,13 +10831,13 @@
     (property "Reference" "U10" (at 287.02 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 287.02 234.95 90)
+    (property "Value" "BL1551B" (at 287.02 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 284.48 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 284.48 228.6 0)
+    (property "Datasheet" "" (at 284.48 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 284.48 228.6 0)
@@ -10856,7 +10856,7 @@
     (pin "2" (uuid d5ce3558-7cd6-4ad1-9519-cf1d50fa220c))
     (pin "5" (uuid 234b7ad2-604b-4968-8f84-969dd7b9519d))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U10") (unit 2)
         )
@@ -10875,13 +10875,13 @@
     (property "Reference" "U15" (at 311.785 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 311.785 191.135 90)
+    (property "Value" "BL1551B" (at 311.785 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 309.245 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 309.245 184.785 0)
+    (property "Datasheet" "" (at 309.245 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 309.245 184.785 0)
@@ -10900,7 +10900,7 @@
     (pin "2" (uuid a04ac45e-72bb-4100-83d7-ee4e0d88509b))
     (pin "5" (uuid 231bea86-b965-4d5d-bd5a-ddc643c6979f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U15") (unit 2)
         )
@@ -10919,13 +10919,13 @@
     (property "Reference" "U23" (at 349.885 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 349.885 191.135 90)
+    (property "Value" "BL1551B" (at 349.885 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 347.345 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 347.345 184.785 0)
+    (property "Datasheet" "" (at 347.345 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 347.345 184.785 0)
@@ -10944,7 +10944,7 @@
     (pin "2" (uuid 520d59d1-4b7b-4024-bf32-159bcbba0427))
     (pin "5" (uuid f820a534-f13d-465c-a7ff-adede21e76f9))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U23") (unit 2)
         )
@@ -11001,7 +11001,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D19") (unit 1)
         )
@@ -11058,7 +11058,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R17") (unit 1)
         )
@@ -11115,7 +11115,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R21") (unit 1)
         )
@@ -11184,7 +11184,7 @@
           (reference "C?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "C5") (unit 1)
         )
@@ -11241,7 +11241,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D5") (unit 1)
         )
@@ -11260,13 +11260,13 @@
     (property "Reference" "U10" (at 134.62 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 134.62 36.83 0)
+    (property "Value" "BL1551B" (at 134.62 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 134.62 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 134.62 40.64 0)
+    (property "Datasheet" "" (at 134.62 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 134.62 40.64 0)
@@ -11285,7 +11285,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95e4))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d2e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U10") (unit 1)
         )
@@ -11315,7 +11315,7 @@
     )
     (pin "1" (uuid 56d04408-1742-49c0-bdd2-4d8b744b079c))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR030") (unit 1)
         )
@@ -11334,13 +11334,13 @@
     (property "Reference" "U8" (at 278.765 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 278.765 234.95 90)
+    (property "Value" "BL1551B" (at 278.765 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 276.225 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 276.225 228.6 0)
+    (property "Datasheet" "" (at 276.225 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 276.225 228.6 0)
@@ -11359,7 +11359,7 @@
     (pin "2" (uuid f7ed143e-222f-4c46-8725-54a90bcd60f5))
     (pin "5" (uuid fe8e8edc-986d-40e7-8d9f-c690862570c5))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U8") (unit 2)
         )
@@ -11416,7 +11416,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D28") (unit 1)
         )
@@ -11473,7 +11473,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R28") (unit 1)
         )
@@ -11492,13 +11492,13 @@
     (property "Reference" "U14" (at 303.53 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 303.53 234.95 90)
+    (property "Value" "BL1551B" (at 303.53 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 300.99 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 300.99 228.6 0)
+    (property "Datasheet" "" (at 300.99 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 300.99 228.6 0)
@@ -11517,7 +11517,7 @@
     (pin "2" (uuid 0d3fcad7-9830-4224-a492-c8821e97313a))
     (pin "5" (uuid 511a7d47-9a37-4a16-a119-5fb181913e0f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U14") (unit 2)
         )
@@ -11574,7 +11574,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D9") (unit 1)
         )
@@ -11593,13 +11593,13 @@
     (property "Reference" "U11" (at 295.275 173.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 295.275 191.135 90)
+    (property "Value" "BL1551B" (at 295.275 191.135 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 292.735 192.405 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 292.735 184.785 0)
+    (property "Datasheet" "" (at 292.735 184.785 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 292.735 184.785 0)
@@ -11618,7 +11618,7 @@
     (pin "2" (uuid 73c6c605-b505-4eb8-b97b-9a39cacdf6b9))
     (pin "5" (uuid 2d910140-1d37-4961-9bd0-4ddf2091b58e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U11") (unit 2)
         )
@@ -11637,13 +11637,13 @@
     (property "Reference" "U22" (at 208.28 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 215.9 69.85 0)
+    (property "Value" "BL1551B" (at 215.9 69.85 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 215.9 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 215.9 73.66 0)
+    (property "Datasheet" "" (at 215.9 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 215.9 73.66 0)
@@ -11662,7 +11662,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95e5))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d2f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U22") (unit 1)
         )
@@ -11681,13 +11681,13 @@
     (property "Reference" "U30" (at 316.23 123.19 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 323.85 113.03 0)
+    (property "Value" "BL1551B" (at 323.85 113.03 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 323.85 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 323.85 116.84 0)
+    (property "Datasheet" "" (at 323.85 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 323.85 116.84 0)
@@ -11706,7 +11706,7 @@
     (pin "2" (uuid c9ce3474-e54b-4df3-bd66-5fdb9226fb4d))
     (pin "5" (uuid e183a189-0564-4f0c-8f9a-8bf1c4441f6e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U30") (unit 1)
         )
@@ -11763,7 +11763,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D8") (unit 1)
         )
@@ -11820,7 +11820,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D32") (unit 1)
         )
@@ -11877,7 +11877,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D23") (unit 1)
         )
@@ -11907,7 +11907,7 @@
     )
     (pin "1" (uuid 7acd7744-b19f-4891-9dde-2cedbf8801d5))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR027") (unit 1)
         )
@@ -11964,7 +11964,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D30") (unit 1)
         )
@@ -12021,7 +12021,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R25") (unit 1)
         )
@@ -12051,7 +12051,7 @@
     )
     (pin "1" (uuid 0ced595b-696c-4aba-9933-206992c6386e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR019") (unit 1)
         )
@@ -12108,7 +12108,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D25") (unit 1)
         )
@@ -12162,7 +12162,7 @@
     (pin "8" (uuid db72ecb9-bc97-4bac-9d8e-f66ba813944c))
     (pin "9" (uuid 76f2fd4f-0a1e-4785-99ce-f159c49cd71f))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U4") (unit 1)
         )
@@ -12192,7 +12192,7 @@
     )
     (pin "1" (uuid b03c7ee2-5699-44e9-9895-43a19cd37ff8))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR021") (unit 1)
         )
@@ -12249,7 +12249,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D27") (unit 1)
         )
@@ -12306,7 +12306,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D16") (unit 1)
         )
@@ -12336,7 +12336,7 @@
     )
     (pin "1" (uuid 3751c1fb-6f0a-4b84-abf0-e7afc9932a48))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR017") (unit 1)
         )
@@ -12392,7 +12392,7 @@
           (reference "J?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J7") (unit 1)
         )
@@ -12449,7 +12449,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R24") (unit 1)
         )
@@ -12468,13 +12468,13 @@
     (property "Reference" "U24" (at 349.885 217.17 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "NC7SB3157P6X" (at 349.885 234.95 90)
+    (property "Value" "BL1551B" (at 349.885 234.95 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 347.345 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 347.345 228.6 0)
+    (property "Datasheet" "" (at 347.345 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 347.345 228.6 0)
@@ -12493,7 +12493,7 @@
     (pin "2" (uuid d4662f45-97e1-49e8-9e5b-b91eeaec52d7))
     (pin "5" (uuid 58ceb4b2-1842-4e30-860f-19806a2fe36e))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U24") (unit 2)
         )
@@ -12562,7 +12562,7 @@
           (reference "C?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "C1") (unit 1)
         )
@@ -12619,7 +12619,7 @@
           (reference "R?") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "R19") (unit 1)
         )
@@ -12649,7 +12649,7 @@
     )
     (pin "1" (uuid edacbb04-75e8-48e7-a3d6-4a9552d537da))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR026") (unit 1)
         )
@@ -12679,7 +12679,7 @@
     )
     (pin "1" (uuid 3b141283-fcaa-4447-8724-6261db0045d7))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR02") (unit 1)
         )
@@ -12736,7 +12736,7 @@
           (reference "D8") (unit 1)
         )
       )
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "D17") (unit 1)
         )
@@ -12766,7 +12766,7 @@
     )
     (pin "1" (uuid 7de6df15-298b-4e97-bb0b-3658de350583))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR028") (unit 1)
         )
@@ -12796,7 +12796,7 @@
     )
     (pin "1" (uuid e6d4e911-6d75-4e1d-87a5-f211f1044c93))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR016") (unit 1)
         )
@@ -12826,7 +12826,7 @@
     )
     (pin "1" (uuid 839639c1-ff44-45a3-bcf3-6c1c4f68fbf7))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR01") (unit 1)
         )
@@ -12856,7 +12856,7 @@
     )
     (pin "1" (uuid 552c18db-2148-455d-9a30-a6a6ed12123d))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "#PWR011") (unit 1)
         )
@@ -12875,13 +12875,13 @@
     (property "Reference" "U14" (at 154.94 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "NC7SB3157P6X" (at 154.94 140.97 0)
+    (property "Value" "BL1551B" (at 154.94 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 154.94 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NC7SB3157-D.PDF" (at 154.94 144.78 0)
+    (property "Datasheet" "" (at 154.94 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLCPCB Part #" "C2944066" (at 154.94 144.78 0)
@@ -12900,7 +12900,7 @@
     (pin "2" (uuid a0669ce4-f34c-4ab8-bc49-40a502fc95e7))
     (pin "5" (uuid cec04f53-3a74-4d62-a9fe-056f78ec3d31))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "U14") (unit 1)
         )
@@ -12933,7 +12933,7 @@
     (pin "3" (uuid bcb78290-a5f8-4023-bfd5-600488a8ed02))
     (pin "4" (uuid 91c082cc-ac0e-4842-988f-6a771b653497))
     (instances
-      (project "mcFPGA-SW-box"
+      (project "myFPGA-SW-box"
         (path "/75464c66-5d03-4301-9167-50ec2376d3e1"
           (reference "J1") (unit 1)
         )
