@@ -1,17 +1,18 @@
-ar
+
 #include <SPI.h>
 #include <stdio.h>
 
 #define LATCH_PIN 10
-#define CLOCK_PIN 7
+#define CLOCK_PIN 8
 
-#define CLB_BYTES (10)
-#define BITS_CONFIGURED (4+8+8+8+8)
-#define CLB_OFFSET (8)
+#define CLB_BYTES (17)
+#define BITS_CONFIGURED (8+7)
+#define CLB_OFFSET (0)
 #define CLOCK_HALF_PERIOD (250)
 
 char bitstream[CLB_BYTES];
-char conf_bits[BITS_CONFIGURED] = {/*reg*/15,14,13,12, /*LUT_A*/24,25,26,27,28,29,30,31, /*LUT_B*/36,37,38,39,40,41,42,43, /*LUT_C*/50,51,52,53,56,57,60,61, /*LUT_D*/65,66,68,70,72,74,76,78};
+//char conf_bits[BITS_CONFIGURED] = {/*reg*/15,14,13,12, /*LUT_A*/24,25,26,27,28,29,30,31, /*LUT_B*/36,37,38,39,40,41,42,43, /*LUT_C*/50,51,52,53,56,57,60,61, /*LUT_D*/65,66,68,70,72,74,76,78};
+char conf_bits[BITS_CONFIGURED] = {40,41,42,43,44,45,46,47, 14,6,126,118,110,89,90}; // 40,41,42,43,44,45,46,47,
 
 FILE f_out;
 int sput(char c, __attribute__((unused)) FILE* f) {return !Serial.write(c);}
@@ -84,40 +85,4 @@ void do_clk(){
   delay(CLOCK_HALF_PERIOD);
   digitalWrite(CLOCK_PIN, HIGH);
   delay(CLOCK_HALF_PERIOD);
-}
-
-int rd4(){
-  int val = 0;
-  if(digitalRead(A0))
-    val |= (1<<0);
-  if(digitalRead(A1))
-    val |= (1<<1);
-  if(digitalRead(A2))
-    val |= (1<<2);
-  if(digitalRead(A3))
-    val |= (1<<3);
-  return val;
-}
-
-void wrt4(int val){
-
-  if( (val & 1) )
-    digitalWrite(2, HIGH);
-  else
-    digitalWrite(2, LOW);
-
-  if( (val & 2) )
-    digitalWrite(3, HIGH);
-  else
-    digitalWrite(3, LOW);
-
-  if( (val & 4) )
-    digitalWrite(4, HIGH);
-  else
-    digitalWrite(4, LOW);
-
-  if( (val & 8) )
-    digitalWrite(5, HIGH);
-  else
-    digitalWrite(5, LOW);
 }

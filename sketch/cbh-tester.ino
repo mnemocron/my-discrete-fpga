@@ -1,17 +1,17 @@
-ar
+
 #include <SPI.h>
 #include <stdio.h>
 
 #define LATCH_PIN 10
-#define CLOCK_PIN 7
+#define CLOCK_PIN 8
 
-#define CLB_BYTES (10)
-#define BITS_CONFIGURED (4+8+8+8+8)
-#define CLB_OFFSET (8)
-#define CLOCK_HALF_PERIOD (250)
+#define CBh_BYTES (2)
+#define CBh_OFFSET (88)
+#define CLOCK_HALF_PERIOD (1)
 
-char bitstream[CLB_BYTES];
-char conf_bits[BITS_CONFIGURED] = {/*reg*/15,14,13,12, /*LUT_A*/24,25,26,27,28,29,30,31, /*LUT_B*/36,37,38,39,40,41,42,43, /*LUT_C*/50,51,52,53,56,57,60,61, /*LUT_D*/65,66,68,70,72,74,76,78};
+int BITS_CONFIGURED;
+char bitstream[CBh_BYTES];
+char conf_bits[CBh_BYTES*8]; //  = {/*reg*/15, /*LUT_A*/16  /*24,25,26,27,28,29,30,31*/};
 
 FILE f_out;
 int sput(char c, __attribute__((unused)) FILE* f) {return !Serial.write(c);}
@@ -24,6 +24,8 @@ void setup() {
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
   pinMode(A0, INPUT);
   pinMode(A1, INPUT);
   pinMode(A2, INPUT);
@@ -37,41 +39,69 @@ void setup() {
   SPI.setBitOrder(LSBFIRST);
   prg_bitstream();
 
+  Serial.println("sel_0");
+  test_insel(0);
+  Serial.println("sel_1");
+  test_insel(1);
+  Serial.println("sel_2");
+  test_insel(2);
+  Serial.println("sel_3");
+  test_insel(3);
+
 }
 
 void loop() {
-  do_clk();
+  for(int i=0; i<16; i++){
+    wrt4(i);
+    do_clk();
+  }
 }
 
-void test_lut(int offset){
-  for(int i=0; i<16; i++){
-    conf_bits[1] = (16*(offset+1))+i;
-    prg_bitstream();
-    printf(" %04x |", (1<<i));
-    for(int j=0; j<16; j++){
-      wrt4(j);
-      do_clk();
-      int val = rd4();
-      if( (val & (1<<offset)) )
-        Serial.print(" 1 ");
-      else
-        Serial.print(" . ");
-    }
-    Serial.println("");
+void test_insel(int offset){
+  printf(". \t");
+  for(int i=0; i<64; i++){
+    printf("%02x ", i);
   }
-  Serial.println("");
+  printf("\n");
+  for(int i=0; i<8; i++){  // 8:1 MUX
+    BITS_CONFIGURED = 0;
+    int mux_sel[3];
+    if(i&1){
+      conf_bits[BITS_CONFIGURED++] = CBh_OFFSET + 15-offset*4;
+    }
+    if(i&2){
+      conf_bits[BITS_CONFIGURED++] = CBh_OFFSET + 15-offset*4-1;
+    }
+    if(i&4){
+      conf_bits[BITS_CONFIGURED++] = CBh_OFFSET + 15-offset*4-2;
+    }
+    prg_bitstream();
+    delay(10);
+
+    printf("%d\t", i);
+    for(int j=0; j<64; j++){
+      wrt4(j);
+      int rd = rd4();
+      if(rd)
+        printf(" %x ", rd);
+      else
+        printf(" . ");
+    }
+    printf(" (");
+    for(int j=0; j<BITS_CONFIGURED; j++)
+      printf("%d,", conf_bits[j]);
+    printf(")\n");
+  }
 }
 
 void prg_bitstream(){
-  for(int i=0; i<CLB_BYTES; i++)
+  for(int i=0; i<CBh_BYTES; i++)
     bitstream[i] = 0;
   for(int i=0; i<BITS_CONFIGURED; i++){
-      char bt = conf_bits[i] - CLB_OFFSET;
+      char bt = conf_bits[i] - CBh_OFFSET;
       bitstream[bt/8] |= (1 << (bt%8));
-      if(i == 1)
-        printf("(%d)", conf_bits[i]);
   }
-  for(int i=0; i<CLB_BYTES; i++){
+  for(int i=0; i<CBh_BYTES; i++){
     SPI.transfer(bitstream[i]);
   }
   digitalWrite(LATCH_PIN, HIGH);
@@ -120,4 +150,14 @@ void wrt4(int val){
     digitalWrite(5, HIGH);
   else
     digitalWrite(5, LOW);
+    
+  if( (val & 16) )
+    digitalWrite(6, HIGH);
+  else
+    digitalWrite(6, LOW);
+
+  if( (val & 32) )
+    digitalWrite(7, HIGH);
+  else
+    digitalWrite(7, LOW);
 }

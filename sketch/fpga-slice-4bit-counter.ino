@@ -1,17 +1,28 @@
-ar
+
 #include <SPI.h>
 #include <stdio.h>
 
 #define LATCH_PIN 10
-#define CLOCK_PIN 7
+#define CLOCK_PIN 8
 
-#define CLB_BYTES (10)
-#define BITS_CONFIGURED (4+8+8+8+8)
-#define CLB_OFFSET (8)
+#define CLB_BYTES (17)
+#define BITS_CONFIGURED (4*8+4*4+4+8)
+#define CLB_OFFSET (0)
 #define CLOCK_HALF_PERIOD (250)
 
 char bitstream[CLB_BYTES];
-char conf_bits[BITS_CONFIGURED] = {/*reg*/15,14,13,12, /*LUT_A*/24,25,26,27,28,29,30,31, /*LUT_B*/36,37,38,39,40,41,42,43, /*LUT_C*/50,51,52,53,56,57,60,61, /*LUT_D*/65,66,68,70,72,74,76,78};
+char conf_bits[BITS_CONFIGURED] = { 
+    24,25,26,27,28,29,30,31,  /*LUT_A*/ 
+    36,37,38,39,40,41,42,43,  /*LUT_B*/ 
+    50,51,52,53,56,57,60,61,  /*LUT_C*/ 
+    65,66,68,70,72,74,76,78,  /*LUT_D*/ 
+    12,13,14,15,              /*CLB reg_en*/
+    124,125,126,127,          /*SW south*/ 
+    116,117,118,119,          /*SW west*/ 
+    108,109,110,111,          /*SW cross points*/ 
+    4,5,6,7,                  /*CBv en bus*/ 
+    89,90,91, 93,94, 97,98, 101 /*CBh in select*/
+  };
 
 FILE f_out;
 int sput(char c, __attribute__((unused)) FILE* f) {return !Serial.write(c);}
