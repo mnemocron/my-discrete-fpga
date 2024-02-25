@@ -11,7 +11,7 @@
 #define CLOCK_HALF_PERIOD (250)
 
 char bitstream[CLB_BYTES];
-char conf_bits[BITS_CONFIGURED] = { 
+int conf_bits[BITS_CONFIGURED] = { 
     24,25,26,27,28,29,30,31,  /*LUT_A*/ 
     36,37,38,39,40,41,42,43,  /*LUT_B*/ 
     50,51,52,53,56,57,60,61,  /*LUT_C*/ 
@@ -21,7 +21,7 @@ char conf_bits[BITS_CONFIGURED] = {
     116,117,118,119,          /*SW west*/ 
     108,109,110,111,          /*SW cross points*/ 
     4,5,6,7,                  /*CBv en bus*/ 
-    89,90,91, 93,94, 97,98, 101 /*CBh in select*/
+    89,90,91, 93,94, 97,99, 101 /*CBh in select*/
   };
 
 FILE f_out;
@@ -77,7 +77,7 @@ void prg_bitstream(){
   for(int i=0; i<CLB_BYTES; i++)
     bitstream[i] = 0;
   for(int i=0; i<BITS_CONFIGURED; i++){
-      char bt = conf_bits[i] - CLB_OFFSET;
+      int bt = conf_bits[i] - CLB_OFFSET;
       bitstream[bt/8] |= (1 << (bt%8));
       if(i == 1)
         printf("(%d)", conf_bits[i]);
