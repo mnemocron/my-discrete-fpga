@@ -31,7 +31,8 @@ entity clb_slice is
     mosi  : in  std_logic;
     latch : in  std_logic;
     miso  : out std_logic;
-    clr_n   : in  std_logic;
+    clr_n : in  std_logic;
+    ce    : in  std_logic;
     -- LUT outputs
     Qa    : out std_logic;
     Qb    : out std_logic;
@@ -135,6 +136,7 @@ architecture arch of clb_slice is
   end component;
 
   signal reg_clk     : std_logic;  -- register clock for D-flip flop stage
+  signal sel_clk     : std_logic;
 
   -- LUT input signals
   signal A0,A1,A2,A3 : std_logic;
@@ -209,6 +211,8 @@ architecture arch of clb_slice is
   signal set_reg_d   : std_logic;
   signal set_sum     : std_logic;
   signal set_clk_sel : std_logic;
+  signal set_ce      : std_logic;
+  signal ce_int      : std_logic;
   signal insel_a     : std_logic_vector(1 downto 0);
   signal insel_b     : std_logic_vector(1 downto 0);
   signal insel_c     : std_logic_vector(1 downto 0);
@@ -756,9 +760,26 @@ begin
       e_n => '0', 
       i0  => clk_0, 
       i1  => clk_1, 
-      y   => reg_clk
+      y   => sel_clk
     );
 
+  ce_select_inst : mux_74LVC1G157
+    port map (
+      s   => set_ce, 
+      e_n => '0', 
+      i0  => '1', 
+      i1  => ce, 
+      y   => ce_int
+    );
+
+  clk_enabled_inst : mux_74LVC1G157
+    port map (
+      s   => ce_int, 
+      e_n => '0', 
+      i0  => '0', 
+      i1  => sel_clk, 
+      y   => reg_clk
+    );
 
   insel_reg_inst : sr_74xx595
     port map (
@@ -791,7 +812,7 @@ begin
       qd       => set_reg_d,
       qe       => set_sum,
       qf       => set_clk_sel,
-      qg       => open,
+      qg       => set_ce,
       qh       => open,
       qh_s     => config_to_serout 
     );

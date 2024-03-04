@@ -40,6 +40,7 @@ architecture bh of tb_clb_slice is
       latch : in  std_logic;
       miso  : out std_logic;
       clr_n : in  std_logic;
+      ce    : in  std_logic;
       -- LUT outputs
       Qa    : out std_logic;
       Qb    : out std_logic;
@@ -418,8 +419,8 @@ begin
   clb_inst : clb_slice
     port map (
       -- clocking and reset
-      clk_0 => clk,
-      clk_1 => '0',
+      clk_0 => '0',
+      clk_1 => clk,
       rst_n => rst_n,
       -- configuration
       sclk  => sclk,
@@ -427,6 +428,7 @@ begin
       latch => latch,
       miso  => miso,
       clr_n => cfg_clr_n,
+      ce    => '0',
       -- LUT outputs
       Qa    => o_qa,
       Qb    => o_qb,
