@@ -125,7 +125,6 @@ architecture arch of sw_box is
   signal conf_ser_data_0 : std_logic;
   signal conf_ser_data_1 : std_logic;
   signal conf_ser_data_2 : std_logic;
-  signal conf_ser_data_3 : std_logic;
 
 begin
 
@@ -135,7 +134,7 @@ begin
       srclk    => sclk, 
       srclkr_n => clr_n, 
       oe_n     => '0', 
-      ser      => mosi, 
+      ser      => conf_ser_data_2, 
       qa       => xpoint_0,
       qb       => xpoint_1,
       qc       => xpoint_2,
@@ -144,7 +143,7 @@ begin
       qf       => xpoint_5,
       qg       => xpoint_6,
       qh       => xpoint_7,
-      qh_s     => conf_ser_data_0
+      qh_s     => miso
     );
 
   config_inst_1 : sr_74xx595
@@ -153,7 +152,7 @@ begin
       srclk    => sclk, 
       srclkr_n => clr_n, 
       oe_n     => '0', 
-      ser      => conf_ser_data_0,
+      ser      => conf_ser_data_1,
       qa       => sw_8,
       qb       => sw_9,
       qc       => sw_10,
@@ -171,7 +170,7 @@ begin
       srclk    => sclk, 
       srclkr_n => clr_n, 
       oe_n     => '0', 
-      ser      => conf_ser_data_2,
+      ser      => conf_ser_data_0,
       qa       => sw_16,
       qb       => sw_17,
       qc       => sw_18,
@@ -180,7 +179,7 @@ begin
       qf       => sw_21,
       qg       => sw_22,
       qh       => sw_23,
-      qh_s     => conf_ser_data_3
+      qh_s     => conf_ser_data_1
     );
 
   config_inst_3 : sr_74xx595
@@ -189,7 +188,7 @@ begin
       srclk    => sclk, 
       srclkr_n => clr_n, 
       oe_n     => '0', 
-      ser      => conf_ser_data_3,
+      ser      => mosi,
       qa       => sw_24,
       qb       => sw_25,
       qc       => sw_26,
@@ -198,7 +197,7 @@ begin
       qf       => sw_29,
       qg       => sw_30,
       qh       => sw_31,
-      qh_s     => miso
+      qh_s     => conf_ser_data_0
     );
 
   xpoint_0_inst : newsw

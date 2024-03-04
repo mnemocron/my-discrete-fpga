@@ -5,10 +5,10 @@ BITSTREAM_FILE = './bitstream.txt'
 
 set_bits = []
 
-set_bits.append(132) # SW xpoint_3 south[3] to west [3]
-set_bits.append(133) # SW xpoint_2 south[2] to west [2]
-set_bits.append(134) # SW xpoint_1 south[1] to west [1]
-set_bits.append(135) # SW xpoint_0 south[0] to west [0]
+set_bits.append(108) # SW xpoint_3 south[3] to west [3]
+set_bits.append(109) # SW xpoint_2 south[2] to west [2]
+set_bits.append(110) # SW xpoint_1 south[1] to west [1]
+set_bits.append(111) # SW xpoint_0 south[0] to west [0]
 
 set_bits.append(124) # SW en_bus_south[3]
 set_bits.append(125) # SW en_bus_south[2]
