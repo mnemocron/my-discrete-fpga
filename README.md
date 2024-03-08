@@ -1,5 +1,11 @@
-# Discrete 4-bit FPGA
+# Discrete 7400 logic based FPGA
 A custom, modular FPGA architecture simulated in VHDL (GHDL), realized with discrete 7400-logic ICs and layouted on PCB with KiCAD.
+
+---
+
+![architecture/svg/fpga-arch-tile.svg](architecture/svg/fpga-arch-tile.svg)
+
+Read more on my blog: [mnemocron.github.io](https://mnemocron.github.io/2023-12-08-DIY-FPGA-diary-1/)
 
 ## Motivation
 
@@ -9,6 +15,9 @@ Ever since building Ben Eaters [8 bit CPU](https://eater.net/8bit) myself, I wan
 The 8 bit CPU is arguably the worst CPU ever built - but it is a fantastic educational example.
 And that is the case for the **4 bit FPGA**. It is a purely educational side project that boosted my knowledge about FPGA architecture, VHDL design and verification. Without further ado, here it is.
 
+## Build Process
+
+![doc/img/concept-to-pcb.png](doc/img/concept-to-pcb.png)
 
 ## Inspiration & Honorable Mentions
 
