@@ -46,6 +46,7 @@ architecture bh of tb_connection_box_horizontal is
       cout_s     : out   std_logic;
       cout_n     : out   std_logic;
       cin        : in    std_logic;
+      ce         : out   std_logic;
       preselect  : out   std_logic_vector(3 downto 0)
     );
   end component;

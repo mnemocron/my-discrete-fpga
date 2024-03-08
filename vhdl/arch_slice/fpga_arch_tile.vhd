@@ -95,6 +95,7 @@ architecture arch of fpga_arch_tile is
       cout_s     : out   std_logic;
       cout_n     : out   std_logic;
       cin        : in    std_logic;
+      ce         : out   std_logic;
       preselect  : out   std_logic_vector(3 downto 0)
     );
   end component;
@@ -111,6 +112,7 @@ architecture arch of fpga_arch_tile is
       latch : in  std_logic;
       miso  : out std_logic;
       clr_n : in  std_logic;
+      ce    : in  std_logic;
       -- LUT outputs
       Qa    : out std_logic;
       Qb    : out std_logic;
@@ -166,6 +168,7 @@ architecture arch of fpga_arch_tile is
   signal s_cout_clb_cbh   : std_logic;
   signal s_presel_cbh_clb : std_logic_vector(3 downto 0);
   signal s_bus_cbh_clb    : std_logic_vector(3 downto 0);
+  signal s_ce             : std_logic;
 
   signal lut_q : std_logic_vector(3 downto 0);
 
@@ -218,6 +221,7 @@ begin
       cout_s     => s_cin_cbh_clb,
       cout_n     => cout_north,
       cin        => s_cout_clb_cbh,
+      ce         => s_ce,
       preselect  => s_presel_cbh_clb
     );
 
@@ -233,6 +237,7 @@ begin
       latch => s_latch,
       miso  => btstrm_clb_to_cbv,
       clr_n => s_clr_n,
+      ce    => s_ce,
       -- LUT outputs
       Qa    => lut_q(0),
       Qb    => lut_q(1),

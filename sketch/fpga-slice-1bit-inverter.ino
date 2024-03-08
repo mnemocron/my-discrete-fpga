@@ -86,3 +86,39 @@ void do_clk(){
   digitalWrite(CLOCK_PIN, HIGH);
   delay(CLOCK_HALF_PERIOD);
 }
+
+int rd4(){
+  int val = 0;
+  if(digitalRead(A0))
+    val |= (1<<0);
+  if(digitalRead(A1))
+    val |= (1<<1);
+  if(digitalRead(A2))
+    val |= (1<<2);
+  if(digitalRead(A3))
+    val |= (1<<3);
+  return val;
+}
+
+void wrt4(int val){
+
+  if( (val & 1) )
+    digitalWrite(2, HIGH);
+  else
+    digitalWrite(2, LOW);
+
+  if( (val & 2) )
+    digitalWrite(3, HIGH);
+  else
+    digitalWrite(3, LOW);
+
+  if( (val & 4) )
+    digitalWrite(4, HIGH);
+  else
+    digitalWrite(4, LOW);
+
+  if( (val & 8) )
+    digitalWrite(5, HIGH);
+  else
+    digitalWrite(5, LOW);
+}

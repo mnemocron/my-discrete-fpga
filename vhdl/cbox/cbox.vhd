@@ -13,9 +13,6 @@ entity cbox is
 end entity;
 
 architecture arch of cbox is
-
-  signal direction : std_logic;
-
 begin
 
   b <= c when en = '1' else

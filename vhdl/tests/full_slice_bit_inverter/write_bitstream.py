@@ -2,17 +2,18 @@
 BITSTREAM_FILE = './bitstream.txt'
 set_bits = []
 
-# LUT B has a toggle bit
+# LUT A has a toggle bit
 
-set_bits.append(134) # SW xpoint_1 south[1] to west [1]
-set_bits.append(126) # SW en_bus_south[1]
-set_bits.append(118) # SW en_bus_west[1]
-set_bits.append(6) # CBv LUT B -> bus[1] enable
-set_bits.append(89) # CBh presel_3 = 6
-set_bits.append(90) # CBh presel_3 = 6
-set_bits.append(14) # CLB LUT en reg b
+set_bits.append(7) # CBv LUT A -> bus[0] enable
+set_bits.append(111) # SW xpoint_1 south[0] to west [0]
+set_bits.append(119) # SW en_bus_south[0]
+set_bits.append(127) # SW en_bus_west[0]
+set_bits.append(101) # CBh presel_3[2] = +4
+set_bits.append(102) # CBh presel_3[1] = +2
+set_bits.append(103) # CBh presel_3[0] = +1
+set_bits.append(15) # CLB LUT en reg a
 
-for b in [40,41,42,43,44,45,46,47] :
+for b in [17,19,21,23,25,27,29,31] :
     set_bits.append(b) 
 
 with open(BITSTREAM_FILE, 'w') as f:

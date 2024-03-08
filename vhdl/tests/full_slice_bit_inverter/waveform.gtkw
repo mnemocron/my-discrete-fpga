@@ -1,21 +1,22 @@
 [*]
 [*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
-[*] Sun Nov  5 08:42:22 2023
+[*] Fri Mar  8 08:06:40 2024
 [*]
 [dumpfile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/tests/full_slice_bit_inverter/wave.vcd"
-[dumpfile_mtime] "Sun Nov  5 08:41:56 2023"
-[dumpfile_size] 108356
+[dumpfile_mtime] "Fri Mar  8 08:04:11 2024"
+[dumpfile_size] 258723
 [savefile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/tests/full_slice_bit_inverter/waveform.gtkw"
 [timestart] 0
-[size] 1846 1047
-[pos] -1899 206
-*-25.000000 55500000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[size] 1846 501
+[pos] 1979 4
+*-25.000000 166500000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb_fpga_arch_tile.
 [treeopen] tb_fpga_arch_tile.bcinst.
+[treeopen] tb_fpga_arch_tile.bcinst.clb_inst.
 [sst_width] 338
 [signals_width] 216
 [sst_expanded] 1
-[sst_vpaned_height] 363
+[sst_vpaned_height] 138
 @28
 tb_fpga_arch_tile.bitstream_done
 tb_fpga_arch_tile.sclk
@@ -29,11 +30,12 @@ tb_fpga_arch_tile.clk
 tb_fpga_arch_tile.bcinst.clb_inst.qb
 @22
 tb_fpga_arch_tile.bcinst.cbv_inst.bus_north[3:0]
+[color] 7
 tb_fpga_arch_tile.bcinst.cbv_inst.bus_west[3:0]
 @28
 tb_fpga_arch_tile.bcinst.clb_inst.set_reg_b
 @22
-tb_fpga_arch_tile.bcinst.clb_inst.lut3b0[7:0]
-tb_fpga_arch_tile.bcinst.clb_inst.lut3b1[7:0]
+tb_fpga_arch_tile.bcinst.clb_inst.lut3a0[7:0]
+tb_fpga_arch_tile.bcinst.clb_inst.lut3a1[7:0]
 [pattern_trace] 1
 [pattern_trace] 0

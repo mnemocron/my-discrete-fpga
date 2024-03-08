@@ -38,6 +38,7 @@ entity connection_box_horizontal is
     cout_s     : out   std_logic;
     cout_n     : out   std_logic;
     cin        : in    std_logic;
+    ce         : out   std_logic;
     preselect  : out   std_logic_vector(3 downto 0)
   );
 end entity;
@@ -89,6 +90,7 @@ architecture arch of connection_box_horizontal is
   signal sel_2 : std_logic_vector(2 downto 0) := (others => '0');
   signal sel_3 : std_logic_vector(2 downto 0) := (others => '0');
   signal xpoint_cin : std_logic;
+  signal xpoint_ce  : std_logic;
   signal xpoint_cout_n : std_logic;
   signal xpoint_cout_s : std_logic;
 
@@ -133,7 +135,7 @@ begin
       qe       => sel_3(0),
       qf       => sel_3(1),
       qg       => sel_3(2),
-      qh       => open,
+      qh       => xpoint_ce,
       qh_s     => miso
     );
 
@@ -144,6 +146,8 @@ begin
       c  => cin,
       en => xpoint_cin
     );
+
+  ce <= prio_east(1) when xpoint_ce = '1' else 'Z';
 
   bus_prio(0) <= '1' when prio_east(0) = '1' else
                  '0' when prio_east(0) = '0' else
