@@ -37,21 +37,17 @@ architecture bh of tb_sw_box is
       miso  : out std_logic;
       clr_n : in  std_logic;
       -- bus interfaces
-      bus_north  : inout std_logic_vector(3 downto 0);
-      bus_south  : inout std_logic_vector(3 downto 0);
-      bus_east   : inout std_logic_vector(3 downto 0);
-      bus_west   : inout std_logic_vector(3 downto 0);
-      prio_north : inout std_logic_vector(1 downto 0);
-      prio_south : inout std_logic_vector(1 downto 0);
-      prio_east  : inout std_logic_vector(1 downto 0);
-      prio_west  : inout std_logic_vector(1 downto 0)
+      bus_north  : inout std_logic_vector(5 downto 0);
+      bus_south  : inout std_logic_vector(5 downto 0);
+      bus_east   : inout std_logic_vector(5 downto 0);
+      bus_west   : inout std_logic_vector(5 downto 0)
     );
   end component;
 
   component bus_io_dummy is
     port(
-      bus_a  : inout std_logic_vector(3 downto 0);
-      bus_b  : inout std_logic_vector(3 downto 0)
+      bus_a  : inout std_logic_vector(5 downto 0);
+      bus_b  : inout std_logic_vector(5 downto 0)
     );
   end component;
 
@@ -68,29 +64,28 @@ architecture bh of tb_sw_box is
   signal latch      : std_logic;
   signal cfg_clr_n  : std_logic;
 
-  signal cb_bus_west  : std_logic_vector(3 downto 0);
-  signal cb_bus_east  : std_logic_vector(3 downto 0);
-  signal cb_bus_north : std_logic_vector(3 downto 0);
-  signal cb_bus_south : std_logic_vector(3 downto 0);
-  signal cb_preselect : std_logic_vector(3 downto 0);
+  signal cb_bus_west  : std_logic_vector(5 downto 0);
+  signal cb_bus_east  : std_logic_vector(5 downto 0);
+  signal cb_bus_north : std_logic_vector(5 downto 0);
+  signal cb_bus_south : std_logic_vector(5 downto 0);
   signal cb_prio_north : std_logic_vector(1 downto 0);
   signal cb_prio_south : std_logic_vector(1 downto 0);
   signal cb_prio_west : std_logic_vector(1 downto 0);
   signal cb_prio_east : std_logic_vector(1 downto 0);
 
-  signal cb_bus_west_copy  : std_logic_vector(3 downto 0);
-  signal cb_bus_east_copy  : std_logic_vector(3 downto 0);
-  signal cb_bus_north_copy : std_logic_vector(3 downto 0);
-  signal cb_bus_south_copy : std_logic_vector(3 downto 0);
+  signal cb_bus_west_copy  : std_logic_vector(5 downto 0);
+  signal cb_bus_east_copy  : std_logic_vector(5 downto 0);
+  signal cb_bus_north_copy : std_logic_vector(5 downto 0);
+  signal cb_bus_south_copy : std_logic_vector(5 downto 0);
   signal cb_prio_north_copy : std_logic_vector(1 downto 0);
   signal cb_prio_south_copy : std_logic_vector(1 downto 0);
   signal cb_prio_west_copy : std_logic_vector(1 downto 0);
   signal cb_prio_east_copy : std_logic_vector(1 downto 0);
 
-  signal cb_bus_west_buf  : std_logic_vector(3 downto 0);
-  signal cb_bus_east_buf  : std_logic_vector(3 downto 0);
-  signal cb_bus_north_buf : std_logic_vector(3 downto 0);
-  signal cb_bus_south_buf : std_logic_vector(3 downto 0);
+  signal cb_bus_west_buf  : std_logic_vector(5 downto 0);
+  signal cb_bus_east_buf  : std_logic_vector(5 downto 0);
+  signal cb_bus_north_buf : std_logic_vector(5 downto 0);
+  signal cb_bus_south_buf : std_logic_vector(5 downto 0);
   signal cb_prio_north_buf : std_logic_vector(1 downto 0);
   signal cb_prio_south_buf : std_logic_vector(1 downto 0);
   signal cb_prio_west_buf : std_logic_vector(1 downto 0);
@@ -275,10 +270,10 @@ begin
   exp_cbw_2 <= cb_bus_west_buf(2);
   exp_cbw_3 <= cb_bus_west_buf(3);
 
-  cb_bus_south <= clk_count(3 downto 0);
+  cb_bus_south <= clk_count(5 downto 0);
   cb_prio_north <= clk_count(2 downto 1);
 
-  cb_bus_south_copy <= clk_count(3 downto 0);
+  cb_bus_south_copy <= clk_count(5 downto 0);
   cb_prio_north_copy <= clk_count(2 downto 1);
 
   p_test : process(clk)
@@ -300,11 +295,7 @@ begin
       bus_north  => cb_bus_north,
       bus_south  => cb_bus_south,
       bus_east   => cb_bus_east,
-      bus_west   => cb_bus_west,
-      prio_north => cb_prio_north,
-      prio_south => cb_prio_south,
-      prio_east  => cb_prio_east,
-      prio_west  => cb_prio_west
+      bus_west   => cb_bus_west
     );
 
   con_inst : sw_box 
@@ -317,11 +308,7 @@ begin
       bus_north  => cb_bus_north_copy,
       bus_south  => open,
       bus_east   => cb_bus_east_copy,
-      bus_west   => cb_bus_west_copy,
-      prio_north => cb_prio_north_copy,
-      prio_south => cb_prio_south_copy,
-      prio_east  => cb_prio_east_copy,
-      prio_west  => cb_prio_west_copy
+      bus_west   => cb_bus_west_copy
     );
 
   src_bus_inst : bus_io_dummy
@@ -329,11 +316,5 @@ begin
       bus_a  => cb_bus_south_copy,
       bus_b  => cb_bus_south_buf
     );
-
---  snk_bus_inst : bus_io_dummy
---    port map (
---      bus_a  => ,
---      bus_b  => 
---    );
 
 end bh;

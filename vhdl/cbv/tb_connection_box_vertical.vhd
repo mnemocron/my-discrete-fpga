@@ -37,12 +37,10 @@ architecture bh of tb_connection_box_vertical is
       miso  : out std_logic;
       clr_n : in  std_logic;
       -- bus interfaces
-      bus_north  : inout std_logic_vector(3 downto 0);
-      bus_south  : inout std_logic_vector(3 downto 0);
+      bus_north  : inout std_logic_vector(5 downto 0);
+      bus_south  : inout std_logic_vector(5 downto 0);
       bus_east   : out   std_logic_vector(3 downto 0);
-      bus_west   : in    std_logic_vector(3 downto 0);
-      prio_north : inout std_logic_vector(1 downto 0);
-      prio_south : inout std_logic_vector(1 downto 0)
+      bus_west   : in    std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -70,8 +68,8 @@ architecture bh of tb_connection_box_vertical is
   signal cout         : std_logic;
   signal cb_bus_west  : std_logic_vector(3 downto 0) := (others => '0');
   signal cb_bus_east  : std_logic_vector(3 downto 0);
-  signal cb_bus_north : std_logic_vector(3 downto 0);
-  signal cb_bus_south : std_logic_vector(3 downto 0);
+  signal cb_bus_north : std_logic_vector(5 downto 0);
+  signal cb_bus_south : std_logic_vector(5 downto 0);
   signal cb_prio_north : std_logic_vector(1 downto 0) := "ZZ";
   signal cb_prio_south : std_logic_vector(1 downto 0) := "ZZ";
 
@@ -170,10 +168,10 @@ begin
     wait;
   end process;
 
-  pri_n0 <= cb_prio_north(0);
-  pri_n1 <= cb_prio_north(1);
-  pri_s0 <= cb_prio_south(0);
-  pri_s1 <= cb_prio_south(1);
+  pri_n0 <= cb_bus_north(4);
+  pri_n1 <= cb_bus_north(5);
+  pri_s0 <= cb_bus_south(4);
+  pri_s1 <= cb_bus_south(5);
 
   cbn_0 <= cb_bus_north(0);
   cbn_1 <= cb_bus_north(1);
@@ -205,9 +203,7 @@ begin
       bus_north  => cb_bus_north,
       bus_south  => cb_bus_south,
       bus_east   => cb_bus_east,
-      bus_west   => cb_bus_west,
-      prio_north => cb_prio_north,
-      prio_south => cb_prio_south
+      bus_west   => cb_bus_west
     );
   
 

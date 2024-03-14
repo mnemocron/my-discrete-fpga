@@ -29,12 +29,10 @@ entity connection_box_vertical is
     miso  : out std_logic;
     clr_n : in  std_logic;
     -- bus interfaces
-    bus_north  : inout std_logic_vector(3 downto 0);
-    bus_south  : inout std_logic_vector(3 downto 0);
+    bus_north  : inout std_logic_vector(5 downto 0);
+    bus_south  : inout std_logic_vector(5 downto 0);
     bus_east   : out   std_logic_vector(3 downto 0);
-    bus_west   : in    std_logic_vector(3 downto 0);
-    prio_north : inout std_logic_vector(1 downto 0);
-    prio_south : inout std_logic_vector(1 downto 0)
+    bus_west   : in    std_logic_vector(3 downto 0)
   );
 end entity;
 
@@ -139,29 +137,29 @@ begin
     );
   xpoint_4_inst : cbox 
     port map (
-      a  => prio_north(1),
-      b  => prio_south(1),
+      a  => bus_north(5),
+      b  => bus_south(5),
       c  => bus_west(0),
       en => xpoint_4_en
     );
   xpoint_5_inst : cbox 
     port map (
-      a  => prio_north(0),
-      b  => prio_south(0),
+      a  => bus_north(4),
+      b  => bus_south(4),
       c  => bus_west(1),
       en => xpoint_5_en
     );
   xpoint_6_inst : cbox 
     port map (
-      a  => prio_north(1),
-      b  => prio_south(1),
+      a  => bus_north(5),
+      b  => bus_south(5),
       c  => bus_west(2),
       en => xpoint_6_en
     );
   xpoint_7_inst : cbox 
     port map (
-      a  => prio_north(0),
-      b  => prio_south(0),
+      a  => bus_north(4),
+      b  => bus_south(4),
       c  => bus_west(3),
       en => xpoint_7_en
     );

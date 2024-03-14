@@ -47,10 +47,10 @@ architecture bh of tb_fpga_arch_tile is
       clb_east       : out   std_logic_vector(3 downto 0);
       cout_north     : out   std_logic;
       cin_south      : in    std_logic;
-      net_bus_north  : inout std_logic_vector(3 downto 0);
-      net_bus_south  : inout std_logic_vector(3 downto 0);
-      net_bus_west   : inout std_logic_vector(3 downto 0);
-      net_bus_east   : inout std_logic_vector(3 downto 0);
+      net_bus_north  : inout std_logic_vector(5 downto 0);
+      net_bus_south  : inout std_logic_vector(5 downto 0);
+      net_bus_west   : inout std_logic_vector(5 downto 0);
+      net_bus_east   : inout std_logic_vector(5 downto 0);
       net_prio_north : inout std_logic_vector(1 downto 0);
       net_prio_south : inout std_logic_vector(1 downto 0);
       net_prio_west  : inout std_logic_vector(1 downto 0);
@@ -81,10 +81,10 @@ architecture bh of tb_fpga_arch_tile is
   signal clb_north : std_logic_vector(3 downto 0) := (others => 'Z');
   signal clb_south : std_logic_vector(3 downto 0) := (others => 'Z');
 
-  signal bus_west  : std_logic_vector(3 downto 0) := (others => 'Z');
-  signal bus_east  : std_logic_vector(3 downto 0) := (others => 'Z');
-  signal bus_north : std_logic_vector(3 downto 0) := (others => 'Z');
-  signal bus_south : std_logic_vector(3 downto 0) := (others => 'Z');
+  signal bus_west  : std_logic_vector(5 downto 0) := (others => 'Z');
+  signal bus_east  : std_logic_vector(5 downto 0) := (others => 'Z');
+  signal bus_north : std_logic_vector(5 downto 0) := (others => 'Z');
+  signal bus_south : std_logic_vector(5 downto 0) := (others => 'Z');
 
   signal prio_west  : std_logic_vector(1 downto 0) := (others => 'Z');
   signal prio_east  : std_logic_vector(1 downto 0) := (others => 'Z');

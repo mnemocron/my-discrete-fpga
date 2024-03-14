@@ -39,10 +39,8 @@ architecture bh of tb_connection_box_horizontal is
       -- bus interfaces
       bus_north  : out   std_logic_vector(3 downto 0);
       bus_south  : out   std_logic_vector(3 downto 0);
-      bus_east   : inout std_logic_vector(3 downto 0);
-      bus_west   : inout std_logic_vector(3 downto 0);
-      prio_east  : inout std_logic_vector(1 downto 0);
-      prio_west  : inout std_logic_vector(1 downto 0);
+      bus_east   : inout std_logic_vector(5 downto 0);
+      bus_west   : inout std_logic_vector(5 downto 0);
       cout_s     : out   std_logic;
       cout_n     : out   std_logic;
       cin        : in    std_logic;
@@ -73,13 +71,11 @@ architecture bh of tb_connection_box_horizontal is
 
   signal cin          : std_logic;
   signal cout         : std_logic;
-  signal cb_bus_west  : std_logic_vector(3 downto 0);
-  signal cb_bus_east  : std_logic_vector(3 downto 0);
+  signal cb_bus_west  : std_logic_vector(5 downto 0);
+  signal cb_bus_east  : std_logic_vector(5 downto 0);
   signal cb_bus_north : std_logic_vector(3 downto 0);
   signal cb_bus_south : std_logic_vector(3 downto 0);
   signal cb_preselect : std_logic_vector(3 downto 0);
-  signal cb_prio_west : std_logic_vector(1 downto 0);
-  signal cb_prio_east : std_logic_vector(1 downto 0);
 
   signal pri_n0 : std_logic;
   signal pri_n1 : std_logic;
@@ -186,10 +182,10 @@ begin
     wait;
   end process;
 
-  pri_n0 <= cb_prio_west(0);
-  pri_n1 <= cb_prio_west(1);
-  pri_s0 <= cb_prio_east(0);
-  pri_s1 <= cb_prio_east(1);
+  pri_n0 <= cb_bus_west(4);
+  pri_n1 <= cb_bus_west(5);
+  pri_s0 <= cb_bus_east(4);
+  pri_s1 <= cb_bus_east(5);
 
   cbn_0 <= cb_bus_north(0);
   cbn_1 <= cb_bus_north(1);
@@ -211,7 +207,7 @@ begin
   cbw_2 <= cb_bus_west(2);
   cbw_3 <= cb_bus_west(3);
 
-  cb_bus_east <= clk_count(3 downto 0);
+  cb_bus_east <= clk_count(5 downto 0);
   p_test : process(clk)
   begin
 
@@ -232,8 +228,6 @@ begin
       bus_south  => cb_bus_south,
       bus_east   => cb_bus_east,
       bus_west   => cb_bus_west,
-      prio_east  => cb_prio_east,
-      prio_west  => cb_prio_west,
       cout_s     => open,
       cout_n     => open,
       cin        => '0',

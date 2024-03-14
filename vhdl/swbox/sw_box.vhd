@@ -29,14 +29,10 @@ entity sw_box is
     miso  : out std_logic;
     clr_n : in  std_logic;
     -- bus interfaces
-    bus_north  : inout std_logic_vector(3 downto 0);
-    bus_south  : inout std_logic_vector(3 downto 0);
-    bus_east   : inout std_logic_vector(3 downto 0);
-    bus_west   : inout std_logic_vector(3 downto 0);
-    prio_north : inout std_logic_vector(1 downto 0);
-    prio_south : inout std_logic_vector(1 downto 0);
-    prio_east  : inout std_logic_vector(1 downto 0);
-    prio_west  : inout std_logic_vector(1 downto 0)
+    bus_north  : inout std_logic_vector(5 downto 0);
+    bus_south  : inout std_logic_vector(5 downto 0);
+    bus_east   : inout std_logic_vector(5 downto 0);
+    bus_west   : inout std_logic_vector(5 downto 0)
   );
 end entity;
 
@@ -99,10 +95,6 @@ architecture arch of sw_box is
     );
   end component;
 
-  signal bus_vect : std_logic_vector(7 downto 0);
-  signal bus_prio : std_logic_vector(1 downto 0);
-
-  signal prio_lane   : std_logic_vector(1 downto 0);
   signal xpoint_0 : std_logic;
   signal xpoint_1 : std_logic;
   signal xpoint_2 : std_logic;
@@ -253,9 +245,9 @@ begin
   xpoint_4_inst : newsw
     port map (
       d_n  => xpoint_4_6,
-      d_s  => prio_south(0),
+      d_s  => bus_south(4),
       d_e  => xpoint_4_5,
-      d_w  => prio_east(0),
+      d_w  => bus_east(4),
       en_x => xpoint_4,
       en_n => '1',
       en_s => sw_24,
@@ -265,9 +257,9 @@ begin
   xpoint_5_inst : newsw
     port map (
       d_n  => xpoint_5_7,
-      d_s  => prio_south(1),
+      d_s  => bus_south(5),
       d_e  => xpoint_4_5,
-      d_w  => prio_west(0),
+      d_w  => bus_west(4),
       en_x => xpoint_5,
       en_n => '1',
       en_s => sw_25,
@@ -276,9 +268,9 @@ begin
     );
   xpoint_6_inst : newsw
     port map (
-      d_n  => prio_north(0),
+      d_n  => bus_north(4),
       d_s  => xpoint_4_6,
-      d_e  => prio_east(1),
+      d_e  => bus_east(5),
       d_w  => xpoint_6_7,
       en_x => xpoint_6,
       en_n => sw_26,
@@ -288,10 +280,10 @@ begin
     );
   xpoint_7_inst : newsw
     port map (
-      d_n  => prio_north(1),
+      d_n  => bus_north(5),
       d_s  => xpoint_5_7,
       d_e  => xpoint_6_7,
-      d_w  => prio_west(1),
+      d_w  => bus_west(5),
       en_x => xpoint_7,
       en_n => sw_27,
       en_s => '1',

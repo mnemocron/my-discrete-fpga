@@ -31,10 +31,8 @@ entity connection_box_horizontal is
     -- bus interfaces
     bus_north  : out   std_logic_vector(3 downto 0);
     bus_south  : out   std_logic_vector(3 downto 0);
-    bus_east   : inout std_logic_vector(3 downto 0);
-    bus_west   : inout std_logic_vector(3 downto 0);
-    prio_east  : inout std_logic_vector(1 downto 0);
-    prio_west  : inout std_logic_vector(1 downto 0);
+    bus_east   : inout std_logic_vector(5 downto 0);
+    bus_west   : inout std_logic_vector(5 downto 0);
     cout_s     : out   std_logic;
     cout_n     : out   std_logic;
     cin        : in    std_logic;
@@ -97,8 +95,6 @@ architecture arch of connection_box_horizontal is
   signal bus_vect : std_logic_vector(7 downto 0);
   signal bus_prio : std_logic_vector(1 downto 0);
 
-  signal prio_lane   : std_logic_vector(1 downto 0);
-
   signal config_ser_data : std_logic;
 
 begin
@@ -141,23 +137,23 @@ begin
 
   xpoint_cin_inst : cbox 
     port map (
-      a  => prio_east(0),
-      b  => prio_west(0),
+      a  => bus_east(4),
+      b  => bus_west(4),
       c  => cin,
       en => xpoint_cin
     );
 
-  ce <= prio_east(1) when xpoint_ce = '1' else 'Z';
+  ce <= bus_east(5) when xpoint_ce = '1' else 'Z';
 
-  bus_prio(0) <= '1' when prio_east(0) = '1' else
-                 '0' when prio_east(0) = '0' else
-                 '1' when prio_west(0) = '1' else
-                 '0' when prio_west(0) = '0' else 'Z';
+  bus_prio(0) <= '1' when bus_east(4) = '1' else
+                 '0' when bus_east(4) = '0' else
+                 '1' when bus_west(4) = '1' else
+                 '0' when bus_west(4) = '0' else 'Z';
 
-  bus_prio(1) <= '1' when prio_east(1) = '1' else
-                 '0' when prio_east(1) = '0' else
-                 '1' when prio_west(1) = '1' else
-                 '0' when prio_west(1) = '0' else 'Z';
+  bus_prio(1) <= '1' when bus_east(5) = '1' else
+                 '0' when bus_east(5) = '0' else
+                 '1' when bus_west(5) = '1' else
+                 '0' when bus_west(5) = '0' else 'Z';
 
   cout_n <= bus_prio(0) when xpoint_cout_n = '1' else 'Z';
   cout_s <= bus_prio(1) when xpoint_cout_s = '1' else 'Z';
