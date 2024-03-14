@@ -67,20 +67,6 @@ architecture arch of sw_box is
     );
   end component;
 
---  component xpoint_thru is
---    port(
---      d_n  : inout std_logic;
---      d_s  : inout std_logic;
---      d_e  : inout std_logic;
---      d_w  : inout std_logic;
---      en_x : in    std_logic;
---      en_n : in    std_logic;
---      en_s : in    std_logic;
---      en_e : in    std_logic;
---      en_w : in    std_logic
---    );
---  end component;
-
   component newsw is
     port(
       d_n  : inout std_logic;

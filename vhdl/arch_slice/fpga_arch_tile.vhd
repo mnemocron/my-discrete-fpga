@@ -47,11 +47,7 @@ entity fpga_arch_tile is
     net_bus_north  : inout std_logic_vector(5 downto 0);
     net_bus_south  : inout std_logic_vector(5 downto 0);
     net_bus_west   : inout std_logic_vector(5 downto 0);
-    net_bus_east   : inout std_logic_vector(5 downto 0);
-    net_prio_north : inout std_logic_vector(1 downto 0);
-    net_prio_south : inout std_logic_vector(1 downto 0);
-    net_prio_west  : inout std_logic_vector(1 downto 0);
-    net_prio_east  : inout std_logic_vector(1 downto 0)
+    net_bus_east   : inout std_logic_vector(5 downto 0)
   );
 end entity;
 
@@ -152,8 +148,6 @@ architecture arch of fpga_arch_tile is
   signal clk_0 : std_logic;
   signal clk_1 : std_logic;
 
-  signal s_prio_swb_cbv   : std_logic_vector(1 downto 0);
-  signal s_prio_swb_cbh   : std_logic_vector(1 downto 0);
   signal s_bus_swb_cbv    : std_logic_vector(5 downto 0);
   signal s_bus_swb_cbh    : std_logic_vector(5 downto 0);
   signal s_cin_cbh_clb    : std_logic;

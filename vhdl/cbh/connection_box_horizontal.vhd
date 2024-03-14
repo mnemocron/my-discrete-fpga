@@ -92,7 +92,7 @@ architecture arch of connection_box_horizontal is
   signal xpoint_cout_n : std_logic;
   signal xpoint_cout_s : std_logic;
 
-  signal bus_vect : std_logic_vector(7 downto 0);
+  signal bus_vect : std_logic_vector(7 downto 0); -- signal selection input for 8:1 MUX
   signal bus_prio : std_logic_vector(1 downto 0);
 
   signal config_ser_data : std_logic;

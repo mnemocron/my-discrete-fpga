@@ -50,11 +50,7 @@ architecture bh of tb_fpga_arch_tile is
       net_bus_north  : inout std_logic_vector(5 downto 0);
       net_bus_south  : inout std_logic_vector(5 downto 0);
       net_bus_west   : inout std_logic_vector(5 downto 0);
-      net_bus_east   : inout std_logic_vector(5 downto 0);
-      net_prio_north : inout std_logic_vector(1 downto 0);
-      net_prio_south : inout std_logic_vector(1 downto 0);
-      net_prio_west  : inout std_logic_vector(1 downto 0);
-      net_prio_east  : inout std_logic_vector(1 downto 0)
+      net_bus_east   : inout std_logic_vector(5 downto 0)
     );
   end component;
 
@@ -85,11 +81,6 @@ architecture bh of tb_fpga_arch_tile is
   signal bus_east  : std_logic_vector(5 downto 0) := (others => 'Z');
   signal bus_north : std_logic_vector(5 downto 0) := (others => 'Z');
   signal bus_south : std_logic_vector(5 downto 0) := (others => 'Z');
-
-  signal prio_west  : std_logic_vector(1 downto 0) := (others => 'Z');
-  signal prio_east  : std_logic_vector(1 downto 0) := (others => 'Z');
-  signal prio_north : std_logic_vector(1 downto 0) := (others => 'Z');
-  signal prio_south : std_logic_vector(1 downto 0) := (others => 'Z');
 
   -- housekeeping
   signal clk_count  : std_logic_vector(31 downto 0) := (others => '0');
@@ -214,12 +205,7 @@ begin
       net_bus_north  => bus_north,
       net_bus_south  => bus_south,
       net_bus_west   => bus_west,
-      net_bus_east   => bus_east,
-
-      net_prio_north => prio_north,
-      net_prio_south => prio_south,
-      net_prio_west  => prio_west,
-      net_prio_east  => prio_east
+      net_bus_east   => bus_east
     );
   
 
