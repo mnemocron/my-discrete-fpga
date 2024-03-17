@@ -161,6 +161,12 @@ begin
     -- finish;
   end process;
 
+  clb_west <= (others => '0');
+  clb_east <= (others => '0');
+
+  clb_north <= clk_count(4 downto 1);
+  clb_south <= clk_count(5 downto 2);
+
   -- generate initial reset
   p_reset_gen : process
   begin 

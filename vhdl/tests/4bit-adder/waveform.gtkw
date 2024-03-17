@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Mar 17 15:03:39 2024
+[*]
+[dumpfile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/tests/4bit-adder/wave.vcd"
+[dumpfile_mtime] "Sun Mar 17 15:03:27 2024"
+[dumpfile_size] 143660
+[savefile] "/mnt/c/Users/simon/Downloads/FPGA/my-discrete-fpga/vhdl/tests/4bit-adder/waveform.gtkw"
+[timestart] 0
+[size] 1846 979
+[pos] 380 997
+*-25.000000 165000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_fpga_arch_tile.
+[treeopen] tb_fpga_arch_tile.bcinst.
+[treeopen] tb_fpga_arch_tile.bcinst.clb_inst.
+[sst_width] 338
+[signals_width] 216
+[sst_expanded] 1
+[sst_vpaned_height] 335
+@28
+tb_fpga_arch_tile.bitstream_done
+tb_fpga_arch_tile.sclk
+tb_fpga_arch_tile.rst_n
+tb_fpga_arch_tile.mosi
+tb_fpga_arch_tile.miso
+tb_fpga_arch_tile.latch
+tb_fpga_arch_tile.bcinst.clb_inst.clk_0
+tb_fpga_arch_tile.bcinst.clb_inst.clk_1
+tb_fpga_arch_tile.clk
+@22
+tb_fpga_arch_tile.bcinst.cbv_inst.bus_west[3:0]
+tb_fpga_arch_tile.bcinst.clb_inst.inmuxa_inst.i1[3:0]
+@28
+tb_fpga_arch_tile.bcinst.clb_inst.lut3_sel_a[2:0]
+tb_fpga_arch_tile.bcinst.clb_inst.lut3_sel_b[2:0]
+tb_fpga_arch_tile.bcinst.clb_inst.lut3_sel_c[2:0]
+@29
+tb_fpga_arch_tile.bcinst.clb_inst.lut3_sel_d[2:0]
+[pattern_trace] 1
+[pattern_trace] 0
