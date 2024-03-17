@@ -3,7 +3,7 @@ A custom, modular FPGA architecture simulated in VHDL (GHDL), realized with disc
 
 ---
 
-![architecture/svg/fpga-arch-tile.svg](architecture/svg/fpga-arch-tile.svg)
+![doc/img/architecture-tile.png](doc/img/architecture-tile.png)
 
 Read more on my blog: [mnemocron.github.io](https://mnemocron.github.io/2023-12-08-DIY-FPGA-diary-1/)
 
@@ -18,6 +18,25 @@ And that is the case for the **4 bit FPGA**. It is a purely educational side pro
 ## Build Process
 
 ![doc/img/concept-to-pcb.png](doc/img/concept-to-pcb.png)
+
+---
+
+## Start Here!
+
+Do you want to build this FPGA yourself? Great! Everything, I made regarding this project is in this repository.
+
+To understand the architecture start with `./architecture` or read about it on my blog.
+Next, you may dive into the VHDL simulations in `./vhdl` and try out a few things.
+Head straight to the `./vhdl/test` directory to see examples with the full FPGA architecture (instead of sub units).
+
+- `./architecture` contains conceptual draw.io block diagrams
+- `./doc` contains images, notes and tools that may be helpful
+- `./ihdl` (WIP) contains ideas and concepts for a "compiler"
+- `./kicad` contains schematics and PCB files for KiCAD 7.0
+- `./sketch` contains Arduino code for testing of assembled PCB hardware
+- `./vhdl` contains models for 74xx ICs and the full FPGA architecture
+
+---
 
 ## Inspiration & Honorable Mentions
 

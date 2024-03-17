@@ -2,6 +2,14 @@
 
 ---
 
+
+
+![../doc/img/memes/sorry-bro-compiler.png](../doc/img/memes/sorry-bro-compiler.png)
+
+
+
+---
+
 ## General Rules
 
 ### Assignments

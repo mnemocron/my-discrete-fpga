@@ -24,8 +24,8 @@ ghdl -a ../../cbv/connection_box_vertical.vhd
 ghdl -a ../../clb/clb_slice.vhd
 ghdl -a ../../cbh/connection_box_horizontal.vhd
 
-ghdl -a ../../arch_slice/fpga_arch_tile.vhd
-ghdl -a -fsynopsys ../../arch_slice/tb_fpga_arch_tile.vhd
+ghdl -a ../../arch_tile/fpga_arch_tile.vhd
+ghdl -a -fsynopsys ../../arch_tile/tb_fpga_arch_tile.vhd
 
 # elaborate
 ghdl -e fpga_arch_tile
