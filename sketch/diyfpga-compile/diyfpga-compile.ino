@@ -22,7 +22,7 @@
 #define CLOCK_PIN 8
 #define RST_PIN 9
 
-#define CLOCK_HALF_PERIOD 50
+#define CLOCK_HALF_PERIOD 250
 
 FILE f_out;
 int sput(char c, __attribute__((unused)) FILE* f) {return !Serial.write(c);}
@@ -30,6 +30,7 @@ int sput(char c, __attribute__((unused)) FILE* f) {return !Serial.write(c);}
 fpga_t myfpga;  // fpga object: edit settings in diyfpga_user.h
 
 void setup() {
+  // todo: find out what the SPI is doing on reset. this could potentially be dangerous for the FPGA
   setup_printf();
   setup_gpio();
 

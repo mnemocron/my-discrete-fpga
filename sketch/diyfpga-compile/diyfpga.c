@@ -85,15 +85,15 @@ int create_bitstream(fpga_t* fpga){
         if(sw->west[i])
           SET_BIT_IN_BITSTREAM(slc, 127-i);
       }
-      for(int i=4; i<5; i++){        
+      for(int i=4; i<6; i++){ 
         if(sw->north[i])
-          SET_BIT_IN_BITSTREAM(slc, 133-i);
+          SET_BIT_IN_BITSTREAM(slc, 133-i+4);
         if(sw->south[i])
-          SET_BIT_IN_BITSTREAM(slc, 135-i);
+          SET_BIT_IN_BITSTREAM(slc, 135-i+4);
         if(sw->east[i])
-          SET_BIT_IN_BITSTREAM(slc, 129-i);
+          SET_BIT_IN_BITSTREAM(slc, 129-i+4);
         if(sw->west[i])
-          SET_BIT_IN_BITSTREAM(slc, 131-i);
+          SET_BIT_IN_BITSTREAM(slc, 131-i+4);
       }
       if(sw->xp[4])
         SET_BIT_IN_BITSTREAM(slc, 107); 
@@ -156,6 +156,8 @@ int create_bitstream(fpga_t* fpga){
       
       // Bitstream
       int offset = N_BYTES_SLICE * (iy + (fpga->Ny * ix));
+      // but with SPI the slice order is reversed, therefore reverse the slice order:
+      offset = N_BYTES_SLICE * ( (fpga->Ny * fpga->Nx) - (iy + (fpga->Ny * ix)) -1 );
       for(int k=0; k<N_BYTES_SLICE; k++)
         fpga->bitstream[offset+k] = slc->bitstream[k];
     }
