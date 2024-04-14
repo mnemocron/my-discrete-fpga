@@ -1,55 +1,52 @@
-
+/*******************************************************************************
+ * @file        diyfpga.c
+ * @brief       Rudimentary compiler that translates features from a struct into
+ *              a binary bitstream for the FPGA
+ * @details     
+ * @version     
+ * @author      Simon Burkhardt https://github.com/mnemocron
+ * @date        2024.04
+ * @see         https://github.com/mnemocron/my-discrete-fpga
+*******************************************************************************/ 
 #include <SPI.h>
 #include <stdio.h>
 #include "diyfpga.h"
 #include "diyfpga_user.h"
 
+/* SPI pinout
+ * 13 -> SCLK
+ * 12 -> MISO
+ * 11 -> MOSI 
+ */
 #define LATCH_PIN 10
 #define CLOCK_PIN 8
 #define RST_PIN 9
 
-#define CLB_BYTES (17)
-#define BITS_CONFIGURED (4*8+4*4+4+8)
-#define CLB_OFFSET (0)
-#define CLOCK_HALF_PERIOD (100)
-
-char bitstream[CLB_BYTES];
-int conf_bits[BITS_CONFIGURED] = { 
-    24,25,26,27,28,29,30,31,  /*LUT_A*/ 
-    36,37,38,39,40,41,42,43,  /*LUT_B*/ 
-    50,51,52,53,56,57,60,61,  /*LUT_C*/ 
-    65,66,68,70,72,74,76,78,  /*LUT_D*/ 
-    12,13,14,15,              /*CLB reg_en*/
-    124,125,126,127,          /*SW south*/ 
-    116,117,118,119,          /*SW west*/ 
-    108,109,110,111,          /*SW cross points*/ 
-    4,5,6,7,                  /*CBv en bus*/ 
-    89,90,91, 93,94, 97,99, 101 /*CBh in select*/
-  };
+#define CLOCK_HALF_PERIOD 50
 
 FILE f_out;
 int sput(char c, __attribute__((unused)) FILE* f) {return !Serial.write(c);}
 
-fpga_t myfpga;
+fpga_t myfpga;  // fpga object: edit settings in diyfpga_user.h
 
 void setup() {
   setup_printf();
+  setup_gpio();
 
   /* Program the FPGA functionality in myfpga_user.cpp */
   diyfpga_setup(); 
   create_bitstream(&myfpga);
+  program_bitstream(myfpga.bitstream, N_BYTES_BITSTREAM);
 
-  setup_gpio();
 
-  for(int i=0; i<CLB_BYTES; i++){
-    printf("%02X\t%02X\n", bitstream[i], myfpga.slice[0][0].bitstream[i]);
+  for(int i=0; i<N_BYTES_SLICE; i++){
+    printf("%02X\n", myfpga.slice[0][0].bitstream[i]);
   }
 }
 
 void loop() {
   do_clk();
 }
-
 
 void setup_printf(){
   Serial.begin(9600);
@@ -73,28 +70,21 @@ void setup_gpio(){
 
   SPI.begin();
   SPI.setBitOrder(LSBFIRST);
-  digitalWrite(RST_PIN, LOW);
-  prg_bitstream(2);
-  delay(50);
-  digitalWrite(RST_PIN, HIGH);
-  delay(50);
 }
 
-void prg_bitstream(int n){
-  for(int i=0; i<CLB_BYTES; i++)
-    bitstream[i] = 0;
-  for(int i=0; i<BITS_CONFIGURED; i++){
-      int bt = conf_bits[i] - CLB_OFFSET;
-      bitstream[bt/8] |= (1 << (bt%8));
-  }
-  for(int k=0; k<n; k++){
-    for(int i=0; i<CLB_BYTES; i++){
-      SPI.transfer(bitstream[i]);
-    }
+void program_bitstream(char* bin, int len){
+  digitalWrite(RST_PIN, LOW);
+
+  for(int i=0; i<len; i++){
+    SPI.transfer(*bin++);
   }
   digitalWrite(LATCH_PIN, HIGH);
   delay(1);
   digitalWrite(LATCH_PIN, LOW);
+
+  delay(50);
+  digitalWrite(RST_PIN, HIGH);
+  delay(50);
 }
 
 void do_clk(){

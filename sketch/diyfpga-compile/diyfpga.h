@@ -20,6 +20,22 @@
 #define N_BYTES_CBH (2)
 #define N_BYTES_CSW (4)
 #define N_BYTES_SLICE (N_BYTES_CLB + N_BYTES_CBV + N_BYTES_CBH + N_BYTES_CSW)
+#define N_BYTES_BITSTREAM (N_BYTES_SLICE * N_SLICE_X * N_SLICE_Y)
+
+#define BYTE_TO_BINARY_PATTERN "%c%c%c%c%c%c%c%c"
+#define BYTE_TO_BINARY(byte)  \
+  ((byte) & 0x80 ? '1' : '0'), \
+  ((byte) & 0x40 ? '1' : '0'), \
+  ((byte) & 0x20 ? '1' : '0'), \
+  ((byte) & 0x10 ? '1' : '0'), \
+  ((byte) & 0x08 ? '1' : '0'), \
+  ((byte) & 0x04 ? '1' : '0'), \
+  ((byte) & 0x02 ? '1' : '0'), \
+  ((byte) & 0x01 ? '1' : '0') 
+
+#ifdef __cplusplus
+ extern "C" {
+#endif
 
 typedef enum {
   GND = 0,
@@ -88,8 +104,13 @@ typedef struct {
   slice_t slice[N_SLICE_X][N_SLICE_Y];
   int Nx;
   int Ny;
+  char bitstream[N_BYTES_BITSTREAM];
 } fpga_t;
 
 int create_bitstream(fpga_t* fpga);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif	/* MY_FPGA_H */

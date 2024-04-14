@@ -1,6 +1,16 @@
+/*******************************************************************************
+ * @file        diyfpga.c
+ * @brief       Rudimentary compiler that translates features from a struct into
+ *              a binary bitstream for the FPGA
+ * @details     
+ * @version     
+ * @author      Simon Burkhardt https://github.com/mnemocron
+ * @date        2024.04
+ * @see         https://github.com/mnemocron/my-discrete-fpga
+*******************************************************************************/
 
-#include "myFpga.h"
 #include <stdio.h>
+#include "diyfpga.h"
 
 void SET_BIT_IN_BITSTREAM(slice_t* s, int b){
   s->bitstream[b/8] |= (1 << (b%8));
@@ -51,7 +61,6 @@ void SET_CLB_LUT_BITSTREAM(slice_t* s){
 }
 
 int create_bitstream(fpga_t* fpga){
-  int offset = 0;
   fpga->Nx = N_SLICE_X;
   fpga->Ny = N_SLICE_Y;
   
@@ -144,11 +153,18 @@ int create_bitstream(fpga_t* fpga){
         SET_BIT_IN_BITSTREAM(slc, 8);
       if(clb->clk_sel == 1)  // TODO: boundry check for clock selection [0,1]
         SET_BIT_IN_BITSTREAM(slc, 10);
+      
+      // Bitstream
+      int offset = N_BYTES_SLICE * (iy + (fpga->Ny * ix));
+      for(int k=0; k<N_BYTES_SLICE; k++)
+        fpga->bitstream[offset+k] = slc->bitstream[k];
     }
   }
 #if ENABLE_PRINT_MESSAGES
   printf("\n");
 #endif
+
+  return 0;
 }
 
 

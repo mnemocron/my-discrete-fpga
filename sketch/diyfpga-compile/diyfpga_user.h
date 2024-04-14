@@ -14,8 +14,16 @@
 #define N_SLICE_X (1)
 #define N_SLICE_Y (1)
 
-#define ENABLE_PRINT_MESSAGES true
+#define ENABLE_PRINT_MESSAGES false
+
+#ifdef __cplusplus
+ extern "C" {
+#endif
 
 void diyfpga_setup();
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif	/* MY_FPGA_USER_H */
