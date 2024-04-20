@@ -143,6 +143,7 @@ int create_bitstream(fpga_t* fpga){
       // CLB
       clb_t* clb = &slc->clb;
       SET_CLB_LUT_BITSTREAM(slc);
+      SET_CLB_INMUX_BITSTREAM(slc);
       for(int i=0; i<4; i++){
         if(clb->reg[i])
           SET_BIT_IN_BITSTREAM(slc, 15-i);

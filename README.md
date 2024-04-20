@@ -1,11 +1,12 @@
 # Discrete 7400 logic based FPGA
-A custom, modular FPGA architecture simulated in VHDL (GHDL), realized with discrete 7400-logic ICs and layouted on PCB with KiCAD.
+A custom, modular FPGA architecture simulated in VHDL (GHDL), realized with discrete 7400-logic ICs, layouted on PCB with KiCAD and programmed through an abstraction layer via Arduino.
 
 ---
 
-![doc/img/architecture-tile.png](doc/img/architecture-tile.png)
+![doc/img/fpga-arduino-1.jpg](doc/img/fpga-arduino-1.jpg)
 
-Read more on my blog: [mnemocron.github.io](https://mnemocron.github.io/2023-12-08-DIY-FPGA-diary-1/)
+Read the full thorugh process and many explanations on my blog: 
+[mnemocron.github.io](https://mnemocron.github.io/2023-12-08-DIY-FPGA-diary-0/)
 
 ## Motivation
 
@@ -15,7 +16,11 @@ Ever since building Ben Eaters [8 bit CPU](https://eater.net/8bit) myself, I wan
 The 8 bit CPU is arguably the worst CPU ever built - but it is a fantastic educational example.
 And that is the case for the **4 bit FPGA**. It is a purely educational side project that boosted my knowledge about FPGA architecture, VHDL design and verification. Without further ado, here it is.
 
+![doc/img/architecture-tile.png](doc/img/architecture-tile.png)
+
 ## Build Process
+
+The actual part list is WIP. Expected material cost are approximately 50 USD per assembled tile (4:4 bit LUT with interconnect).
 
 ![doc/img/concept-to-pcb.png](doc/img/concept-to-pcb.png)
 
@@ -32,9 +37,15 @@ Head straight to the `./vhdl/test` directory to see examples with the full FPGA 
 - `./architecture` contains conceptual draw.io block diagrams
 - `./doc` contains images, notes and tools that may be helpful
 - `./ihdl` (WIP) contains ideas and concepts for a "compiler"
-- `./kicad` contains schematics and PCB files for KiCAD 7.0
-- `./sketch` contains Arduino code for testing of assembled PCB hardware
-- `./vhdl` contains models for 74xx ICs and the full FPGA architecture
+- `./kicad` contains **schematics and PCB files** for KiCAD 7.0
+- `./sketch` contains Arduino code for testing of assembled PCB hardware and **abstraction layer in C**
+- `./vhdl` contains models for 74xx ICs and the **full FPGA architecture for simulation**
+
+---
+
+## "Assemble" code to map onto the FPGA in Arduino
+
+![doc/img/compiler-design.png](doc/img/compiler-design.png)
 
 ---
 

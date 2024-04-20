@@ -12,7 +12,7 @@
 
 // How many slices does the FPGA have? (2D matrix)
 #define N_SLICE_X (1)
-#define N_SLICE_Y (2)
+#define N_SLICE_Y (3)
 
 #define ENABLE_PRINT_MESSAGES false
 

@@ -22,7 +22,7 @@
 #define CLOCK_PIN 8
 #define RST_PIN 9
 
-#define CLOCK_HALF_PERIOD 250
+#define CLOCK_HALF_PERIOD 50
 
 FILE f_out;
 int sput(char c, __attribute__((unused)) FILE* f) {return !Serial.write(c);}
